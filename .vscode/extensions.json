@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"biomejs.biome",
+		"formulahendry.auto-rename-tag",
+		"usernamehw.errorlens",
+		"dsznajder.es7-react-js-snippets",
+		"naumovs.color-highlight",
+		"WallabyJs.console-ninja",
+		"EditorConfig.EditorConfig",
+		"ecmel.vscode-html-css"
+	]
+}

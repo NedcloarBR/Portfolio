@@ -1,0 +1,3 @@
+{
+	"*.{ts,tsx,json}": "yarn dlx @biomejs/biome check --apply ./"
+}
