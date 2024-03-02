@@ -7,6 +7,7 @@
 		"naumovs.color-highlight",
 		"WallabyJs.console-ninja",
 		"EditorConfig.EditorConfig",
-		"ecmel.vscode-html-css"
+		"ecmel.vscode-html-css",
+		"arcanis.vscode-zipfs"
 	]
 }

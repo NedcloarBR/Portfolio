@@ -1,7 +1,22 @@
 {
-	"cSpell.words": ["biomejs", "clsx", "languagedetector", "localforage", "Nedcloar", "tailwindcss", "Uhlein"],
+	"cSpell.words": [
+		"biomejs",
+		"clsx",
+		"commitlint",
+		"languagedetector",
+		"localforage",
+		"Nedcloar",
+		"shadcn",
+		"tailwindcss",
+		"Uhlein"
+	],
 	"material-icon-theme.files.associations": {
 		"router.tsx": "Routing"
 	},
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": ".yarn/sdks/typescript/lib",
+	"search.exclude": {
+		"**/.yarn": true,
+		"**/.pnp.*": true
+	},
+	"typescript.enablePromptUseWorkspaceTsdk": true
 }

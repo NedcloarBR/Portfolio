@@ -17,11 +17,12 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"update": "yarn upgrade-interactive",
+		"layout": "yarn dlx shadcn-ui@latest",
 		"format": "yarn dlx @biomejs/biome format --write ./",
 		"lint": "yarn dlx @biomejs/biome lint ./",
 		"check": "yarn dlx @biomejs/biome check --apply ./",
 		"preview": "vite preview",
-		"prepare": "husky"
+		"postinstall": "husky || true"
 	},
 	"dependencies": {
 		"@radix-ui/react-dropdown-menu": "^2.0.6",
