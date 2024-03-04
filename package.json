@@ -20,6 +20,7 @@
 		"layout": "yarn dlx shadcn-ui@latest",
 		"format": "yarn dlx @biomejs/biome format --write ./",
 		"lint": "yarn dlx @biomejs/biome lint ./",
+		"lint-hook": "lint-staged",
 		"check": "yarn dlx @biomejs/biome check --apply ./",
 		"preview": "vite preview",
 		"postinstall": "husky || true"
