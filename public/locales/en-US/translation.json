@@ -11,5 +11,9 @@
 	"ErrorToast": {
 		"Title": "Error copied!",
 		"Description": "Error code has copied to clipboard"
+	},
+	"Languages": {
+		"pt-BR": "Portuguese",
+		"en-US": "English"
 	}
 }

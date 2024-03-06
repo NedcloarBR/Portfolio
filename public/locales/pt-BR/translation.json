@@ -11,5 +11,9 @@
 	"ErrorToast": {
 		"Title": "Erro copiado!",
 		"Description": "Código de erro copiado para a area de transferência"
+	},
+	"Languages": {
+		"pt-BR": "Português",
+		"en-US": "Inglês"
 	}
 }
