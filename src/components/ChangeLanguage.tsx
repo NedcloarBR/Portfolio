@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import type { ReactElement } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
@@ -26,12 +26,12 @@ export default function ChangeLanguage() {
 
 	function DropdownLanguages() {
 		const arr: ReactElement[] = [];
-		for (let i = 0; i < Languages.length; i++) {
+		for (const element of Languages) {
 			arr.push(
-				<DropdownMenuItem onClick={() => i18n.changeLanguage(Languages[i].code)}>
+				<DropdownMenuItem onClick={() => i18n.changeLanguage(element.code)}>
 					<div className="flex items-center gap-1">
-						<span className={`fi fi-${Languages[i].flag}`} />
-						<div>{Languages[i].name}</div>
+						<span className={`fi fi-${element.flag}`} />
+						<div>{element.name}</div>
 					</div>
 				</DropdownMenuItem>,
 			);
