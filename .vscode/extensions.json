@@ -1,6 +1,6 @@
 {
-	"recommendations": [
-		"biomejs.biome",
+  "recommendations": [
+    "biomejs.biome",
 		"formulahendry.auto-rename-tag",
 		"usernamehw.errorlens",
 		"dsznajder.es7-react-js-snippets",
@@ -8,6 +8,7 @@
 		"WallabyJs.console-ninja",
 		"EditorConfig.EditorConfig",
 		"ecmel.vscode-html-css",
-		"arcanis.vscode-zipfs"
-	]
+		"arcanis.vscode-zipfs",
+    "lokalise.i18n-ally"
+  ]
 }

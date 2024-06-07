@@ -1,0 +1,24 @@
+{
+	"Metadata": {
+		"Home": {
+			"title": "Portfolio Miguel Alexandre Uhlein",
+			"description": "Get to know me and explore my projects!"
+		}
+	},
+	"Theme": {
+		"Toggle": "Toggle theme",
+		"Dark": "Dark",
+		"Light": "Light"
+	},
+	"Copy": "Copy",
+	"Reload": "Click here to back to main page",
+	"Hello": "Hello, World!",
+	"ErrorToast": {
+		"Title": "Error copied!",
+		"Description": "Error code has copied to clipboard"
+	},
+	"Languages": {
+		"pt-BR": "Portuguese",
+		"en-US": "English"
+	}
+}
