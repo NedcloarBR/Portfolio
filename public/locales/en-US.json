@@ -18,6 +18,7 @@
 		"Description": "Error code has copied to clipboard"
 	},
 	"Languages": {
+    "Change": "Change Language",
 		"pt-BR": "Portuguese",
 		"en-US": "English"
 	}

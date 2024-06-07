@@ -13,9 +13,9 @@ export interface LocaleLayoutProps {
   params: { locale: string };
 }
 
-export async function generateMetadata({params: { locale }}: { params: LocaleLayoutProps["params"]}) {
-  const t = await getTranslations({locale, namespace: "Metadata"});
- 
+export async function generateMetadata({ params: { locale } }: { params: LocaleLayoutProps["params"] }) {
+  const t = await getTranslations({ locale, namespace: "Metadata" });
+
   return {
     title: t('Home.title'),
     description: t("Home.description")
@@ -35,7 +35,7 @@ export default async function LocaleLayout({
               {children}
             </MainContainer>
           </NextIntlClientProvider>
-        </ThemeProvider>  
+        </ThemeProvider>
       </body>
     </html>
   );

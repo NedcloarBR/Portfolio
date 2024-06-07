@@ -1,17 +1,39 @@
 "use client"
 
-import { Menu } from "lucide-react";
-import { useState } from "react";
+import {
+  CircleHelp,
+  CirclePlus,
+  Info,
+  Menu,
+} from 'lucide-react';
+
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { ToggleTheme } from './toggle-theme';
+import { useTranslations } from 'next-intl';
+import { Separator } from './ui/separator';
+import { ChangeLanguage } from './change-language';
 
 export function HamburgerMenu() {
-	const [isOpen, setIsOpen] = useState<boolean>(false);
+  const t = useTranslations()
 
-	return (
-		<nav className="w-4 p-[25px] cursor-pointer ">
-			<Menu className="size-12 zinc" onClick={() => setIsOpen(!isOpen)} />
-			<div className="rounded-md h-20 w-20 p-1 bg-zinc-500 dark:bg-zinc-700" hidden={!isOpen}>
-				hehe boy
-			</div>
-		</nav>
-	);
-}
+  return (
+    <Sheet>
+      <SheetTrigger>
+        <Menu color="white" className="ml-2 mr-2 size-8" />
+      </SheetTrigger>
+      <SheetContent side="left" className="pt-[96px] flex flex-col">
+        <div className="flex flex-col gap-4">
+          <div className="flex items-center gap-2">
+            <ToggleTheme />
+            {t("Theme.Toggle")}
+          </div>
+          <div className="flex items-center gap-2">
+            <ChangeLanguage />
+            {t("Languages.Change")}
+          </div>
+          <Separator />
+        </div>
+      </SheetContent>
+    </Sheet>
+  );
+};

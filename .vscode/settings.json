@@ -1,24 +1,20 @@
 {
-	"cSpell.words": [
-		"biomejs",
-		"clsx",
-		"commitlint",
-		"languagedetector",
-		"localforage",
-		"Nedcloar",
-		"shadcn",
-		"tailwindcss",
-		"Uhlein"
-	],
-	"material-icon-theme.files.associations": {
-		"router.tsx": "Routing"
-	},
-	"typescript.tsdk": ".yarn/sdks/typescript/lib",
-	"search.exclude": {
-		"**/.yarn": true,
-		"**/.pnp.*": true
-	},
-	"typescript.enablePromptUseWorkspaceTsdk": true,
-  "i18n-ally.localesPaths": ["./public/locales"],
+  "cSpell.words": [
+    "biomejs",
+    "clsx",
+    "Nedcloar",
+    "shadcn",
+    "tailwindcss",
+    "Uhlein"
+  ],
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "i18n-ally.localesPaths": [
+    "./public/locales"
+  ],
   "i18n-ally.keystyle": "nested",
 }
