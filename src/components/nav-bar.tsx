@@ -1,4 +1,4 @@
-import { HamburgerMenu } from "./hamburger-menu";
+import { HamburgerMenu } from "@/components";
 
 export function NavBar() {
 	return (

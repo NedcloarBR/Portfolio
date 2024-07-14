@@ -3,14 +3,13 @@
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 import type { ReactElement } from "react";
-import { Button } from "./ui/button";
 import {
+	Button,
 	DropdownMenu,
 	DropdownMenuContent,
 	DropdownMenuItem,
 	DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
-import { Separator } from "./ui/separator";
+} from "@/components/ui";
 
 export function ChangeLanguage() {
 	const t = useTranslations("Languages");

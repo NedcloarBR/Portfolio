@@ -2,11 +2,9 @@
 
 import { Menu } from "lucide-react";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { ToggleTheme } from "./toggle-theme";
+import { ToggleTheme, ChangeLanguage } from "@/components";
 import { useTranslations } from "next-intl";
-import { Separator } from "./ui/separator";
-import { ChangeLanguage } from "./change-language";
+import { Separator, Sheet, SheetContent, SheetTrigger } from "@/components/ui";
 
 export function HamburgerMenu() {
 	const t = useTranslations();

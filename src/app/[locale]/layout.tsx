@@ -1,10 +1,9 @@
 import { Inter } from "next/font/google";
 import "@/styles/global.css";
 import "flag-icons/css/flag-icons.css";
-import { MainContainer } from "@/components/main-container";
-import { ThemeProvider } from "@/components/theme-provider";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { MainContainer, ThemeProvider } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
 
