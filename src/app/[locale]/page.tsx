@@ -6,15 +6,19 @@ export default function Home() {
 
 	return (
 		<main className="scroll">
-			<section id={t("Pages.Home.Navigation.top")}>
+			<section id="top">
 				<NavBar />
 			</section>
 			<section
-				id={t("Pages.Home.Navigation.about")}
+				id="about"
 				className="flex justify-center mt-8 h-screen text-4xl text-blue-700"
 			>
 				<div>{t("Hello")}</div>
 			</section>
+			<section id="competencies" className="h-screen bg-zinc-600"></section>
+			<section id="projects" className="h-screen"></section>
+			<section id="contact" className="h-screen bg-zinc-600"></section>
+			<section id="footer" className="h-28"></section>
 		</main>
 	);
 }

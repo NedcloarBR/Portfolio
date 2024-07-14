@@ -5,14 +5,9 @@
 			"description": "Get to know me and explore my projects!"
 		}
 	},
-  "Pages": {
-    "Home": {
-      "Navigation": {
-        "top": "top",
-        "about": "about"
-      }
-    }
-  },
+	"Pages": {
+		"Home": {}
+	},
 	"Theme": {
 		"Toggle": "Toggle theme",
 		"Dark": "Dark",
@@ -26,7 +21,7 @@
 		"Description": "Error code has copied to clipboard"
 	},
 	"Languages": {
-    "Change": "Change Language",
+		"Change": "Change Language",
 		"pt-BR": "Portuguese",
 		"en-US": "English"
 	}

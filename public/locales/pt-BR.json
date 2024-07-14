@@ -5,14 +5,9 @@
 			"description": "Me conheça melhor e visualize meus projetos!"
 		}
 	},
-  "Pages": {
-    "Home": {
-      "Navigation": {
-        "top": "topo",
-        "about": "sobre"
-      }
-    }
-  },
+	"Pages": {
+		"Home": {}
+	},
 	"Theme": {
 		"Toggle": "Mudar tema",
 		"Dark": "Escuro",
@@ -26,7 +21,7 @@
 		"Description": "Código de erro copiado para a area de transferência"
 	},
 	"Languages": {
-    "Change": "Mudar Idioma",
+		"Change": "Mudar Idioma",
 		"pt-BR": "Português",
 		"en-US": "Inglês"
 	}
