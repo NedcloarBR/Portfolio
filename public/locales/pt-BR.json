@@ -5,23 +5,22 @@
 			"description": "Me conheça melhor e visualize meus projetos!"
 		}
 	},
-	"Pages": {
-		"Home": {}
-	},
 	"Theme": {
-		"Toggle": "Mudar tema",
 		"Dark": "Escuro",
 		"Light": "Claro"
 	},
 	"Copy": "Copiar",
 	"Reload": "Clique aqui para voltar para a página principal",
-	"Hello": "Olá, Mundo!",
+	"Start": {
+		"Hello": "Olá, Mundo!",
+		"Name": "Meu nome é Miguel",
+		"Details": "Seu próximo Desenvolvedor Back-end"
+	},
 	"ErrorToast": {
 		"Title": "Erro copiado!",
 		"Description": "Código de erro copiado para a area de transferência"
 	},
 	"Languages": {
-		"Change": "Mudar Idioma",
 		"pt-BR": "Português",
 		"en-US": "Inglês"
 	}

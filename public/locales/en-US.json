@@ -5,23 +5,22 @@
 			"description": "Get to know me and explore my projects!"
 		}
 	},
-	"Pages": {
-		"Home": {}
-	},
 	"Theme": {
-		"Toggle": "Toggle theme",
 		"Dark": "Dark",
 		"Light": "Light"
 	},
 	"Copy": "Copy",
 	"Reload": "Click here to back to main page",
-	"Hello": "Hello, World!",
+	"Start": {
+		"Hello": "Hello, World!",
+		"Name": "My name is Miguel",
+		"Details": "Your next Back-end Developer"
+	},
 	"ErrorToast": {
 		"Title": "Error copied!",
 		"Description": "Error code has copied to clipboard"
 	},
 	"Languages": {
-		"Change": "Change Language",
 		"pt-BR": "Portuguese",
 		"en-US": "English"
 	}
