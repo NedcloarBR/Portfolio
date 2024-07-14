@@ -70,7 +70,7 @@ export function ChangeLanguage() {
 					<span className="sr-only">{}</span>
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end">
+			<DropdownMenuContent align="center">
 				{DropdownLanguages()}
 			</DropdownMenuContent>
 		</DropdownMenu>

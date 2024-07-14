@@ -26,7 +26,7 @@ export function ToggleTheme() {
 					<span className="sr-only">{}</span>
 				</Button>
 			</DropdownMenuTrigger>
-			<DropdownMenuContent align="end">
+			<DropdownMenuContent align="center">
 				<DropdownMenuItem onClick={() => setTheme("light")}>
 					<span className="flex items-center gap-1">
 						<Sun />

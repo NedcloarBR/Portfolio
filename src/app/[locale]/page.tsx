@@ -3,18 +3,18 @@ import {
 	Competencies,
 	Contact,
 	Footer,
+	Header,
 	Projects,
-	Top,
 } from "@/components";
 
 export default function Home() {
 	return (
 		<main>
-			<Top />
+			<Header />
 			<About />
 			<Competencies />
-			<Contact />
 			<Projects />
+			<Contact />
 			<Footer />
 		</main>
 	);
