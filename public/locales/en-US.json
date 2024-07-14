@@ -16,6 +16,9 @@
 		"Name": "My name is Miguel",
 		"Details": "Your next Back-end Developer"
 	},
+	"About": {
+		"Text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum culpa odio optio earum deserunt nulla alias sint eum accusamus commodi ipsum, eveniet sed similique explicabo nesciunt quo non! Provident."
+	},
 	"ErrorToast": {
 		"Title": "Error copied!",
 		"Description": "Error code has copied to clipboard"
