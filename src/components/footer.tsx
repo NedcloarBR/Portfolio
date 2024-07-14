@@ -1,3 +1,3 @@
 export function Footer() {
-	return <section id="footer" className="h-28"></section>;
+	return <footer className="h-28 bg-black"></footer>;
 }
