@@ -5,6 +5,14 @@
 			"description": "Get to know me and explore my projects!"
 		}
 	},
+  "Pages": {
+    "Home": {
+      "Navigation": {
+        "top": "top",
+        "about": "about"
+      }
+    }
+  },
 	"Theme": {
 		"Toggle": "Toggle theme",
 		"Dark": "Dark",

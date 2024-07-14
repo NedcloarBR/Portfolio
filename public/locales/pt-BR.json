@@ -5,6 +5,14 @@
 			"description": "Me conheça melhor e visualize meus projetos!"
 		}
 	},
+  "Pages": {
+    "Home": {
+      "Navigation": {
+        "top": "topo",
+        "about": "sobre"
+      }
+    }
+  },
 	"Theme": {
 		"Toggle": "Mudar tema",
 		"Dark": "Escuro",

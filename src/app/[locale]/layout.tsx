@@ -9,34 +9,34 @@ import { getMessages, getTranslations } from "next-intl/server";
 const inter = Inter({ subsets: ["latin"] });
 
 export interface LocaleLayoutProps {
-  children: React.ReactNode;
-  params: { locale: string };
+	children: React.ReactNode;
+	params: { locale: string };
 }
 
-export async function generateMetadata({ params: { locale } }: { params: LocaleLayoutProps["params"] }) {
-  const t = await getTranslations({ locale, namespace: "Metadata" });
+export async function generateMetadata({
+	params: { locale },
+}: { params: LocaleLayoutProps["params"] }) {
+	const t = await getTranslations({ locale, namespace: "Metadata" });
 
-  return {
-    title: t('Home.title'),
-    description: t("Home.description")
-  };
+	return {
+		title: t("Home.title"),
+		description: t("Home.description"),
+	};
 }
 
 export default async function LocaleLayout({
-  children,
-  params: { locale }
+	children,
+	params: { locale },
 }: Readonly<LocaleLayoutProps>) {
-  return (
-    <html lang={locale}>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="dark">
-          <NextIntlClientProvider messages={await getMessages()}>
-            <MainContainer>
-              {children}
-            </MainContainer>
-          </NextIntlClientProvider>
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang={locale}>
+			<body className={inter.className}>
+				<ThemeProvider attribute="class" defaultTheme="dark">
+					<NextIntlClientProvider messages={await getMessages()}>
+						<MainContainer>{children}</MainContainer>
+					</NextIntlClientProvider>
+				</ThemeProvider>
+			</body>
+		</html>
+	);
 }
