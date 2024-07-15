@@ -11,6 +11,13 @@
 		"email": "nedcloar1@hotmail.com",
 		"url": "https://github.com/NedcloarBR/"
 	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NedcloarBR/Portfolio.git"
+	},
+	"bugs": {
+		"url": "https://github.com/NedcloarBR/Portfolio/issues"
+	},
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
