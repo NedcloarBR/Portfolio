@@ -4,6 +4,7 @@ import "flag-icons/css/flag-icons.css";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { MainContainer, ThemeProvider } from "@/components";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,10 @@ export default async function LocaleLayout({
 			<body className={inter.className}>
 				<ThemeProvider attribute="class" defaultTheme="dark">
 					<NextIntlClientProvider messages={await getMessages()}>
-						<MainContainer>{children}</MainContainer>
+						<MainContainer>
+              {children}
+              <Analytics/>
+            </MainContainer>
 					</NextIntlClientProvider>
 				</ThemeProvider>
 			</body>
