@@ -8,12 +8,10 @@
     "tailwindcss",
     "Uhlein"
   ],
-  "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "typescript.enablePromptUseWorkspaceTsdk": true,
   "i18n-ally.localesPaths": [
     "./public/locales"
   ],
