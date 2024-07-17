@@ -2,7 +2,7 @@
 
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
-import { ComponentProps, FormEvent, useEffect, useState } from "react"
+import { ComponentProps, MouseEvent,  useEffect, useState } from "react"
 
 interface Props extends ComponentProps<"a"> {
   target: string
@@ -18,7 +18,7 @@ export function HeaderAnchor({ target }: Readonly<Props>) {
     setAnchorTarget(document.getElementById(target))
   }, [target])
   
-  function handleClick(event: FormEvent<HTMLAnchorElement>) {
+  function handleClick(event: MouseEvent<HTMLAnchorElement>) {
     event.preventDefault();
     anchorTarget?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
