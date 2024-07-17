@@ -5,6 +5,13 @@
 			"description": "Get to know me and explore my projects!"
 		}
 	},
+	"Header": {
+		"start": "Start",
+		"about": "About",
+		"competencies": "Competencies",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
 	"Theme": {
 		"Dark": "Dark",
 		"Light": "Light"

@@ -5,6 +5,13 @@
 			"description": "Me conheça melhor e visualize meus projetos!"
 		}
 	},
+	"Header": {
+		"start": "Inicio",
+		"about": "Sobre",
+		"competencies": "Competências",
+		"projects": "Projetos",
+		"contact": "Contato"
+	},
 	"Theme": {
 		"Dark": "Escuro",
 		"Light": "Claro"
