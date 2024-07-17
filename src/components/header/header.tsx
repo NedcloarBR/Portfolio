@@ -9,7 +9,6 @@ export function Header() {
 			<nav className="px-4 flex items-center justify-between w-full">
         <div className="flex-1"></div>
         <div className="flex justify-center items-center w-full gap-4 ml-28">
-          <HeaderAnchor target="start"/>
           <HeaderAnchor target="about"/>
           <HeaderAnchor target="competencies"/>
           <HeaderAnchor target="projects"/>

@@ -1,5 +1,6 @@
 import {
 	About,
+	BackToTop,
 	Competencies,
 	Contact,
 	Footer,
@@ -12,6 +13,7 @@ export default function Home() {
 	return (
 		<main>
 			<Header />
+      <BackToTop/>
 			<Start />
 			<About />
 			<Competencies />

@@ -1,4 +1,5 @@
 export * from "./about";
+export * from "./back-to-top";
 export * from "./change-language";
 export * from "./competencies"
 export * from "./contact"
