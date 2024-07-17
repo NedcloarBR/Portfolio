@@ -17,8 +17,6 @@
 		"Light": "Light"
 	},
 	"WIP": "🚧 This project is under development 🚧",
-	"Copy": "Copy",
-	"Reload": "Click here to back to main page",
 	"Start": {
 		"Hello": "Hello, World!",
 		"Name": "My name is Miguel",
@@ -27,9 +25,13 @@
 	"About": {
 		"Text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum culpa odio optio earum deserunt nulla alias sint eum accusamus commodi ipsum, eveniet sed similique explicabo nesciunt quo non! Provident."
 	},
-	"ErrorToast": {
-		"Title": "Error copied!",
-		"Description": "Error code has copied to clipboard"
+	"Error": {
+		"Copy": "Copy",
+		"Reload": "Click here to back to main page",
+		"Toast": {
+			"Title": "Error copied!",
+			"Description": "Error code has copied to clipboard"
+		}
 	},
 	"Languages": {
 		"pt-BR": "Portuguese",
