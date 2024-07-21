@@ -22,7 +22,11 @@
 		"Details": "Seu próximo Desenvolvedor Back-end"
 	},
 	"About": {
-		"Text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum culpa odio optio earum deserunt nulla alias sint eum accusamus commodi ipsum, eveniet sed similique explicabo nesciunt quo non! Provident."
+		"Title": "Sobre",
+		"Text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum culpa odio optio earum deserunt nulla alias sint eum accusamus commodi ipsum, eveniet sed similique explicabo nesciunt quo non! Provident.",
+		"TextFull": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum culpa odio optio earum deserunt nulla alias sint eum accusamus commodi ipsum, eveniet sed similique explicabo nesciunt quo non! Provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, voluptatum culpa odio optio earum deserunt nulla alias sint eum accusamus commodi ipsum, eveniet sed similique explicabo nesciunt quo non! Provident.",
+		"Button": "Expandir...",
+		"Button2": "Recolher..."
 	},
 	"Error": {
 		"Copy": "Copiar",

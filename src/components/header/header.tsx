@@ -10,7 +10,6 @@ export function Header() {
         <div className="flex-1"></div>
         <div className="flex justify-center items-center w-full gap-4 ml-28">
           <HeaderAnchor target="about"/>
-          <HeaderAnchor target="competencies"/>
           <HeaderAnchor target="projects"/>
           <HeaderAnchor target="contact"/>
         </div>
