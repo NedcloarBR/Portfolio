@@ -16,9 +16,6 @@ export function About() {
 					className="size-80 mt-2 mr-8 inline-block rounded-xl"
 				/>
 				<div className="mt-8 max-w-xl">
-          <p id="about_text">
-            {t("Text")}
-          </p>
           <AboutText />
         </div>
 			</div>

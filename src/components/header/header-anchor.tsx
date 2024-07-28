@@ -6,10 +6,10 @@ import { ComponentProps, MouseEvent,  useEffect, useState } from "react"
 
 interface Props extends ComponentProps<"a"> {
   target: string
-  active?: boolean
+  text?: string
 }
 
-export function HeaderAnchor({ target }: Readonly<Props>) {
+export function HeaderAnchor({ target, text }: Readonly<Props>) {
   const t = useTranslations("Header");
 
   const [anchorTarget, setAnchorTarget] = useState<HTMLElement | null>(null);
@@ -23,5 +23,5 @@ export function HeaderAnchor({ target }: Readonly<Props>) {
     anchorTarget?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
-  return <Link onClick={handleClick} href={`#${target}`}>{t(target)}</Link>
+  return <Link onClick={handleClick} href={`#${target}`}>{text ?? t(target)}</Link>
 }
