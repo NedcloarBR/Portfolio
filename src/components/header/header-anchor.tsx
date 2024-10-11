@@ -23,5 +23,5 @@ export function HeaderAnchor({ target, text }: Readonly<Props>) {
     anchorTarget?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
-  return <Link onClick={handleClick} href={`#${target}`}>{text ?? t(target)}</Link>
+  return <Link className="hover:font-bold hover:underline" onClick={handleClick} href={`#${target}`}>{text ?? t(target)}</Link>
 }
