@@ -9,10 +9,6 @@ export function AboutText() {
   const t = useTranslations("About");
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
-  function handleClick() {
-    setIsExpanded((prev) => !prev);
-  }
-
   return (
     <>
       <div>
@@ -29,7 +25,7 @@ export function AboutText() {
           })
         )}
       </div>
-      <Button className="text-blue-500" variant="link" onClick={handleClick}>
+      <Button className="text-blue-500" variant="link" onClick={() => setIsExpanded((prev) => !prev)}>
         {isExpanded ? t("Button2") : t("Button")}
       </Button>
     </>
