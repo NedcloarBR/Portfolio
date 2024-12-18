@@ -13,9 +13,13 @@ export interface LocaleLayoutProps {
   params: { locale: string };
 }
 
-export async function generateMetadata({
-  params: { locale },
-}: { params: LocaleLayoutProps["params"] }) {
+export async function generateMetadata(props: { params: Promise<LocaleLayoutProps["params"]> }) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -24,10 +28,17 @@ export async function generateMetadata({
   };
 }
 
-export default async function LocaleLayout({
-  children,
-  params: { locale },
-}: Readonly<LocaleLayoutProps>) {
+export default async function LocaleLayout(props: Readonly<LocaleLayoutProps>) {
+  const params = await props.params;
+
+  const {
+    locale
+  } = params;
+
+  const {
+    children
+  } = props;
+
   return (
     <html lang={locale}>
       <body className={inter.className}>
