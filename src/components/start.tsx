@@ -1,10 +1,16 @@
+"use client";
+
 import { useTranslations } from "next-intl";
+import { useRef } from "react";
+import { BackToTop } from "./back-to-top";
 
 export function Start() {
 	const t = useTranslations();
+  const startRef = useRef<HTMLElement>(null);
 
 	return (
 		<section
+      ref={startRef}
 			id="start"
 			className="h-screen bg-zinc-600 flex flex-col items-center justify-center text-center space-y-2"
 		>
@@ -12,6 +18,7 @@ export function Start() {
 			<div className="text-3xl">{t("Start.Hello")}</div>
 			<div className="text-6xl">{t("Start.Name")}</div>
 			<div className="text-2xl">{t("Start.Details")}</div>
+      <BackToTop startRef={startRef} />
 		</section>
 	);
 }

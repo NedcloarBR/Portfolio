@@ -5,6 +5,8 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { MainContainer, Theme } from "@/components";
 import { Analytics } from "@vercel/analytics/next";
+import { routing } from "@/lib/i18n/routing";
+import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,6 +40,10 @@ export default async function LocaleLayout(props: Readonly<LocaleLayoutProps>) {
   const {
     children
   } = props;
+
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
 
   return (
     <html lang={locale}>

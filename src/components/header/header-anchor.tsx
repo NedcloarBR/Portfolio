@@ -1,9 +1,8 @@
 "use client"
 
-import { Link } from "@/navigation";
+import { Link } from "@/lib/i18n/routing";
 import { useTranslations } from "next-intl";
 import { ComponentProps, MouseEvent,  useEffect, useState } from "react"
-
 interface Props extends ComponentProps<"a"> {
   target: string
   text?: string
