@@ -1,8 +1,8 @@
 "use client"
 
-import { Link } from "@/lib/i18n/routing";
 import { useTranslations } from "next-intl";
 import { ComponentProps, MouseEvent,  useEffect, useState } from "react"
+import { Button } from "../ui";
 interface Props extends ComponentProps<"a"> {
   target: string
   text?: string
@@ -17,10 +17,10 @@ export function HeaderAnchor({ target, text }: Readonly<Props>) {
     setAnchorTarget(document.getElementById(target))
   }, [target])
   
-  function handleClick(event: MouseEvent<HTMLAnchorElement>) {
+  function handleClick(event: MouseEvent<HTMLButtonElement>) {
     event.preventDefault();
     anchorTarget?.scrollIntoView({ behavior: "smooth", block: "start" })
   }
 
-  return <Link className="hover:font-bold hover:underline" onClick={handleClick} href={`#${target}`}>{text ?? t(target)}</Link>
+  return <Button variant="link" className="hover:font-bold hover:underline" onClick={handleClick}>{text ?? t(target)}</Button>
 }
