@@ -10,12 +10,7 @@ import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export interface LocaleLayoutProps {
-  children: React.ReactNode;
-  params: { locale: string };
-}
-
-export async function generateMetadata(props: { params: Promise<LocaleLayoutProps["params"]> }) {
+export async function generateMetadata(props: { params: { locale: string} }) {
   const params = await props.params;
 
   const {
