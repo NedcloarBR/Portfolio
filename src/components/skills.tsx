@@ -66,7 +66,7 @@ export function Skills() {
           <DialogContent>
             <DialogHeader>
               <DialogTitle >
-                <Link className="flex items-center justify-center gap-6" href={dialogSkill.url}>
+                <Link className="flex items-center justify-center gap-6" href={dialogSkill.url} target="_blank" rel="noopener noreferrer">
                   <Icon className="size-12" name={dialogSkill.name}/>
                   {dialogSkill.name}
                 </Link>
