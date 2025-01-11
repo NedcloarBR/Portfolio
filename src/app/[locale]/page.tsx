@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <Header.Root />
       <Start />
-      <About.Root />
+      <About />
       <Skills />
       <Projects />
       <Contact />
