@@ -28,10 +28,10 @@ export async function generateMetadata(props: { params: { locale: string} }) {
 export default async function LocaleLayout({
   children,
   params: {locale}
-}: Readonly<{
+}: {
   children: React.ReactNode;
   params: {locale: string};
-}>) {
+}) {
 
   if (!routing.locales.includes(locale as any)) {
     notFound();
