@@ -30,26 +30,25 @@ export async function generateMetadata(props: { params: Promise<LocaleLayoutProp
   };
 }
 
-export default async function LocaleLayout(props: Readonly<LocaleLayoutProps>) {
-  const params = await props.params;
-
-  const {
-    locale
-  } = params;
-
-  const {
-    children
-  } = props;
+export default async function LocaleLayout({
+  children,
+  params: {locale}
+}: Readonly<{
+  children: React.ReactNode;
+  params: {locale: string};
+}>) {
 
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
+  
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body className={inter.className}>
         <Theme.Provider attribute="class" defaultTheme="dark">
-          <NextIntlClientProvider messages={await getMessages()}>
+          <NextIntlClientProvider messages={messages}>
             <MainContainer>
               {children}
               <Analytics />
