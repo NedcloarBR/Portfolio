@@ -1,7 +1,7 @@
 "use client"
 
 import { useTranslations } from "next-intl";
-import { About, Icon } from "@/components";
+import { About } from "@/components";
 
 export function AboutRoot() {
   const t = useTranslations("About");
@@ -18,12 +18,6 @@ export function AboutRoot() {
         <div className="mt-8 max-w-xl">
           <About.Text />
         </div>
-      </div>
-      <div className="flex gap-2">
-        <Icon className="size-12" name="NodeJS" />
-        <Icon className="size-12" name="TypeScript" />
-        <Icon className="size-12" name="JavaScript" />
-        <Icon className="size-12" name="NestJS" />
       </div>
     </section>
   );

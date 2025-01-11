@@ -6,6 +6,7 @@ import {
   Projects,
   Start,
 } from "@/components";
+import { Skills } from "@/components/skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Header.Root />
       <Start />
       <About.Root />
+      <Skills />
       <Projects />
       <Contact />
       <Footer />
