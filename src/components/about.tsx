@@ -32,7 +32,7 @@ export function About() {
         />
         <div className="mt-8 max-w-xl">
           <motion.div
-            className="relative overflow-hidden"
+            className="overflow-hidden"
             initial={{ height: 0 }}
             animate={{ height: isExpanded ? contentHeight ?? undefined : 80 }}
             transition={{
