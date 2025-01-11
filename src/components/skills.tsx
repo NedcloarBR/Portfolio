@@ -56,7 +56,7 @@ export function Skills() {
         {skills.map((skill) => (
           <div key={skill.name} className="flex flex-col items-center">
             <Button variant="ghost" size="sm" onClick={() => handleClick(skill)}>
-              <Icon className="skills-icon-hover size-12 relative cursor-pointer" name={skill.name}/>
+              <Icon className="skills-icon-hover size-12 cursor-pointer" name={skill.name}/>
             </Button>
           </div>
         ))}
