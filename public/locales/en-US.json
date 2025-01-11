@@ -35,7 +35,7 @@
     },
     "TypeScript": {
       "Title": "TypeScript",
-      "Description": "TypeScript is a superset of JavaScript that adds optional static typing to the language. It is designed for the development of large"
+      "Description": "TypeScript is an open-source programming language developed by Microsoft. It is a strict syntactic superset of JavaScript and adds optional static typing to the language. Types provide a way to describe the shape of an object, providing better documentation and allowing TypeScript to validate that your code is working correctly."
     },
     "JavaScript": {
       "Title": "JavaScript",
