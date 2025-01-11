@@ -8,7 +8,7 @@ export const routing = defineRouting({
   localePrefix: {
     mode: "always",
     prefixes: {
-      "en-US": "/us",
+      "en-US": "/en-US",
       "pt-BR": "/pt-BR",
     },
   },
