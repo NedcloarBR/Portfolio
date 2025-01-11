@@ -34,7 +34,7 @@ export function About() {
           <motion.div
             className="relative overflow-hidden"
             initial={{ height: 0 }}
-            animate={{ height: isExpanded ? contentHeight : 80 }}
+            animate={{ height: isExpanded ? contentHeight ?? undefined : 80 }}
             transition={{
               duration: 0.6,
               ease: "easeInOut",
