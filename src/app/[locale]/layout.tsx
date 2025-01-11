@@ -10,12 +10,8 @@ import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function generateMetadata(props: { params: { locale: string} }) {
-  const params = await props.params;
-
-  const {
-    locale
-  } = params;
+export async function generateMetadata({ params }: { params: { locale: string } }) {
+  const { locale } = params;
 
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
@@ -27,16 +23,15 @@ export async function generateMetadata(props: { params: { locale: string} }) {
 
 export default async function LocaleLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }) {
-
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
-  
+
   const messages = await getMessages({ locale });
 
   return (
@@ -54,3 +49,4 @@ export default async function LocaleLayout({
     </html>
   );
 }
+
