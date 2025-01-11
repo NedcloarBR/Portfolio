@@ -10,6 +10,7 @@ export function HeaderRoot() {
         <div className="flex-1"></div>
         <div className="flex justify-center items-center w-full gap-4 ml-28">
           <Header.Anchor target="about" />
+          <Header.Anchor target="skills" />
           <Header.Anchor target="projects" />
           <Header.Anchor target="contact" />
         </div>

@@ -7,7 +7,7 @@
 	},
 	"Header": {
 		"about": "About",
-		"competencies": "Competencies",
+		"skills": "Competencies",
 		"projects": "Projects",
 		"contact": "Contact"
 	},
@@ -27,6 +27,9 @@
 		"Button": "Expand...",
 		"Button2": "Retract..."
 	},
+  "Skills": {
+    "Title": "Competencies"
+  },
 	"Error": {
 		"Copy": "Copy",
 		"Reload": "Click here to back to main page",

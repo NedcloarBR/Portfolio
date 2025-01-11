@@ -7,7 +7,7 @@
 	},
 	"Header": {
 		"about": "Sobre",
-		"competencies": "Competências",
+		"skills": "Competências",
 		"projects": "Projetos",
 		"contact": "Contato"
 	},
@@ -27,6 +27,9 @@
 		"Button": "Expandir...",
 		"Button2": "Recolher..."
 	},
+  "Skills": {
+    "Title": "Competências"
+  },
 	"Error": {
 		"Copy": "Copiar",
 		"Reload": "Clique aqui para voltar para a página principal",
