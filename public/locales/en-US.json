@@ -28,7 +28,23 @@
 		"Button2": "Retract..."
 	},
   "Skills": {
-    "Title": "Competencies"
+    "Title": "Competencies",
+    "NodeJS": {
+      "Title": "NodeJS",
+      "Description": "Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It is an asynchronous event-driven JavaScript runtime designed to build scalable network applications."
+    },
+    "TypeScript": {
+      "Title": "TypeScript",
+      "Description": "TypeScript is a superset of JavaScript that adds optional static typing to the language. It is designed for the development of large"
+    },
+    "JavaScript": {
+      "Title": "JavaScript",
+      "Description": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based, and multi-paradigm."
+    },
+    "NestJS": {
+      "Title": "NestJS",
+      "Description": "NestJS is a framework for building efficient, scalable Node.js server-side applications. It uses progressive JavaScript, is built with TypeScript, and combines elements of OOP (Object Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming)."
+    }
   },
 	"Error": {
 		"Copy": "Copy",

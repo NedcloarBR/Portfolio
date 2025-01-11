@@ -28,7 +28,23 @@
 		"Button2": "Recolher..."
 	},
   "Skills": {
-    "Title": "Competências"
+    "Title": "Competências",
+    "NodeJS": {
+      "Title": "NodeJS",
+      "Description": "Node.js é um tempo de execução JavaScript construído no motor JavaScript V8 do Chrome. É um tempo de execução JavaScript assíncrono orientado a eventos projetado para criar aplicativos de rede escaláveis."
+    },
+    "TypeScript": {
+      "Title": "TypeScript",
+      "Description": "TypeScript é um superset do JavaScript que adiciona tipagem estática opcional à linguagem. É projetado para o desenvolvimento de grandes"
+    },
+    "JavaScript": {
+      "Title": "JavaScript",
+      "Description": "JavaScript é uma linguagem de programação interpretada de alto nível que está em conformidade com a especificação ECMAScript. É uma linguagem que também é caracterizada como dinâmica, de tipagem fraca, baseada em protótipos e multiparadigma."
+    },
+    "NestJS": {
+      "Title": "NestJS",
+      "Description": "NestJS é um framework para construir aplicativos eficientes e escaláveis do lado do servidor Node.js. Ele usa JavaScript progressivo, é construído com TypeScript e combina elementos de OOP (Programação Orientada a Objetos), FP (Programação Funcional) e FRP (Programação Funcional Reativa)."
+    }
   },
 	"Error": {
 		"Copy": "Copiar",

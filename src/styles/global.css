@@ -75,3 +75,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+.skills-icon-hover {
+  transition: transform 0.3s ease;
+}
+
+.skills-icon-hover:hover {
+  transform: scale(1.2) translateY(-10px);
+}
