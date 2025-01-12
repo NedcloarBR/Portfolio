@@ -5,6 +5,8 @@ import { Button } from "@/components/ui";
 import { useState, useRef, useEffect } from "react";
 import { HeaderAnchor } from "./header/header-anchor";
 import { motion } from "framer-motion";
+import { Icon } from "./icon";
+import { Mail } from "lucide-react"
 
 export function About() {
   const t = useTranslations("About");
@@ -25,11 +27,19 @@ export function About() {
         {t("Title")}
       </div>
       <div className="-mb-16 flex overflow-wrap break-word">
-        <img
-          src="PPF.jpeg"
-          alt="Miguel Alexandre Uhlein PPF"
-          className="size-80 mt-2 mr-8 inline-block rounded-xl"
-        />
+        <div className="flex-col flex gap-4">
+          <img
+            src="PPF.jpeg"
+            alt="Miguel Alexandre Uhlein PPF"
+            className="size-80 mt-2 mr-8 inline-block rounded-xl"
+          />
+          <div className="flex">
+            <Button variant="ghost" onClick={() => window.open("CV-MiguelAlexandreUhlein.pdf", "_blank")}>
+              <Icon name="Curriculum" className="size-12"/>
+            </Button>
+            <Mail className="size-12 cursor-pointer" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}/>
+          </div>
+        </div>
         <div className="mt-8 max-w-xl">
           <motion.div
             className="overflow-hidden"
