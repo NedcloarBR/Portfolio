@@ -76,10 +76,10 @@
   }
 }
 
-.skills-icon-hover {
+.card-hover {
   transition: transform 0.3s ease;
 }
 
-.skills-icon-hover:hover {
-  transform: scale(1.2) translateY(-10px);
+.card-hover:hover {
+  transform: scale(1.1) translateY(-6px);
 }
