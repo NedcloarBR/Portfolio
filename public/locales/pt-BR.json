@@ -96,7 +96,6 @@
   "Projects": {
     "Title": "Projetos",
     "N-D-B": {
-      "Title": "N-D-B",
       "Description": "N-D-B é um bot do Discord desenvolvido usando DiscordJS e Necord uma biblioteca para o NestJS. É um bot multipropósito que possui várias funcionalidades, como moderação, música e comandos divertidos. O bot é projetado para ser fácil de usar e possui uma interface simples e intuitiva. Ele está sendo constantemente atualizado com novos recursos e melhorias."
     }
   },
