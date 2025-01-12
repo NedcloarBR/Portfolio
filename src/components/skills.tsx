@@ -6,38 +6,11 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "./ui/dialog";
 import { Button, Separator } from "./ui";
 import Link from "next/link";
-
-type SkillData = {
-  name: string;
-  description: string;
-  url: string;
-};
+import { SkillData } from "@/@types";
+import { skills } from "@/constants";
 
 export function Skills() {
   const t = useTranslations("Skills");
-  
-  const skills: SkillData[] = [
-    {
-      name: t("NodeJS.Title"),
-      description: t("NodeJS.Description"),
-      url: "https://nodejs.org/",
-    },
-    {
-      name: t("TypeScript.Title"),
-      description: t("TypeScript.Description"),
-      url: "https://www.typescriptlang.org/",
-    },
-    {
-      name: t("JavaScript.Title"),
-      description: t("JavaScript.Description"),
-      url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    },
-    {
-      name: t("NestJS.Title"),
-      description: t("NestJS.Description"),
-      url: "https://nestjs.com/",
-    },
-  ];
 
   const [isOpen, setIsOpen] = useState(false);
   const [dialogSkill, setDialogSkill] = useState<SkillData | null>(null);
@@ -56,7 +29,7 @@ export function Skills() {
         {skills.map((skill) => (
           <div key={skill.name} className="flex flex-col items-center">
             <Button variant="ghost" size="sm" onClick={() => handleClick(skill)}>
-              <Icon className="skills-icon-hover size-12 cursor-pointer" name={skill.name}/>
+              <Icon className="card-hover size-12 cursor-pointer" name={t(skill.name)}/>
             </Button>
           </div>
         ))}
@@ -67,13 +40,13 @@ export function Skills() {
             <DialogHeader>
               <DialogTitle >
                 <Link className="flex items-center justify-center gap-6" href={dialogSkill.url} target="_blank" rel="noopener noreferrer">
-                  <Icon className="size-12" name={dialogSkill.name}/>
-                  {dialogSkill.name}
+                  <Icon className="size-12" name={t(dialogSkill.name)}/>
+                  {t(dialogSkill.name)}
                 </Link>
               </DialogTitle>
               <Separator />
               <DialogDescription>
-                {dialogSkill.description}
+                {t(dialogSkill.description)}
               </DialogDescription>
             </DialogHeader>
           </DialogContent>

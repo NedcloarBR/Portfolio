@@ -1,61 +1,90 @@
 {
-	"Metadata": {
-		"Home": {
-			"title": "Portfolio Miguel Alexandre Uhlein",
-			"description": "Me conheça melhor e visualize meus projetos!"
-		}
-	},
-	"Header": {
-		"about": "Sobre",
-		"skills": "Competências",
-		"projects": "Projetos",
-		"contact": "Contato"
-	},
-	"Theme": {
-		"Dark": "Escuro",
-		"Light": "Claro"
-	},
-	"WIP": "🚧 Este projeto está sob desenvolvimento 🚧",
-	"Start": {
-		"Hello": "Olá, Mundo!",
-		"Name": "Meu nome é Miguel",
-		"Details": "Seu próximo Desenvolvedor Back-end"
-	},
-	"About": {
-		"Title": "Sobre",
-		"Text": "Olá! Meu nome é Miguel, tenho 20 anos e sou programador backend.<br></br> Tenho experiência no desenvolvimento de aplicações utilizando NestJS, TypeScript, JavaScript e NodeJS.<br></br><br></br>Minha paixão por tecnologia e programação começou cedo, pois meu pai tinha uma loja de informática. Essa exposição me levou à área de programação, e desde então venho me especializando em criar soluções eficientes e escaláveis. Gosto de enfrentar desafios e estou sempre buscando aprender e aprimorar minhas habilidades.<br></br><br></br>Trabalho com foco em entregar código de alta qualidade, seguindo boas práticas e mantendo uma comunicação clara com a equipe. Acredito que a colaboração e o aprendizado contínuo são essenciais para o sucesso em projetos de desenvolvimento de software.<br></br><br></br>Tenho interesse em expandir minhas habilidades e trabalhar com C# e Rust, explorando novas linguagens e tecnologias.<br></br><br></br>Se você está interessado em saber mais sobre meu trabalho ou colaborar em algum projeto, sinta-se à vontade para <contact>entrar em contato!</contact>",
-		"Button": "Expandir...",
-		"Button2": "Recolher..."
-	},
-  "Skills": {
-    "Title": "Competências",
-    "NodeJS": {
-      "Title": "NodeJS",
-      "Description": "Node.js é um tempo de execução JavaScript construído no motor JavaScript V8 do Chrome. É um tempo de execução JavaScript assíncrono orientado a eventos projetado para criar aplicativos de rede escaláveis."
-    },
-    "TypeScript": {
-      "Title": "TypeScript",
-      "Description": "TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem. Tipos fornecem uma maneira de descrever a forma de um objeto, fornecendo melhor documentação e permitindo que o TypeScript valide se seu código está funcionando corretamente."
-    },
-    "JavaScript": {
-      "Title": "JavaScript",
-      "Description": "JavaScript é uma linguagem de programação interpretada de alto nível que está em conformidade com a especificação ECMAScript. É uma linguagem que também é caracterizada como dinâmica, de tipagem fraca, baseada em protótipos e multiparadigma."
-    },
-    "NestJS": {
-      "Title": "NestJS",
-      "Description": "NestJS é um framework para construir aplicativos eficientes e escaláveis do lado do servidor Node.js. Ele usa JavaScript progressivo, é construído com TypeScript e combina elementos de OOP (Programação Orientada a Objetos), FP (Programação Funcional) e FRP (Programação Funcional Reativa)."
+  "Metadata": {
+    "Home": {
+      "title": "Portfolio Miguel Alexandre Uhlein",
+      "description": "Me conheça melhor e visualize meus projetos!"
     }
   },
-	"Error": {
-		"Copy": "Copiar",
-		"Reload": "Clique aqui para voltar para a página principal",
-		"Toast": {
-			"Title": "Erro copiado!",
-			"Description": "Código de erro copiado para a area de transferência"
-		}
-	},
-	"Languages": {
-		"pt-BR": "Português",
-		"en-US": "Inglês"
-	}
+  "Header": {
+    "about": "Sobre",
+    "skills": "Competências",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "Theme": {
+    "Dark": "Escuro",
+    "Light": "Claro"
+  },
+  "WIP": "🚧 Este projeto está sob desenvolvimento 🚧",
+  "Start": {
+    "Hello": "Olá, Mundo!",
+    "Name": "Meu nome é Miguel",
+    "Details": "Seu próximo Desenvolvedor Back-end"
+  },
+  "About": {
+    "Title": "Sobre",
+    "Text": "Olá! Meu nome é Miguel, tenho 20 anos e sou programador backend.<br></br> Tenho experiência no desenvolvimento de aplicações utilizando NestJS, TypeScript, JavaScript e NodeJS.<br></br><br></br>Minha paixão por tecnologia e programação começou cedo, pois meu pai tinha uma loja de informática. Essa exposição me levou à área de programação, e desde então venho me especializando em criar soluções eficientes e escaláveis. Gosto de enfrentar desafios e estou sempre buscando aprender e aprimorar minhas habilidades.<br></br><br></br>Trabalho com foco em entregar código de alta qualidade, seguindo boas práticas e mantendo uma comunicação clara com a equipe. Acredito que a colaboração e o aprendizado contínuo são essenciais para o sucesso em projetos de desenvolvimento de software.<br></br><br></br>Tenho interesse em expandir minhas habilidades e trabalhar com C# e Rust, explorando novas linguagens e tecnologias.<br></br><br></br>Se você está interessado em saber mais sobre meu trabalho ou colaborar em algum projeto, sinta-se à vontade para <contact>entrar em contato!</contact>",
+    "Button": "Expandir...",
+    "Button2": "Recolher..."
+  },
+  "Skills": {
+    "Title": "Competências",
+    "CSS3": {
+      "Description": "CSS3 é a última evolução da linguagem Cascading Style Sheets e visa estender o CSS2.1. Ele traz muitas novidades muito aguardadas, como cantos arredondados, sombras, gradientes, transições ou animações, bem como novos layouts como multi-colunas, caixa flexível ou layouts de grade."
+    },
+    "DiscordJS": {
+      "Description": "Discord.js é um poderoso módulo Node.js que permite interagir com a API do Discord de forma muito fácil. Ele adota uma abordagem muito mais orientada a objetos do que a maioria das outras bibliotecas Discord JS, tornando o código do seu bot significativamente mais organizado e fácil de compreender."
+    },
+    "HTML5": {
+      "Description": "HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web. É a quinta e última grande versão do HTML que é uma recomendação do World Wide Web Consortium (W3C)."
+    },
+    "JavaScript": {
+      "Description": "JavaScript é uma linguagem de programação interpretada de alto nível que está em conformidade com a especificação ECMAScript. É uma linguagem que também é caracterizada como dinâmica, fracamente tipada, baseada em protótipos e multiparadigma."
+    },
+    "Necord": {
+      "Description": "Necord é uma biblioteca para criar bots do Discord usando NestJS. Ele fornece uma interface simples e intuitiva para interagir com a API do Discord e permite criar bots poderosos e eficientes com o mínimo de esforço."
+    },
+    "NestJS": {
+      "Description": "NestJS é um framework para construir aplicativos de servidor Node.js eficientes e escaláveis. Ele usa JavaScript progressivo, é construído com TypeScript e combina elementos de OOP (Programação Orientada a Objetos), FP (Programação Funcional) e FRP (Programação Funcional Reativa)."
+    },
+    "NextJS": {
+      "Description": "Next.js é um framework React que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React. É uma ferramenta poderosa que permite construir aplicativos da web rápidos e eficientes com o mínimo de esforço."
+    },
+    "NodeJS": {
+      "Description": "Node.js é um ambiente de tempo de execução JavaScript de plataforma aberta e de alto desempenho construído no motor V8 do Chrome. Ele é usado para desenvolver aplicativos de rede rápidos e escaláveis, bem como ferramentas de linha de comando e scripts do lado do servidor."
+    },
+    "PostgreSQL": {
+      "Description": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de objeto de código aberto e poderoso. Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ganhou uma forte reputação por confiabilidade, integridade de dados e conformidade com padrões."
+    },
+    "Prisma": {
+      "Description": "Prisma é um kit de ferramentas de banco de dados de código aberto. Ele substitui ORMs tradicionais e facilita o acesso ao banco de dados com um construtor de consultas auto-gerado para TypeScript e Node.js."
+    },
+    "ReactJS": {
+      "Description": "React é uma biblioteca JavaScript de código aberto para criar interfaces de usuário. É mantido pelo Facebook e por uma comunidade de desenvolvedores individuais e empresas. O React pode ser usado como uma base no desenvolvimento de aplicativos de página única ou móveis."
+    },
+    "TailwindCSS": {
+      "Description": "Tailwind CSS é um framework CSS de utilitários de baixo nível que fornece classes prontas para uso para criar designs personalizados sem sair do HTML. Ele é projetado para ser fácil de usar e altamente personalizável, permitindo que você crie rapidamente designs exclusivos e responsivos."
+    },
+    "TypeScript": {
+      "Description": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem estática e outros recursos aprimorados à linguagem. O TypeScript pode ser usado para desenvolver aplicativos JavaScript em grande escala para qualquer navegador, host e qualquer sistema operacional."
+    },
+    "Vercel": {
+      "Description": "Vercel é uma plataforma de nuvem para sites estáticos e aplicativos da web que permite implantar sites em segundos. Ele oferece integração contínua, hospedagem global, pré-visualizações instantâneas e muito mais, tornando-o uma escolha popular para desenvolvedores que desejam implantar aplicativos da web rapidamente e com facilidade."
+    },
+    "Yarn": {
+      "Description": "Yarn é um gerenciador de pacotes rápido, confiável e seguro para JavaScript. Ele é compatível com o npm e oferece várias melhorias de desempenho e segurança, como instalações paralelas, cache de pacotes e verificação de integridade."
+    }
+  },
+  "Error": {
+    "Copy": "Copiar",
+    "Reload": "Clique aqui para voltar para a página principal",
+    "Toast": {
+      "Title": "Erro copiado!",
+      "Description": "Código de erro copiado para a area de transferência"
+    }
+  },
+  "Languages": {
+    "pt-BR": "Português",
+    "en-US": "Inglês"
+  }
 }
