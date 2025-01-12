@@ -75,6 +75,13 @@
       "Description": "Yarn is a fast, reliable, and secure package manager for JavaScript. It is compatible with npm and offers various performance and security improvements, such as parallel installations, package caching, and integrity verification."
     }
   },
+  "Projects": {
+    "Title": "Projects",
+    "N-D-B": {
+      "Title": "N-D-B",
+      "Description": "N-D-B is a Discord bot developed using DiscordJS and Necord an library for NestJS. It is a multipurpose bot that has several features, such as moderation, music, and fun commands. The bot is designed to be easy to use and has a simple and intuitive interface. It is constantly being updated with new features and improvements."
+    }
+  },
   "Error": {
     "Copy": "Copy",
     "Reload": "Click here to back to main page",
