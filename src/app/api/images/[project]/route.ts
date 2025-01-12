@@ -5,9 +5,9 @@ import type { NextRequest } from "next/server";
 
 export async function GET(
   request: NextRequest,
-  context: { params: { project: string } }
+  context: { params: Promise<{ project: string }> }
 ) {
-  const { project } = await context.params;
+  const project = (await context.params).project;
 
   if (!project) {
     return NextResponse.json(
