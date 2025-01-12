@@ -29,7 +29,7 @@ export function Skills() {
         {skills.map((skill) => (
           <div key={skill.name} className="flex flex-col items-center">
             <Button variant="ghost" size="sm" onClick={() => handleClick(skill)}>
-              <Icon className="card-hover size-12 cursor-pointer" name={t(skill.name)}/>
+              <Icon className="card-hover size-12 cursor-pointer" name={skill.name} extension={skill.name === "Necord" ? "png" : "svg"}/>
             </Button>
           </div>
         ))}
@@ -40,8 +40,8 @@ export function Skills() {
             <DialogHeader>
               <DialogTitle >
                 <Link className="flex items-center justify-center gap-6" href={dialogSkill.url} target="_blank" rel="noopener noreferrer">
-                  <Icon className="size-12" name={t(dialogSkill.name)}/>
-                  {t(dialogSkill.name)}
+                  <Icon className="size-12" name={dialogSkill.name} extension={dialogSkill.name === "Necord" ? "png" : "svg"}/>
+                  {dialogSkill.name}
                 </Link>
               </DialogTitle>
               <Separator />

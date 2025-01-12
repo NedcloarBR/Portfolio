@@ -15,7 +15,7 @@ export default function Home() {
       <Start />
       <About />
       <Skills />
-      <Projects />
+      <Projects.Section />
       <Contact />
       <Footer />
     </main>

@@ -1,3 +1,3 @@
-export function Projects() {
+export function ProjectsFullCard() {
 	return <section id="projects" className="h-screen"></section>;
 }
