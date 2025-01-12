@@ -38,6 +38,12 @@ export const skills: SkillData[] = [
     url: "https://eslint.org/",
   },
   {
+    name: "GitHub",
+    description: "GitHub.Description",
+    categories: ["Tools"],
+    url: "https://github.com/NedcloarBR",
+  },
+  {
     name: "HTML5",
     description: "HTML5.Description",
     categories: ["Frontend"],

@@ -41,6 +41,8 @@ export type ProjectCategories = "";
 export type Project = {
   name: string;
   description: string;
+  github: string;
+  deploy: string;
   techs: Techs[];
   categories: ProjectCategories[];
 };

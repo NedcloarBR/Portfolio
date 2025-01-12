@@ -2397,6 +2397,7 @@ __metadata:
     postcss: "npm:^8.4.49"
     react: "npm:^19.0.0"
     react-dom: "npm:^19.0.0"
+    simple-icons: "npm:^14.2.0"
     tailwind-merge: "npm:^2.6.0"
     tailwindcss: "npm:^3.4.17"
     tailwindcss-animate: "npm:^1.0.7"
@@ -2827,6 +2828,13 @@ __metadata:
   version: 4.1.0
   resolution: "signal-exit@npm:4.1.0"
   checksum: 10c0/41602dce540e46d599edba9d9860193398d135f7ff72cab629db5171516cfae628d21e7bfccde1bbfdf11c48726bc2a6d1a8fb8701125852fbfda7cf19c6aa83
+  languageName: node
+  linkType: hard
+
+"simple-icons@npm:^14.2.0":
+  version: 14.2.0
+  resolution: "simple-icons@npm:14.2.0"
+  checksum: 10c0/47b3656ecdd33f0b58d516bd2d67f06c6bd9b39ffa5cea26cbdfb6799af2ce6c07d0b525920e25dd5d9bdf491904fb35ac8a20f1cfe20cfbef82b7b10bbc935c
   languageName: node
   linkType: hard
 

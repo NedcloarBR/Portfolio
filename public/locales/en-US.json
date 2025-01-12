@@ -46,7 +46,10 @@
     },
     "ESLint": {
       "Description": "ESLint is a code linting tool for JavaScript. It is used to identify and report problematic patterns found in JavaScript code. It is highly configurable and can be customized to meet the specific needs of your project."
-  },
+    },
+    "GitHub": {
+      "Description": "GitHub is a web-based platform for version control using Git. It allows developers to collaborate on projects, track changes, and manage code repositories. It provides a wide range of features, such as issue tracking, pull requests, code review, and project management."
+    },
     "HTML5": {
       "Description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major version of HTML, recommended by the World Wide Web Consortium (W3C)."
     },
@@ -95,6 +98,8 @@
   },
   "Projects": {
     "Title": "Projects",
+    "ViewSource": "View on GitHub",
+    "ViewDeploy": "View Deploy",
     "N-D-B": {
       "Description": "N-D-B is a Discord bot developed using DiscordJS and Necord an library for NestJS. It is a multipurpose bot that has several features, such as moderation, music, and fun commands. The bot is designed to be easy to use and has a simple and intuitive interface. It is constantly being updated with new features and improvements."
     }

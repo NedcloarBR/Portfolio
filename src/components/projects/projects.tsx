@@ -12,7 +12,7 @@ export function ProjectsSection() {
       </div>
       <div>
         {projects.map((project) => (
-          <ProjectsSmallCard key={project.name} name={project.name} description={t(project.description)} techs={project.techs} />
+          <ProjectsSmallCard key={project.name} info={project} />
         ))}
       </div>
     </section>
