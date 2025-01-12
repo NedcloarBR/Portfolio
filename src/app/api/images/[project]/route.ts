@@ -1,12 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
 export async function GET(
-  request: Request,
-  { params }: { params: { project: string } }
+  request: NextRequest,
+  context: { params: { project: string } }
 ) {
-  const { project } = await params;
+  const { project } = await context.params;
 
   if (!project) {
     return NextResponse.json(
