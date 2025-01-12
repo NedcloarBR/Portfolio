@@ -29,17 +29,32 @@
   },
   "Skills": {
     "Title": "Competencies",
+    "BeekeeperStudio": {
+      "Description": "Beekeeper Studio is an open-source, cross-platform SQL  client for database developers. It offers an intuitive and user-friendly   interface to interact with databases, execute SQL queries, visualize  schemas, and much more."
+    },
+    "BiomeJS": {
+      "Description": "BiomeJS is a formatting and indentation tool for JavaScript   and TypeScript projects. It is highly configurable and can be customized to   meet the specific needs of your project. It is easy to use and can be   seamlessly integrated into any JavaScript or TypeScript project."
+    },
     "CSS3": {
       "Description": "CSS3 is the latest evolution of the Cascading Style Sheets language, aimed at extending CSS2.1. It introduces highly anticipated features like rounded corners, shadows, gradients, transitions, animations, and new layouts such as multi-columns, flexible box, and grid layouts."
     },
     "DiscordJS": {
       "Description": "Discord.js is a powerful Node.js module that allows you to interact with the Discord API easily. It takes a much more object-oriented approach than most other Discord JS libraries, making your bot's code significantly more organized and easier to understand."
     },
+    "Docker": {
+      "Description": "Docker is a software platform that allows you to build, test, and deploy applications quickly. It enables you to package an application with all its parts, such as libraries and dependencies, and ship it as a container, ensuring it runs consistently in any environment."
+    },
+    "ESLint": {
+      "Description": "ESLint is a code linting tool for JavaScript. It is used to identify and report problematic patterns found in JavaScript code. It is highly configurable and can be customized to meet the specific needs of your project."
+  },
     "HTML5": {
       "Description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major version of HTML, recommended by the World Wide Web Consortium (W3C)."
     },
     "JavaScript": {
       "Description": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is characterized as dynamic, weakly typed, prototype-based, and multi-paradigm."
+    },
+    "MongoDB": {
+      "Description": "MongoDB is an open-source, cross-platform database that provides high performance, high availability, and easy scalability. It is a NoSQL database that stores data in flexible, JSON-like documents, making it easier to develop and evolve applications."
     },
     "Necord": {
       "Description": "Necord is a library for creating Discord bots using NestJS. It provides a simple and intuitive interface for interacting with the Discord API, allowing you to build powerful and efficient bots with minimal effort."
@@ -55,6 +70,9 @@
     },
     "PostgreSQL": {
       "Description": "PostgreSQL is a powerful, open-source object-relational database management system. It has over 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and standards compliance."
+    },
+    "Postman": {
+      "Description": "Postman is a collaboration platform for API development. It is used by over 13 million developers and 500,000 companies to access APIs, share collections, and collaborate on APIs. It offers an intuitive and user-friendly interface for testing and debugging APIs."
     },
     "Prisma": {
       "Description": "Prisma is an open-source database toolkit. It replaces traditional ORMs and simplifies database access with an auto-generated query builder for TypeScript and Node.js."

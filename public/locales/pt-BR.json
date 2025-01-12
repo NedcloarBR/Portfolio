@@ -29,17 +29,32 @@
   },
   "Skills": {
     "Title": "Competências",
+    "BeekeeperStudio": {
+      "Description": "Beekeeper Studio é um cliente SQL de código aberto e multiplataforma para desenvolvedores de banco de dados. Ele oferece uma interface intuitiva e fácil de usar para interagir com bancos de dados, executar consultas SQL, visualizar esquemas e muito mais."
+    },
+    "BiomeJS": {
+      "Description": "BiomeJS de formatação e indentação para projetos JavaScript e TypeScript. Ele é altamente configurável e pode ser personalizado para atender às necessidades específicas do seu projeto. Ele é fácil de usar e pode ser integrado facilmente em qualquer projeto JavaScript ou TypeScript."
+    },
     "CSS3": {
       "Description": "CSS3 é a última evolução da linguagem Cascading Style Sheets e visa estender o CSS2.1. Ele traz muitas novidades muito aguardadas, como cantos arredondados, sombras, gradientes, transições ou animações, bem como novos layouts como multi-colunas, caixa flexível ou layouts de grade."
     },
     "DiscordJS": {
       "Description": "Discord.js é um poderoso módulo Node.js que permite interagir com a API do Discord de forma muito fácil. Ele adota uma abordagem muito mais orientada a objetos do que a maioria das outras bibliotecas Discord JS, tornando o código do seu bot significativamente mais organizado e fácil de compreender."
     },
+    "Docker": {
+      "Description": "Docker é uma plataforma de software que permite criar, testar e implantar aplicativos rapidamente. Ele permite que você empacote um aplicativo com todas as partes de que ele precisa, como bibliotecas e outras dependências, e o envie como um contêiner, garantindo que ele sempre será executado de forma consistente em qualquer ambiente."
+    },
+    "ESLint": {
+      "Description": "ESLint é uma ferramenta de linting de código para JavaScript. Ele é usado para identificar e relatar padrões problemáticos encontrados no código JavaScript. Ele é altamente configurável e pode ser personalizado para atender às necessidades específicas do seu projeto."
+    },
     "HTML5": {
       "Description": "HTML5 é uma linguagem de marcação usada para estruturar e apresentar conteúdo na World Wide Web. É a quinta e última grande versão do HTML que é uma recomendação do World Wide Web Consortium (W3C)."
     },
     "JavaScript": {
       "Description": "JavaScript é uma linguagem de programação interpretada de alto nível que está em conformidade com a especificação ECMAScript. É uma linguagem que também é caracterizada como dinâmica, fracamente tipada, baseada em protótipos e multiparadigma."
+    },
+    "MongoDB": {
+      "Description": "MongoDB é um banco de dados de código aberto e multiplataforma que fornece alta performance, alta disponibilidade e facilidade de escalabilidade. Ele é um banco de dados NoSQL que armazena dados em documentos flexíveis semelhantes a JSON, o que facilita o desenvolvimento e a evolução de aplicativos."
     },
     "Necord": {
       "Description": "Necord é uma biblioteca para criar bots do Discord usando NestJS. Ele fornece uma interface simples e intuitiva para interagir com a API do Discord e permite criar bots poderosos e eficientes com o mínimo de esforço."
@@ -55,6 +70,9 @@
     },
     "PostgreSQL": {
       "Description": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de objeto de código aberto e poderoso. Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ganhou uma forte reputação por confiabilidade, integridade de dados e conformidade com padrões."
+    },
+    "Postman": {
+      "Description": "Postman é uma plataforma de colaboração para desenvolvimento de API. Ele é usado por mais de 13 milhões de desenvolvedores e 500.000 empresas para acessar APIs, compartilhar coleções e colaborar em APIs. Ele oferece uma interface intuitiva e fácil de usar para testar e depurar APIs."
     },
     "Prisma": {
       "Description": "Prisma é um kit de ferramentas de banco de dados de código aberto. Ele substitui ORMs tradicionais e facilita o acesso ao banco de dados com um construtor de consultas auto-gerado para TypeScript e Node.js."

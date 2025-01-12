@@ -25,7 +25,7 @@ export function Skills() {
       <div className="mt-8 flex justify-center items-center text-4xl">
         {t("Title")}
       </div>
-      <div className="flex gap-4">
+      <div className="flex items-center justify-center flex-wrap gap-4">
         {skills.map((skill) => (
           <div key={skill.name} className="flex flex-col items-center">
             <Button variant="ghost" size="sm" onClick={() => handleClick(skill)}>

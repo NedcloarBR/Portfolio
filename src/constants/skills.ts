@@ -2,6 +2,16 @@ import { SkillData } from "@/@types";
 
 export const skills: SkillData[] = [
   {
+    name: "BeekeeperStudio",
+    description: "BeekeeperStudio.Description",
+    url: "https://www.beekeeperstudio.io/",
+  },
+  {
+    name: "BiomeJS",
+    description: "BiomeJS.Description",
+    url: "https://biomejs.com/",
+  },
+  {
     name: "CSS3",
     description: "CSS3.Description",
     url: "https://developer.mozilla.org/en-US/docs/Web/CSS",
@@ -12,6 +22,16 @@ export const skills: SkillData[] = [
     url: "https://discord.js.org/",
   },
   {
+    name: "Docker",
+    description: "Docker.Description",
+    url: "https://www.docker.com/",
+  },
+  {
+    name: "ESLint",
+    description: "ESLint.Description",
+    url: "https://eslint.org/",
+  },
+  {
     name: "HTML5",
     description: "HTML5.Description",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
@@ -20,6 +40,11 @@ export const skills: SkillData[] = [
     name: "JavaScript",
     description: "JavaScript.Description",
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    name: "MongoDB",
+    description: "MongoDB.Description",
+    url: "https://www.mongodb.com/",
   },
   {
     name: "Necord",
@@ -45,6 +70,11 @@ export const skills: SkillData[] = [
     name: "PostgreSQL",
     description: "PostgreSQL.Description",
     url: "https://www.postgresql.org/",
+  },
+  {
+    name: "Postman",
+    description: "Postman.Description",
+    url: "https://www.postman.com/",
   },
   {
     name: "Prisma",
