@@ -1,10 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
 
 export async function GET(
-  request: NextRequest,
+  request: Request,
   context: { params: Promise<{ project: string }> }
 ) {
   const project = (await context.params).project;
