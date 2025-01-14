@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { ProjectsSmallCard } from "./small-card";
-import { projects } from "@/constants/projects";
+import { projects } from "@/constants";
 
 export function ProjectsSection() {
   const t = useTranslations("Projects");

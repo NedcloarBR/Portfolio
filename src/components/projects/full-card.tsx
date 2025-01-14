@@ -1,18 +1,19 @@
 "use client";
 
-import {
+import type { Dispatch, SetStateAction } from "react";
+import { ProjectCarousel } from "./project-carousel";
+import { Project } from "@/@types";
+import { Icon } from "@/components";
+import { LucideUpload } from "lucide-react";
+import { 
+  Button, 
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
-} from "../ui/dialog";
-import { DialogTitle } from "@radix-ui/react-dialog";
-import type { Dispatch, SetStateAction } from "react";
-import { ProjectCarousel } from "./project-carousel";
-import { Project } from "@/@types";
-import { Icon } from "../icon";
-import { LucideUpload } from "lucide-react";
-import { Button, Separator } from "../ui";
+  DialogTitle, 
+  Separator
+} from "@/components/ui";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 

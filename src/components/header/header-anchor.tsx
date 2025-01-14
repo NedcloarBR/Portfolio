@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { ComponentProps, MouseEvent,  useEffect, useState } from "react"
-import { Button } from "../ui";
+import { Button } from "@/components/ui";
 interface Props extends ComponentProps<"a"> {
   target: string
   text?: string

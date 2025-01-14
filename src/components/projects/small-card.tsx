@@ -1,15 +1,15 @@
 "use client"
 
-import {
+import { Icon } from "@/components";
+import { 
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Icon } from "../icon";
-import { Separator } from "../ui";
+  CardTitle, 
+  Separator 
+} from "@/components/ui";
 import { Project } from "@/@types";
 import { ProjectsFullCard } from "./full-card";
 import { useState } from "react";

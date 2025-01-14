@@ -1,13 +1,14 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/card";
 import {
+  Card, 
+  CardContent,
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from "@/components/ui";
 import { useEffect, useState } from "react";
 
 interface ProjectCarouselProps {
