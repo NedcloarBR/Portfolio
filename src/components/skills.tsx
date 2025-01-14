@@ -8,6 +8,7 @@ import { Button, Separator } from "./ui";
 import Link from "next/link";
 import { SkillData } from "@/@types";
 import { skills } from "@/constants";
+import { track } from '@vercel/analytics';
 
 export function Skills() {
   const t = useTranslations("Skills");
@@ -16,6 +17,11 @@ export function Skills() {
   const [dialogSkill, setDialogSkill] = useState<SkillData | null>(null);
 
   function handleClick(skill: SkillData) {
+    track("Skills",{
+      action: "click",
+      category: "Skills",
+      label: skill.name,
+    });
     setDialogSkill(skill);
     setIsOpen(true);
   }
