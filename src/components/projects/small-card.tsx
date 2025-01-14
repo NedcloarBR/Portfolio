@@ -14,6 +14,7 @@ import { Project } from "@/@types";
 import { ProjectsFullCard } from "./full-card";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { track } from "@vercel/analytics";
 
 interface ProjectsSmallCardProps {
   info: Project
@@ -24,9 +25,18 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
   const openState = useState(false);
   const t = useTranslations("Projects");
 
+  function handleClick() {
+    track("Projects", {
+      action: "click",
+      category: "Projects",
+      label: info.name,
+    });
+    openState[1](true);
+  }
+
   return (
     <>
-      <Card className="w-[230px] card-hover cursor-pointer" onClick={() => openState[1](true)}>
+      <Card className="w-[230px] card-hover cursor-pointer" onClick={handleClick}>
         <CardHeader>
           <img src={`images/${info.name}/Logo.png`} alt={`${info.name} Logo`} className="w-[210px] h-[90px] rounded-sm" />
           <Separator />
