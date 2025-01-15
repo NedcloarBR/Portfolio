@@ -30,6 +30,8 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
       action: "click",
       category: "Projects",
       label: info.name,
+    }, {
+      flags: ["Projects"]
     });
     openState[1](true);
   }

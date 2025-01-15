@@ -21,6 +21,8 @@ export function Skills() {
       action: "click",
       category: "Skills",
       label: skill.name,
+    }, {
+      flags: ["Skills"]
     });
     setDialogSkill(skill);
     setIsOpen(true);
