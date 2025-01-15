@@ -33,11 +33,14 @@ export function About() {
             alt="Miguel Alexandre Uhlein PPF"
             className="size-80 mt-2 mr-8 inline-block rounded-xl"
           />
-          <div className="flex">
-            <Button variant="ghost" onClick={() => window.open("CV-MiguelAlexandreUhlein.pdf", "_blank")}>
+          <div className="flex mt-2">
+            <Button variant="link" className="card-hover" onClick={() => window.open("CV-MiguelAlexandreUhlein.pdf", "_blank")}>
               <Icon name="Curriculum" className="size-12"/>
             </Button>
-            <Mail className="size-12 cursor-pointer" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}/>
+            <Mail className="size-12 cursor-pointer card-hover" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}/>
+            <Button variant="link" className="card-hover" onClick={() => window.open("https://www.linkedin.com/in/miguel-alexandre-uhlein-7979a71b0/", "_blank")}>
+              <Icon name="LinkedIn" className="size-12"/>
+            </Button>
           </div>
         </div>
         <div className="mt-8 max-w-xl">
