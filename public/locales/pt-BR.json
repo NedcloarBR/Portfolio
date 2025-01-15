@@ -29,6 +29,15 @@
   },
   "Skills": {
     "Title": "Competências",
+    "Categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Database": "Bancos de Dados",
+      "Library": "Bibliotecas",
+      "Tools": "Ferramentas",
+      "DevOps": "DevOps",
+      "ProgrammingLanguage": "Linguagens de Programação"
+    },
     "BeekeeperStudio": {
       "Description": "Beekeeper Studio é um cliente SQL de código aberto e multiplataforma para desenvolvedores de banco de dados. Ele oferece uma interface intuitiva e fácil de usar para interagir com bancos de dados, executar consultas SQL, visualizar esquemas e muito mais."
     },

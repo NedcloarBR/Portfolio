@@ -29,6 +29,15 @@
   },
   "Skills": {
     "Title": "Competencies",
+    "Categories": {
+      "Frontend": "Frontend",
+      "Backend": "Backend",
+      "Database": "Databases",
+      "Library": "Libraries",
+      "Tools": "Tools",
+      "DevOps": "DevOps",
+      "ProgrammingLanguage": "Programming Languages"
+    },
     "BeekeeperStudio": {
       "Description": "Beekeeper Studio is an open-source, cross-platform SQL  client for database developers. It offers an intuitive and user-friendly   interface to interact with databases, execute SQL queries, visualize  schemas, and much more."
     },

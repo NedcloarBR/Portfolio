@@ -40,7 +40,7 @@ export const skills: SkillData[] = [
   {
     name: "GitHub",
     description: "GitHub.Description",
-    categories: ["Tools"],
+    categories: ["DevOps", "Tools"],
     url: "https://github.com/NedcloarBR",
   },
   {
@@ -52,7 +52,7 @@ export const skills: SkillData[] = [
   {
     name: "JavaScript",
     description: "JavaScript.Description",
-    categories: ["Frontend", "Backend"],
+    categories: ["ProgrammingLanguage", "Frontend", "Backend"],
     url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
   },
   {
@@ -118,7 +118,7 @@ export const skills: SkillData[] = [
   {
     name: "TypeScript",
     description: "TypeScript.Description",
-    categories: ["Frontend", "Backend"],
+    categories: ["ProgrammingLanguage", "Frontend", "Backend"],
     url: "https://www.typescriptlang.org/",
   },
   {
