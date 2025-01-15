@@ -23,9 +23,9 @@ export function About() {
 
   return (
     <section id="about" className="grid justify-center h-screen text-white">
-      <div className="mt-8 flex justify-center items-center text-4xl">
+      <h1 className="mt-8 flex justify-center items-center text-4xl">
         {t("Title")}
-      </div>
+      </h1>
       <div className="-mb-16 flex overflow-wrap break-word">
         <div className="flex-col flex gap-4">
           <img

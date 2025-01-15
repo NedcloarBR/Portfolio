@@ -21,4 +21,21 @@ export const projects: Project[] = [
       "Docker",
     ],
   },
+  {
+    name: "Random Brazil",
+    description: "RandomBrazil.Description",
+    categories: [],
+    github: "https://github.com/NedcloarBR/vscode-random-brazil",
+    deploy:
+      "https://marketplace.visualstudio.com/items?itemName=nedcloarbr.random-brazil",
+    techs: ["NodeJS", "TypeScript", "JavaScript", "BiomeJS", "VSCode"],
+  },
+  {
+    name: "Biome Config",
+    description: "BiomeConfig.Description",
+    categories: [],
+    github: "https://github.com/NedcloarBR/biome-config",
+    deploy: "https://www.npmjs.com/package/@nedcloarbr/biome-config",
+    techs: ["NodeJS", "TypeScript", "JavaScript", "NPM", "BiomeJS"],
+  },
 ];

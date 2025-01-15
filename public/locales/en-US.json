@@ -80,6 +80,9 @@
     "NodeJS": {
       "Description": "Node.js is a high-performance, open-source JavaScript runtime built on Chrome's V8 engine. It is used to develop fast and scalable network applications, command-line tools, and server-side scripts."
     },
+    "NPM": {
+      "Description": "NPM (Node Package Manager) is the default package manager for Node.js, used to install, share, and manage dependencies in JavaScript projects. It provides a large online repository of packages to simplify development."
+    },
     "PostgreSQL": {
       "Description": "PostgreSQL is a powerful, open-source object-relational database management system. It has over 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and standards compliance."
     },
@@ -98,6 +101,9 @@
     "TypeScript": {
       "Description": "TypeScript is a superset of JavaScript developed by Microsoft that adds static typing and other enhanced features to the language. TypeScript can be used to develop large-scale JavaScript applications for any browser, host, and operating system."
     },
+    "VSCode": {
+      "Description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux, and macOS. It includes support for debugging, integrated version control, syntax highlighting, intelligent code completion, snippets, and code refactoring."
+    },
     "Vercel": {
       "Description": "Vercel is a cloud platform for static sites and web applications that allows you to deploy websites in seconds. It offers continuous integration, global hosting, instant previews, and more, making it a popular choice for developers looking to deploy web applications quickly and easily."
     },
@@ -111,6 +117,12 @@
     "ViewDeploy": "View Deploy",
     "N-D-B": {
       "Description": "N-D-B is a Discord bot developed using DiscordJS and Necord an library for NestJS. It is a multipurpose bot that has several features, such as moderation, music, and fun commands. The bot is designed to be easy to use and has a simple and intuitive interface. It is constantly being updated with new features and improvements."
+    },
+    "RandomBrazil": {
+      "Description": "Random Brazil is an extension for Visual Studio Code (and other compatible IDEs) that allows you to generate and validate Brazilian document data such as CPF, CNPJ, CNH, among others. It is ideal for developers who need fictional data for testing or validating information in their applications."
+    },
+    "BiomeConfig": {
+      "Description": "Configuring a linter and formatter, such as BiomeJS, is crucial for maintaining consistent, readable, and error-free code. Linters ensure uniform coding standards and early error detection, saving debugging time. Formatters automate code structuring, enhancing readability and maintenance. These tools increase productivity by allowing developers to focus on critical tasks. They also enforce quality standards, creating a professional development environment. In CI/CD workflows, they ensure code adherence to quality standards, preserving codebase integrity."
     }
   },
   "Error": {

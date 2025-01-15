@@ -86,6 +86,12 @@ export const skills: SkillData[] = [
     url: "https://nodejs.org/",
   },
   {
+    name: "NPM",
+    description: "NPM.Description",
+    categories: ["Tools"],
+    url: "https://www.npmjs.com/~nedcloarbr",
+  },
+  {
     name: "PostgreSQL",
     description: "PostgreSQL.Description",
     categories: ["Database"],
@@ -120,6 +126,12 @@ export const skills: SkillData[] = [
     description: "TypeScript.Description",
     categories: ["ProgrammingLanguage", "Frontend", "Backend"],
     url: "https://www.typescriptlang.org/",
+  },
+  {
+    name: "VSCode",
+    description: "VSCode.Description",
+    categories: ["Tools"],
+    url: "https://code.visualstudio.com/",
   },
   {
     name: "Vercel",

@@ -43,14 +43,12 @@ export function ProjectsFullCard({
         <DialogDescription>{t(info.description)}</DialogDescription>
         <Separator />
         <div>
-          <Button variant="link" size="sm" className="flex">
+          <Button variant="link" size="sm" className="flex" onClick={() => window.open(info.github, "_blank", "noopener noreferrer")}>
             <Icon name="GitHub" className="size-8" />
-            <Link href={info.github} />
             {t("ViewSource")}
           </Button>
-          <Button variant="link" size="sm" className="flex">
+          <Button variant="link" size="sm" className="flex" onClick={() => window.open(info.deploy, "_blank", "noopener noreferrer")}>
             <LucideUpload className="size-8" />
-            <Link href={info.deploy} />
             {t("ViewDeploy")}
           </Button>
         </div>

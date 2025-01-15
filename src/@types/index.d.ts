@@ -11,11 +11,13 @@ export type Techs =
   | "NestJS"
   | "NextJS"
   | "NodeJS"
+  | "NPM"
   | "PostgreSQL"
   | "Prisma"
   | "React"
   | "TailwindCSS"
   | "TypeScript"
+  | "VSCode"
   | "Vercel"
   | "Yarn";
 

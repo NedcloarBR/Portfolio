@@ -80,6 +80,9 @@
     "NodeJS": {
       "Description": "Node.js é um ambiente de tempo de execução JavaScript de plataforma aberta e de alto desempenho construído no motor V8 do Chrome. Ele é usado para desenvolver aplicativos de rede rápidos e escaláveis, bem como ferramentas de linha de comando e scripts do lado do servidor."
     },
+    "NPM": {
+      "Description": "O NPM (Node Package Manager) é o gerenciador de pacotes padrão do Node.js, utilizado para instalar, compartilhar e gerenciar dependências de projetos JavaScript. Ele oferece um vasto repositório online de pacotes para facilitar o desenvolvimento."
+    },
     "PostgreSQL": {
       "Description": "PostgreSQL é um sistema de gerenciamento de banco de dados relacional de objeto de código aberto e poderoso. Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ganhou uma forte reputação por confiabilidade, integridade de dados e conformidade com padrões."
     },
@@ -98,6 +101,9 @@
     "TypeScript": {
       "Description": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem estática e outros recursos aprimorados à linguagem. O TypeScript pode ser usado para desenvolver aplicativos JavaScript em grande escala para qualquer navegador, host e qualquer sistema operacional."
     },
+    "VSCode": {
+      "Description": "Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS. Ele inclui suporte para depuração, controle de versão integrado, realce de sintaxe, complementação de código inteligente, snippets e refatoração de código."
+    },
     "Vercel": {
       "Description": "Vercel é uma plataforma de nuvem para sites estáticos e aplicativos da web que permite implantar sites em segundos. Ele oferece integração contínua, hospedagem global, pré-visualizações instantâneas e muito mais, tornando-o uma escolha popular para desenvolvedores que desejam implantar aplicativos da web rapidamente e com facilidade."
     },
@@ -111,6 +117,12 @@
     "ViewDeploy": "Ver Deploy",
     "N-D-B": {
       "Description": "N-D-B é um bot do Discord desenvolvido usando DiscordJS e Necord uma biblioteca para o NestJS. É um bot multipropósito que possui várias funcionalidades, como moderação, música e comandos divertidos. O bot é projetado para ser fácil de usar e possui uma interface simples e intuitiva. Ele está sendo constantemente atualizado com novos recursos e melhorias."
+    },
+    "RandomBrazil": {
+      "Description": "Random Brazil é uma extensão para o Visual Studio Code (e outras IDEs compatíveis) que permite gerar e validar dados de documentos brasileiros, como CPF, CNPJ, CNH, entre outros. Ideal para desenvolvedores que necessitam de dados fictícios para testes ou validação de informações em suas aplicações."
+    },
+    "BiomeConfig": {
+      "Description": "Configurar um linter e um formatador, como o BiomeJS, é essencial para manter um código consistente, legível e livre de erros. Linters garantem padrões uniformes de codificação e a detecção precoce de erros, economizando tempo de depuração. Formatadores automatizam a estruturação do código, melhorando sua legibilidade e manutenção. Essas ferramentas aumentam a produtividade, permitindo que os desenvolvedores se concentrem em tarefas críticas. Além disso, elas reforçam padrões de qualidade, criando um ambiente de desenvolvimento profissional. Em fluxos de trabalho CI/CD, garantem a conformidade do código com os padrões de qualidade, preservando a integridade da base de código."
     }
   },
   "Error": {

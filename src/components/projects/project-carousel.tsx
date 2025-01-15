@@ -18,11 +18,11 @@ interface ProjectCarouselProps {
 export function ProjectCarousel({ name }: ProjectCarouselProps) {
   const [pictures, setPictures] = useState<{ id: number, src: string; alt: string }[]>([]);
   const [loading, setLoading] = useState(true);
-
+  const nameForAssets = name.split(" ").join("");
   useEffect(() => {
     const fetchPictures = async () => {
       try {
-        const response = await fetch(`/api/images/${name}`);
+        const response = await fetch(`/api/images/${nameForAssets}`);
         if (response.ok) {
           const data = await response.json();
           setPictures(data);

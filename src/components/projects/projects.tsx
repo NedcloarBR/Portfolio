@@ -10,7 +10,7 @@ export function ProjectsSection() {
       <div className="mt-8 flex justify-center items-center text-4xl">
         {t("Title")}
       </div>
-      <div>
+      <div className="flex items-center gap-4">
         {projects.map((project) => (
           <ProjectsSmallCard key={project.name} info={project} />
         ))}

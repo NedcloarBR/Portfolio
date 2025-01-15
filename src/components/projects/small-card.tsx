@@ -35,12 +35,12 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
     });
     openState[1](true);
   }
-
+  const nameForAssets = info.name.split(" ").join("");
   return (
     <>
-      <Card className="w-[230px] card-hover cursor-pointer" onClick={handleClick}>
+      <Card className="w-[230px] h-[400px] card-hover cursor-pointer" onClick={handleClick}>
         <CardHeader>
-          <img src={`images/${info.name}/Logo.png`} alt={`${info.name} Logo`} className="w-[210px] h-[90px] rounded-sm" />
+          <img src={`images/${nameForAssets}/Logo.png`} alt={`${info.name} Logo`} className="w-[210px] h-[90px] rounded-sm" />
           <Separator />
           <CardTitle className="flex justify-center">{info.name}</CardTitle>
         </CardHeader>
