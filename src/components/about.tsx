@@ -34,7 +34,7 @@ export function About() {
             className="size-80 mt-2 mr-8 inline-block rounded-xl"
           />
           <div className="flex mt-2">
-            <Button variant="link" className="card-hover" onClick={() => window.open("CV-MiguelAlexandreUhlein.pdf", "_blank")}>
+            <Button variant="link" className="card-hover" onClick={() => window.open("archives/CV-MiguelAlexandreUhlein.pdf", "_blank")}>
               <Icon name="Curriculum" className="size-12"/>
             </Button>
             <Mail className="size-12 cursor-pointer card-hover" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}/>
