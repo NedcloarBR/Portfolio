@@ -125,6 +125,19 @@
       "Description": "Configurar um linter e um formatador, como o BiomeJS, é essencial para manter um código consistente, legível e livre de erros. Linters garantem padrões uniformes de codificação e a detecção precoce de erros, economizando tempo de depuração. Formatadores automatizam a estruturação do código, melhorando sua legibilidade e manutenção. Essas ferramentas aumentam a produtividade, permitindo que os desenvolvedores se concentrem em tarefas críticas. Além disso, elas reforçam padrões de qualidade, criando um ambiente de desenvolvimento profissional. Em fluxos de trabalho CI/CD, garantem a conformidade do código com os padrões de qualidade, preservando a integridade da base de código."
     }
   },
+  "Contact": {
+    "Title": "Contato",
+    "Form": {
+      "Name": "Nome",
+      "NameDescription": "Como posso te chamar?",
+      "Subject": "Assunto",
+      "SubjectDescription": "Sobre o que você gostaria de falar?",
+      "Message": "Mensagem",
+      "MessageDescription": "Escreva sua mensagem aqui...",
+      "Submit": "Enviar",
+      "NameTooShort": "Nome deve ter no mínimo 3 caracteres"
+    }
+  },
   "Error": {
     "Copy": "Copiar",
     "Reload": "Clique aqui para voltar para a página principal",
