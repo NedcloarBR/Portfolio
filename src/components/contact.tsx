@@ -17,6 +17,8 @@ import {
   Input,
   Textarea,
 } from "@/components/ui";
+import { Section } from "./section";
+
 
 export function Contact() {
   const t = useTranslations("Contact");
@@ -53,11 +55,9 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="grid justify-center h-screen">
-      <h1 className="mt-8 flex justify-center items-center text-4xl">
-        {t("Title")}
-      </h1>
-      <div className="flex justify-center items-center gap-4">
+    <Section.Root id="contact">
+      <Section.Title title={t("Title")} />
+      <Section.Content className="justify-center items-center">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <FormField
@@ -109,7 +109,7 @@ export function Contact() {
             <Button type="submit">Submit</Button>
           </form>
         </Form>
-      </div>
-    </section>
+      </Section.Content>
+    </Section.Root>
   );
 }

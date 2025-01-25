@@ -17,6 +17,7 @@ import Link from "next/link";
 import { SkillData } from "@/@types";
 import { skills } from "@/constants";
 import { track } from "@vercel/analytics";
+import { Section } from "./section";
 
 export function Skills() {
   const t = useTranslations("Skills");
@@ -52,11 +53,9 @@ export function Skills() {
   }
 
   return (
-    <section id="skills" className="grid justify-center h-screen text-white">
-      <h1 className="mt-8 flex justify-center items-center text-4xl">
-        {t("Title")}
-      </h1>
-      <div className="flex items-center justify-center flex-wrap gap-4">
+    <Section.Root id="skills">
+      <Section.Title title={t("Title")} />
+      <Section.Content className="items-center justify-center flex-wrap">
         {Array.from(skillsByCategory.entries()).map(
           ([category, categorySkills]) => (
             <Card
@@ -86,7 +85,7 @@ export function Skills() {
             </Card>
           )
         )}
-      </div>
+      </Section.Content>
 
       {dialogSkill && (
         <Dialog open={isOpen} onOpenChange={(open) => setIsOpen(open)}>
@@ -115,6 +114,6 @@ export function Skills() {
           </DialogContent>
         </Dialog>
       )}
-    </section>
+    </Section.Root>
   );
 }

@@ -6,7 +6,8 @@ import { useState, useRef, useEffect } from "react";
 import { HeaderAnchor } from "./header/header-anchor";
 import { motion } from "framer-motion";
 import { Icon } from "./icon";
-import { Mail } from "lucide-react"
+import { Mail } from "lucide-react";
+import { Section } from "./section";
 
 export function About() {
   const t = useTranslations("About");
@@ -22,11 +23,9 @@ export function About() {
   }, []);
 
   return (
-    <section id="about" className="grid justify-center h-screen text-white">
-      <h1 className="mt-8 flex justify-center items-center text-4xl">
-        {t("Title")}
-      </h1>
-      <div className="-mb-16 flex overflow-wrap break-word">
+    <Section.Root id="about">
+      <Section.Title title={t("Title")} />
+      <Section.Content className="-mb-16 overflow-wrap break-word">
         <div className="flex-col flex gap-4">
           <img
             src="PPF.jpeg"
@@ -34,12 +33,34 @@ export function About() {
             className="size-80 mt-2 mr-8 inline-block rounded-xl"
           />
           <div className="flex mt-2">
-            <Button variant="link" className="card-hover" onClick={() => window.open("archives/CV-MiguelAlexandreUhlein.pdf", "_blank")}>
-              <Icon name="Curriculum" className="size-12"/>
+            <Button
+              variant="link"
+              className="card-hover"
+              onClick={() =>
+                window.open("archives/CV-MiguelAlexandreUhlein.pdf", "_blank")
+              }
+            >
+              <Icon name="Curriculum" className="size-12" />
             </Button>
-            <Mail className="size-12 cursor-pointer card-hover" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}/>
-            <Button variant="link" className="card-hover" onClick={() => window.open("https://www.linkedin.com/in/miguel-alexandre-uhlein-7979a71b0/", "_blank")}>
-              <Icon name="LinkedIn" className="size-12"/>
+            <Mail
+              className="size-12 cursor-pointer card-hover"
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            />
+            <Button
+              variant="link"
+              className="card-hover"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/miguel-alexandre-uhlein-7979a71b0/",
+                  "_blank"
+                )
+              }
+            >
+              <Icon name="LinkedIn" className="size-12" />
             </Button>
           </div>
         </div>
@@ -73,7 +94,7 @@ export function About() {
             {isExpanded ? t("Button2") : t("Button")}
           </Button>
         </div>
-      </div>
-    </section>
+      </Section.Content>
+    </Section.Root>
   );
 }

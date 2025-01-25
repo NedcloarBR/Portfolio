@@ -7,5 +7,6 @@ export * from "./header";
 export * from "./icon";
 export * from "./main-container";
 export * from "./projects";
+export * from "./section";
 export * from "./start";
 export * from "./theme";
