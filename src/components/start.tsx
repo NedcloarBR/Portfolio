@@ -6,20 +6,20 @@ import { BackToTop } from "./back-to-top";
 import { Section } from "./section";
 
 export function Start() {
-	const t = useTranslations();
+  const t = useTranslations();
   const startRef = useRef<HTMLElement>(null);
 
-	return (
-		<Section.Root
+  return (
+    <Section.Root
       ref={startRef}
-			id="start"
-			className="flex-col items-center justify-center text-center space-y-2"
-		>
+      id="start"
+      variant="start"
+    >
       <h1>{t("WIP")}</h1>
-			<div className="text-3xl">{t("Start.Hello")}</div>
-			<div className="text-6xl">{t("Start.Name")}</div>
-			<div className="text-2xl">{t("Start.Details")}</div>
+      <div className="text-3xl">{t("Start.Hello")}</div>
+      <div className="text-6xl">{t("Start.Name")}</div>
+      <div className="text-2xl">{t("Start.Details")}</div>
       <BackToTop startRef={startRef} />
-		</Section.Root>
-	);
+    </Section.Root>
+  );
 }
