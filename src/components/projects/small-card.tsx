@@ -1,14 +1,14 @@
 "use client"
 
 import { Icon } from "@/components";
-import { 
+import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
-  CardTitle, 
-  Separator 
+  CardTitle,
+  Separator
 } from "@/components/ui";
 import { Project } from "@/@types";
 import { ProjectsFullCard } from "./full-card";
@@ -38,22 +38,22 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
   const nameForAssets = info.name.split(" ").join("");
   return (
     <>
-      <Card className="w-[230px] h-[400px] card-hover cursor-pointer" onClick={handleClick}>
+      <Card className="w-[240px] h-[400px] card-hover cursor-pointer" onClick={handleClick}>
         <CardHeader>
           <img src={`images/${nameForAssets}/Logo.png`} alt={`${info.name} Logo`} className="w-[210px] h-[90px] rounded-sm" />
           <Separator />
           <CardTitle className="flex justify-center">{info.name}</CardTitle>
         </CardHeader>
-        <CardContent>
-          <CardDescription>{t(info.description).split(".")[0]+"."}</CardDescription>
+        <CardContent className="-mt-4">
+          <CardDescription>{t(info.description).split(".")[0] + "."}</CardDescription>
         </CardContent>
         <CardFooter className="flex justify-center flex-wrap gap-2">
           {uniqueTechs.map((tech) => (
-            <Icon key={tech} name={tech} extension={tech === "Necord" ? "png" : "svg"}  className="size-6"/>
+            <Icon key={tech} name={tech} extension={tech === "Necord" ? "png" : "svg"} className="size-6" />
           ))}
         </CardFooter>
       </Card>
-      <ProjectsFullCard openState={openState} info={info}/>
+      <ProjectsFullCard openState={openState} info={info} />
     </>
   );
 }
