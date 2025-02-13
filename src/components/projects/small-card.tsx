@@ -38,9 +38,9 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
   const nameForAssets = info.name.split(" ").join("");
   return (
     <>
-      <Card className="w-[240px] h-[400px] card-hover cursor-pointer" onClick={handleClick}>
+      <Card className="w-60 h-100 card-hover cursor-pointer" onClick={handleClick}>
         <CardHeader>
-          <img src={`images/${nameForAssets}/Logo.png`} alt={`${info.name} Logo`} className="w-[210px] h-[90px] rounded-sm" />
+          <img src={`images/${nameForAssets}/Logo.png`} alt={`${info.name} Logo`} className="w-52.5 h-22.5 rounded-sm" />
           <Separator />
           <CardTitle className="flex justify-center">{info.name}</CardTitle>
         </CardHeader>

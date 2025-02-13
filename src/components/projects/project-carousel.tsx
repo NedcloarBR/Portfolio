@@ -45,7 +45,7 @@ export function ProjectCarousel({ name }: ProjectCarouselProps) {
         <CarouselContent className="w-full max-w-64">
           <CarouselItem>
             <div className="p-1">
-              <Card className="w-[230px]">
+              <Card className="w-57.5">
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                   <div className="animate-pulse bg-gray-300 w-full h-full rounded-sm"></div>
                 </CardContent>
@@ -65,7 +65,7 @@ export function ProjectCarousel({ name }: ProjectCarouselProps) {
         {pictures.map((picture) => (
           <CarouselItem key={picture.id}>
             <div className="p-1">
-              <Card className="w-[230px]">
+              <Card className="w-57.5">
                 <CardContent className="flex aspect-square items-center justify-center p-6">
                  <img src={picture.src} alt={picture.alt} />
                 </CardContent>

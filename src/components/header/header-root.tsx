@@ -4,7 +4,7 @@ export function HeaderRoot() {
   return (
     <section
       id="header"
-      className="fixed w-screen h-[100px] flex bg-zinc-400 dark:bg-zinc-900 border-b-4 border-green-700"
+      className="fixed w-screen h-25 flex bg-zinc-400 dark:bg-zinc-900 border-b-4 border-green-700"
     >
       <nav className="px-4 flex items-center justify-between w-full">
         <div className="flex-1"></div>
