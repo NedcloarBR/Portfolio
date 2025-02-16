@@ -1,153 +1,153 @@
 {
-  "Metadata": {
-    "Home": {
-      "title": "Portfolio Miguel Alexandre Uhlein",
-      "description": "Get to know me and explore my projects!"
-    }
-  },
-  "Header": {
-    "about": "About",
-    "skills": "Competencies",
-    "projects": "Projects",
-    "contact": "Contact"
-  },
-  "Theme": {
-    "Dark": "Dark",
-    "Light": "Light"
-  },
-  "WIP": "🚧 This project is under development 🚧",
-  "Start": {
-    "Hello": "Hello, World!",
-    "Name": "My name is Miguel",
-    "Details": "Your next Back-end Developer"
-  },
-  "About": {
-    "Title": "About",
-    "Text": "Hello! My name is Miguel, I am 20 years old, and I am a backend developer.<br></br> I have experience in developing applications using NestJS, TypeScript, JavaScript, and NodeJS.<br></br><br></br>My passion for technology and programming started early, as my father owned a computer store. This exposure led me to the field of programming, and since then, I have been specializing in creating efficient and scalable solutions. I enjoy tackling challenges and am always looking to learn and improve my skills.<br></br><br></br>I focus on delivering high-quality code, following best practices, and maintaining clear communication with the team. I believe that collaboration and continuous learning are essential for success in software development projects.<br></br><br></br>I am interested in expanding my skills and working with C# and Rust, exploring new languages and technologies.<br></br><br></br>If you are interested in learning more about my work or collaborating on a project, feel free to <contact>contact me!</contact>",
-    "Button": "Expand...",
-    "Button2": "Retract..."
-  },
-  "Skills": {
-    "Title": "Competencies",
-    "Categories": {
-      "Frontend": "Frontend",
-      "Backend": "Backend",
-      "Database": "Databases",
-      "Library": "Libraries",
-      "Tools": "Tools",
-      "DevOps": "DevOps",
-      "ProgrammingLanguage": "Programming Languages"
-    },
-    "BeekeeperStudio": {
-      "Description": "Beekeeper Studio is an open-source, cross-platform SQL  client for database developers. It offers an intuitive and user-friendly   interface to interact with databases, execute SQL queries, visualize  schemas, and much more."
-    },
-    "BiomeJS": {
-      "Description": "BiomeJS is a formatting and indentation tool for JavaScript   and TypeScript projects. It is highly configurable and can be customized to   meet the specific needs of your project. It is easy to use and can be   seamlessly integrated into any JavaScript or TypeScript project."
-    },
-    "CSS3": {
-      "Description": "CSS3 is the latest evolution of the Cascading Style Sheets language, aimed at extending CSS2.1. It introduces highly anticipated features like rounded corners, shadows, gradients, transitions, animations, and new layouts such as multi-columns, flexible box, and grid layouts."
-    },
-    "DiscordJS": {
-      "Description": "Discord.js is a powerful Node.js module that allows you to interact with the Discord API easily. It takes a much more object-oriented approach than most other Discord JS libraries, making your bot's code significantly more organized and easier to understand."
-    },
-    "Docker": {
-      "Description": "Docker is a software platform that allows you to build, test, and deploy applications quickly. It enables you to package an application with all its parts, such as libraries and dependencies, and ship it as a container, ensuring it runs consistently in any environment."
-    },
-    "ESLint": {
-      "Description": "ESLint is a code linting tool for JavaScript. It is used to identify and report problematic patterns found in JavaScript code. It is highly configurable and can be customized to meet the specific needs of your project."
-    },
-    "GitHub": {
-      "Description": "GitHub is a web-based platform for version control using Git. It allows developers to collaborate on projects, track changes, and manage code repositories. It provides a wide range of features, such as issue tracking, pull requests, code review, and project management."
-    },
-    "HTML5": {
-      "Description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major version of HTML, recommended by the World Wide Web Consortium (W3C)."
-    },
-    "JavaScript": {
-      "Description": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is characterized as dynamic, weakly typed, prototype-based, and multi-paradigm."
-    },
-    "MongoDB": {
-      "Description": "MongoDB is an open-source, cross-platform database that provides high performance, high availability, and easy scalability. It is a NoSQL database that stores data in flexible, JSON-like documents, making it easier to develop and evolve applications."
-    },
-    "Necord": {
-      "Description": "Necord is a library for creating Discord bots using NestJS. It provides a simple and intuitive interface for interacting with the Discord API, allowing you to build powerful and efficient bots with minimal effort."
-    },
-    "NestJS": {
-      "Description": "NestJS is a framework for building efficient and scalable Node.js server-side applications. It uses progressive JavaScript, is built with TypeScript, and combines elements of OOP (Object-Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming)."
-    },
-    "NextJS": {
-      "Description": "Next.js is a React framework that enables features such as server-side rendering and static site generation for React-based web applications. It is a powerful tool that allows developers to build fast and efficient web applications with minimal effort."
-    },
-    "NodeJS": {
-      "Description": "Node.js is a high-performance, open-source JavaScript runtime built on Chrome's V8 engine. It is used to develop fast and scalable network applications, command-line tools, and server-side scripts."
-    },
-    "NPM": {
-      "Description": "NPM (Node Package Manager) is the default package manager for Node.js, used to install, share, and manage dependencies in JavaScript projects. It provides a large online repository of packages to simplify development."
-    },
-    "PostgreSQL": {
-      "Description": "PostgreSQL is a powerful, open-source object-relational database management system. It has over 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and standards compliance."
-    },
-    "Postman": {
-      "Description": "Postman is a collaboration platform for API development. It is used by over 13 million developers and 500,000 companies to access APIs, share collections, and collaborate on APIs. It offers an intuitive and user-friendly interface for testing and debugging APIs."
-    },
-    "Prisma": {
-      "Description": "Prisma is an open-source database toolkit. It replaces traditional ORMs and simplifies database access with an auto-generated query builder for TypeScript and Node.js."
-    },
-    "ReactJS": {
-      "Description": "React is an open-source JavaScript library for building user interfaces. Maintained by Facebook and a community of developers and companies, React can be used as a base in the development of single-page or mobile applications."
-    },
-    "TailwindCSS": {
-      "Description": "Tailwind CSS is a low-level utility-first CSS framework that provides pre-built classes for creating custom designs directly in HTML. It is designed to be easy to use and highly customizable, allowing you to quickly create unique and responsive designs."
-    },
-    "TypeScript": {
-      "Description": "TypeScript is a superset of JavaScript developed by Microsoft that adds static typing and other enhanced features to the language. TypeScript can be used to develop large-scale JavaScript applications for any browser, host, and operating system."
-    },
-    "VSCode": {
-      "Description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux, and macOS. It includes support for debugging, integrated version control, syntax highlighting, intelligent code completion, snippets, and code refactoring."
-    },
-    "Vercel": {
-      "Description": "Vercel is a cloud platform for static sites and web applications that allows you to deploy websites in seconds. It offers continuous integration, global hosting, instant previews, and more, making it a popular choice for developers looking to deploy web applications quickly and easily."
-    },
-    "Yarn": {
-      "Description": "Yarn is a fast, reliable, and secure package manager for JavaScript. It is compatible with npm and offers various performance and security improvements, such as parallel installations, package caching, and integrity verification."
-    }
-  },
-  "Projects": {
-    "Title": "Projects",
-    "ViewSource": "View on GitHub",
-    "ViewDeploy": "View Deploy",
-    "N-D-B": {
-      "Description": "N-D-B is a Discord bot developed using DiscordJS and Necord an library for NestJS. It is a multipurpose bot that has several features, such as moderation, music, and fun commands. The bot is designed to be easy to use and has a simple and intuitive interface. It is constantly being updated with new features and improvements."
-    },
-    "RandomBrazil": {
-      "Description": "Random Brazil is an extension for Visual Studio Code (and other compatible IDEs) that allows you to generate and validate Brazilian document data such as CPF, CNPJ, CNH, among others. It is ideal for developers who need fictional data for testing or validating information in their applications."
-    },
-    "BiomeConfig": {
-      "Description": "Configuring a linter and formatter, such as BiomeJS, is crucial for maintaining consistent, readable, and error-free code. Linters ensure uniform coding standards and early error detection, saving debugging time. Formatters automate code structuring, enhancing readability and maintenance. These tools increase productivity by allowing developers to focus on critical tasks. They also enforce quality standards, creating a professional development environment. In CI/CD workflows, they ensure code adherence to quality standards, preserving codebase integrity."
-    }
-  },
-  "Contact": {
-    "Title": "Contact",
-    "Form": {
-      "Name": "Name",
-      "NameDescription": "What should I call you?",
-      "Subject": "Subject",
-      "SubjectDescription": "What would you like to talk about?",
-      "Message": "Message",
-      "MessageDescription": "Write your message here...",
-      "Submit": "Submit",
-      "NameTooShort": "Name must have at least 3 characters"
-    }
-  },
-  "Error": {
-    "Copy": "Copy",
-    "Reload": "Click here to back to main page",
-    "Toast": {
-      "Title": "Error copied!",
-      "Description": "Error code has copied to clipboard"
-    }
-  },
-  "Languages": {
-    "pt-BR": "Portuguese",
-    "en-US": "English"
-  }
+	"Metadata": {
+		"Home": {
+			"title": "Portfolio Miguel Alexandre Uhlein",
+			"description": "Get to know me and explore my projects!"
+		}
+	},
+	"Header": {
+		"about": "About",
+		"skills": "Competencies",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"Theme": {
+		"Dark": "Dark",
+		"Light": "Light"
+	},
+	"WIP": "🚧 This project is under development 🚧",
+	"Start": {
+		"Hello": "Hello, World!",
+		"Name": "My name is Miguel",
+		"Details": "Your next Back-end Developer"
+	},
+	"About": {
+		"Title": "About",
+		"Text": "Hello! My name is Miguel, I am 20 years old, and I am a backend developer.<br></br> I have experience in developing applications using NestJS, TypeScript, JavaScript, and NodeJS.<br></br><br></br>My passion for technology and programming started early, as my father owned a computer store. This exposure led me to the field of programming, and since then, I have been specializing in creating efficient and scalable solutions. I enjoy tackling challenges and am always looking to learn and improve my skills.<br></br><br></br>I focus on delivering high-quality code, following best practices, and maintaining clear communication with the team. I believe that collaboration and continuous learning are essential for success in software development projects.<br></br><br></br>I am interested in expanding my skills and working with C# and Rust, exploring new languages and technologies.<br></br><br></br>If you are interested in learning more about my work or collaborating on a project, feel free to <contact>contact me!</contact>",
+		"Button": "Expand...",
+		"Button2": "Retract..."
+	},
+	"Skills": {
+		"Title": "Competencies",
+		"Categories": {
+			"Frontend": "Frontend",
+			"Backend": "Backend",
+			"Database": "Databases",
+			"Library": "Libraries",
+			"Tools": "Tools",
+			"DevOps": "DevOps",
+			"ProgrammingLanguage": "Programming Languages"
+		},
+		"BeekeeperStudio": {
+			"Description": "Beekeeper Studio is an open-source, cross-platform SQL  client for database developers. It offers an intuitive and user-friendly   interface to interact with databases, execute SQL queries, visualize  schemas, and much more."
+		},
+		"BiomeJS": {
+			"Description": "BiomeJS is a formatting and indentation tool for JavaScript   and TypeScript projects. It is highly configurable and can be customized to   meet the specific needs of your project. It is easy to use and can be   seamlessly integrated into any JavaScript or TypeScript project."
+		},
+		"CSS3": {
+			"Description": "CSS3 is the latest evolution of the Cascading Style Sheets language, aimed at extending CSS2.1. It introduces highly anticipated features like rounded corners, shadows, gradients, transitions, animations, and new layouts such as multi-columns, flexible box, and grid layouts."
+		},
+		"DiscordJS": {
+			"Description": "Discord.js is a powerful Node.js module that allows you to interact with the Discord API easily. It takes a much more object-oriented approach than most other Discord JS libraries, making your bot's code significantly more organized and easier to understand."
+		},
+		"Docker": {
+			"Description": "Docker is a software platform that allows you to build, test, and deploy applications quickly. It enables you to package an application with all its parts, such as libraries and dependencies, and ship it as a container, ensuring it runs consistently in any environment."
+		},
+		"ESLint": {
+			"Description": "ESLint is a code linting tool for JavaScript. It is used to identify and report problematic patterns found in JavaScript code. It is highly configurable and can be customized to meet the specific needs of your project."
+		},
+		"GitHub": {
+			"Description": "GitHub is a web-based platform for version control using Git. It allows developers to collaborate on projects, track changes, and manage code repositories. It provides a wide range of features, such as issue tracking, pull requests, code review, and project management."
+		},
+		"HTML5": {
+			"Description": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and final major version of HTML, recommended by the World Wide Web Consortium (W3C)."
+		},
+		"JavaScript": {
+			"Description": "JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is characterized as dynamic, weakly typed, prototype-based, and multi-paradigm."
+		},
+		"MongoDB": {
+			"Description": "MongoDB is an open-source, cross-platform database that provides high performance, high availability, and easy scalability. It is a NoSQL database that stores data in flexible, JSON-like documents, making it easier to develop and evolve applications."
+		},
+		"Necord": {
+			"Description": "Necord is a library for creating Discord bots using NestJS. It provides a simple and intuitive interface for interacting with the Discord API, allowing you to build powerful and efficient bots with minimal effort."
+		},
+		"NestJS": {
+			"Description": "NestJS is a framework for building efficient and scalable Node.js server-side applications. It uses progressive JavaScript, is built with TypeScript, and combines elements of OOP (Object-Oriented Programming), FP (Functional Programming), and FRP (Functional Reactive Programming)."
+		},
+		"NextJS": {
+			"Description": "Next.js is a React framework that enables features such as server-side rendering and static site generation for React-based web applications. It is a powerful tool that allows developers to build fast and efficient web applications with minimal effort."
+		},
+		"NodeJS": {
+			"Description": "Node.js is a high-performance, open-source JavaScript runtime built on Chrome's V8 engine. It is used to develop fast and scalable network applications, command-line tools, and server-side scripts."
+		},
+		"NPM": {
+			"Description": "NPM (Node Package Manager) is the default package manager for Node.js, used to install, share, and manage dependencies in JavaScript projects. It provides a large online repository of packages to simplify development."
+		},
+		"PostgreSQL": {
+			"Description": "PostgreSQL is a powerful, open-source object-relational database management system. It has over 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and standards compliance."
+		},
+		"Postman": {
+			"Description": "Postman is a collaboration platform for API development. It is used by over 13 million developers and 500,000 companies to access APIs, share collections, and collaborate on APIs. It offers an intuitive and user-friendly interface for testing and debugging APIs."
+		},
+		"Prisma": {
+			"Description": "Prisma is an open-source database toolkit. It replaces traditional ORMs and simplifies database access with an auto-generated query builder for TypeScript and Node.js."
+		},
+		"ReactJS": {
+			"Description": "React is an open-source JavaScript library for building user interfaces. Maintained by Facebook and a community of developers and companies, React can be used as a base in the development of single-page or mobile applications."
+		},
+		"TailwindCSS": {
+			"Description": "Tailwind CSS is a low-level utility-first CSS framework that provides pre-built classes for creating custom designs directly in HTML. It is designed to be easy to use and highly customizable, allowing you to quickly create unique and responsive designs."
+		},
+		"TypeScript": {
+			"Description": "TypeScript is a superset of JavaScript developed by Microsoft that adds static typing and other enhanced features to the language. TypeScript can be used to develop large-scale JavaScript applications for any browser, host, and operating system."
+		},
+		"VSCode": {
+			"Description": "Visual Studio Code is a source-code editor developed by Microsoft for Windows, Linux, and macOS. It includes support for debugging, integrated version control, syntax highlighting, intelligent code completion, snippets, and code refactoring."
+		},
+		"Vercel": {
+			"Description": "Vercel is a cloud platform for static sites and web applications that allows you to deploy websites in seconds. It offers continuous integration, global hosting, instant previews, and more, making it a popular choice for developers looking to deploy web applications quickly and easily."
+		},
+		"Yarn": {
+			"Description": "Yarn is a fast, reliable, and secure package manager for JavaScript. It is compatible with npm and offers various performance and security improvements, such as parallel installations, package caching, and integrity verification."
+		}
+	},
+	"Projects": {
+		"Title": "Projects",
+		"ViewSource": "View on GitHub",
+		"ViewDeploy": "View Deploy",
+		"N-D-B": {
+			"Description": "N-D-B is a Discord bot developed using DiscordJS and Necord an library for NestJS. It is a multipurpose bot that has several features, such as moderation, music, and fun commands. The bot is designed to be easy to use and has a simple and intuitive interface. It is constantly being updated with new features and improvements."
+		},
+		"RandomBrazil": {
+			"Description": "Random Brazil is an extension for Visual Studio Code (and other compatible IDEs) that allows you to generate and validate Brazilian document data such as CPF, CNPJ, CNH, among others. It is ideal for developers who need fictional data for testing or validating information in their applications."
+		},
+		"BiomeConfig": {
+			"Description": "Configuring a linter and formatter, such as BiomeJS, is crucial for maintaining consistent, readable, and error-free code. Linters ensure uniform coding standards and early error detection, saving debugging time. Formatters automate code structuring, enhancing readability and maintenance. These tools increase productivity by allowing developers to focus on critical tasks. They also enforce quality standards, creating a professional development environment. In CI/CD workflows, they ensure code adherence to quality standards, preserving codebase integrity."
+		}
+	},
+	"Contact": {
+		"Title": "Contact",
+		"Form": {
+			"Name": "Name",
+			"NameDescription": "What should I call you?",
+			"Subject": "Subject",
+			"SubjectDescription": "What would you like to talk about?",
+			"Message": "Message",
+			"MessageDescription": "Write your message here...",
+			"Submit": "Submit",
+			"NameTooShort": "Name must have at least 3 characters"
+		}
+	},
+	"Error": {
+		"Copy": "Copy",
+		"Reload": "Click here to back to main page",
+		"Toast": {
+			"Title": "Error copied!",
+			"Description": "Error code has copied to clipboard"
+		}
+	},
+	"Languages": {
+		"pt-BR": "Portuguese",
+		"en-US": "English"
+	}
 }

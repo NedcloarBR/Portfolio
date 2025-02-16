@@ -64,7 +64,7 @@ export function ChangeLanguage() {
 
 	return (
 		<DropdownMenu>
-			<DropdownMenuTrigger asChild>
+			<DropdownMenuTrigger asChild={true}>
 				<Button variant="outline" size="sm">
 					{currentLang}
 					<span className="sr-only">{}</span>
