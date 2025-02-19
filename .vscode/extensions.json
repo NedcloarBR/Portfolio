@@ -8,6 +8,7 @@
     "WallabyJs.console-ninja",
     "EditorConfig.EditorConfig",
     "ecmel.vscode-html-css",
-    "lokalise.i18n-ally"
+    "lokalise.i18n-ally",
+    "arcanis.vscode-zipfs"
   ]
 }

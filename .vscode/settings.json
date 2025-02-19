@@ -16,4 +16,6 @@
     "./public/locales"
   ],
   "i18n-ally.keystyle": "nested",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
