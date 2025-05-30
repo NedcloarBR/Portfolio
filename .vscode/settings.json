@@ -1,21 +1,8 @@
 {
-  "cSpell.words": [
-    "biomejs",
-    "clsx",
-    "nedcloabr",
-    "Nedcloar",
-    "shadcn",
-    "tailwindcss",
-    "Uhlein"
-  ],
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "i18n-ally.localesPaths": [
-    "./public/locales"
-  ],
-  "i18n-ally.keystyle": "nested",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true
 }

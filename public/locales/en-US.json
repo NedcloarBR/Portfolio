@@ -123,6 +123,9 @@
 		},
 		"BiomeConfig": {
 			"Description": "Configuring a linter and formatter, such as BiomeJS, is crucial for maintaining consistent, readable, and error-free code. Linters ensure uniform coding standards and early error detection, saving debugging time. Formatters automate code structuring, enhancing readability and maintenance. These tools increase productivity by allowing developers to focus on critical tasks. They also enforce quality standards, creating a professional development environment. In CI/CD workflows, they ensure code adherence to quality standards, preserving codebase integrity."
+		},
+		"NestJSInitializr": {
+			"Description": "NestJS Initializr is a tool that simplifies the creation of new NestJS projects. It provides a user-friendly interface to select project options, such as package manager, database, and authentication method, and generates a boilerplate codebase with the selected configurations. This tool helps developers quickly set up new NestJS projects and start coding without worrying about initial configurations."
 		}
 	},
 	"Contact": {

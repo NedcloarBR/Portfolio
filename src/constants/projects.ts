@@ -38,4 +38,21 @@ export const projects: Project[] = [
 		deploy: "https://www.npmjs.com/package/@nedcloarbr/biome-config",
 		techs: ["NodeJS", "TypeScript", "JavaScript", "NPM", "BiomeJS"],
 	},
+	{
+		name: "NestJS Initializr",
+		description: "NestJSInitializr.Description",
+		categories: [],
+		github: "https://github.com/NedcloarBR/nestjs-initializr",
+		deploy: null,
+		techs: [
+			"NodeJS",
+			"TypeScript",
+			"JavaScript",
+			"NestJS",
+			"NextJS",
+			"Yarn",
+			"BiomeJS",
+			"TailwindCSS",
+		],
+	},
 ];

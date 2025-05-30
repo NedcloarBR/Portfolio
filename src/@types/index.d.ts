@@ -44,7 +44,7 @@ export type Project = {
 	name: string;
 	description: string;
 	github: string;
-	deploy: string;
+	deploy: string | null;
 	techs: Techs[];
 	categories: ProjectCategories[];
 };
