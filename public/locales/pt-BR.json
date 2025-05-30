@@ -126,6 +126,9 @@
 		},
 		"NestJSInitializr": {
 			"Description": "NestJS Initializr é uma ferramenta que simplifica a criação de novos projetos NestJS. Ela fornece uma interface amigável para selecionar opções de projeto, como gerenciador de pacotes, banco de dados e método de autenticação, e gera uma base de código inicial com as configurações selecionadas. Essa ferramenta ajuda os desenvolvedores a configurar rapidamente novos projetos NestJS e começar a codificar sem se preocupar com configurações iniciais."
+		},
+		"NestWhats": {
+			"Description": "NestWhats é um módulo para NestJS que abstrai métodos do whatsapp-web.js para facilitar a criação de bots para WhatsApp."
 		}
 	},
 	"Contact": {

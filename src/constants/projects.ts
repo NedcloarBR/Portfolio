@@ -55,4 +55,12 @@ export const projects: Project[] = [
 			"TailwindCSS",
 		],
 	},
+	{
+		name: "NestWhats",
+		description: "NestWhats.Description",
+		categories: [],
+		github: "https://github.com/NedcloarBR/NestWhats",
+		deploy: "https://www.npmjs.com/package/nestwhats",
+		techs: ["NodeJS", "NestJS", "TypeScript", "JavaScript", "NPM"],
+	},
 ];
