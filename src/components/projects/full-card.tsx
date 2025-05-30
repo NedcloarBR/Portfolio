@@ -41,28 +41,32 @@ export function ProjectsFullCard({
 
 				<DialogDescription>{t(info.description)}</DialogDescription>
 				<Separator />
-				<div>
+				<div className="space-y-2">
 					<Button
 						variant="link"
 						size="sm"
-						className="flex"
+						className={`flex ${info.github ? "cursor-pointer" : "cursor-not-allowed"}`}
 						onClick={() =>
-							window.open(info.github, "_blank", "noopener noreferrer")
+							info.github
+								? window.open(info.github, "_blank", "noopener noreferrer")
+								: null
 						}
 					>
 						<Icon name="GitHub" className="size-8" />
-						{t("ViewSource")}
+						{info.github ? t("ViewSource") : t("NoSource")}
 					</Button>
 					<Button
 						variant="link"
 						size="sm"
-						className="flex"
+						className={`flex ${info.deploy ? "cursor-pointer" : "cursor-not-allowed"}`}
 						onClick={() =>
-							window.open(info.deploy, "_blank", "noopener noreferrer")
+							info.deploy
+								? window.open(info.deploy, "_blank", "noopener noreferrer")
+								: null
 						}
 					>
 						<LucideUpload className="size-8" />
-						{t("ViewDeploy")}
+						{info.deploy ? t("ViewDeploy") : t("NoDeploy")}
 					</Button>
 				</div>
 				<Separator />
