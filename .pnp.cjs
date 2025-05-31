@@ -56,7 +56,7 @@ const RAW_RUNTIME_STATE =
           ["simple-icons", "npm:14.2.0"],\
           ["tailwind-merge", "npm:3.0.1"],\
           ["tailwindcss", "npm:4.0.0"],\
-          ["tailwindcss-animate", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.0.7"],\
+          ["tw-animate-css", "npm:1.3.2"],\
           ["typescript", "patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"],\
           ["zod", "npm:3.24.2"]\
         ],\
@@ -2191,7 +2191,7 @@ const RAW_RUNTIME_STATE =
           ["simple-icons", "npm:14.2.0"],\
           ["tailwind-merge", "npm:3.0.1"],\
           ["tailwindcss", "npm:4.0.0"],\
-          ["tailwindcss-animate", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.0.7"],\
+          ["tw-animate-css", "npm:1.3.2"],\
           ["typescript", "patch:typescript@npm%3A5.7.3#optional!builtin<compat/typescript>::version=5.7.3&hash=5786d5"],\
           ["zod", "npm:3.24.2"]\
         ],\
@@ -2508,28 +2508,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["tailwindcss-animate", [\
-      ["npm:1.0.7", {\
-        "packageLocation": "../../../.yarn/berry/cache/tailwindcss-animate-npm-1.0.7-0ee9776556-10c0.zip/node_modules/tailwindcss-animate/",\
-        "packageDependencies": [\
-          ["tailwindcss-animate", "npm:1.0.7"]\
-        ],\
-        "linkType": "SOFT"\
-      }],\
-      ["virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.0.7", {\
-        "packageLocation": "./.yarn/__virtual__/tailwindcss-animate-virtual-677038bcf7/4/.yarn/berry/cache/tailwindcss-animate-npm-1.0.7-0ee9776556-10c0.zip/node_modules/tailwindcss-animate/",\
-        "packageDependencies": [\
-          ["tailwindcss-animate", "virtual:3786d9363fd0a547cdeba13dbbd7739095de182e2f1aa37c74f8398253205a5b62b2735c6799681aabf1f7716a4d0562fe89843678033b5bdce0191960fb23a9#npm:1.0.7"],\
-          ["@types/tailwindcss", null],\
-          ["tailwindcss", "npm:4.0.0"]\
-        ],\
-        "packagePeers": [\
-          "@types/tailwindcss",\
-          "tailwindcss"\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["tapable", [\
       ["npm:2.2.1", {\
         "packageLocation": "../../../.yarn/berry/cache/tapable-npm-2.2.1-8cf5ff3039-10c0.zip/node_modules/tapable/",\
@@ -2551,6 +2529,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/tslib-npm-2.8.1-66590b21b8-10c0.zip/node_modules/tslib/",\
         "packageDependencies": [\
           ["tslib", "npm:2.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["tw-animate-css", [\
+      ["npm:1.3.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/tw-animate-css-npm-1.3.2-3d310490b3-10c0.zip/node_modules/tw-animate-css/",\
+        "packageDependencies": [\
+          ["tw-animate-css", "npm:1.3.2"]\
         ],\
         "linkType": "HARD"\
       }]\
