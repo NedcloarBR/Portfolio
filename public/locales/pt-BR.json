@@ -146,14 +146,6 @@
 			"NameTooShort": "Nome deve ter no mínimo 3 caracteres"
 		}
 	},
-	"Error": {
-		"Copy": "Copiar",
-		"Reload": "Clique aqui para voltar para a página principal",
-		"Toast": {
-			"Title": "Erro copiado!",
-			"Description": "Código de erro copiado para a area de transferência"
-		}
-	},
 	"Languages": {
 		"pt-BR": "Português",
 		"en-US": "Inglês"
