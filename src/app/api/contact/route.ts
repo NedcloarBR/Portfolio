@@ -17,7 +17,10 @@ export async function POST(request: Request) {
 	const parsed = bodySchema.safeParse(json);
 
 	if (!parsed.success) {
-		return NextResponse.json({ error: "Invalid request body" }, { status: 400 });
+		return NextResponse.json(
+			{ error: "Invalid request body" },
+			{ status: 400 },
+		);
 	}
 
 	const { name, email, subject, message } = parsed.data;
@@ -28,7 +31,9 @@ export async function POST(request: Request) {
 		timeZone: "America/Sao_Paulo",
 	});
 
-	const html = await render(ContactEmail({ name, email, subject, message, sentAt }));
+	const html = await render(
+		ContactEmail({ name, email, subject, message, sentAt }),
+	);
 
 	const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -40,7 +45,10 @@ export async function POST(request: Request) {
 	});
 
 	if (error) {
-		return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+		return NextResponse.json(
+			{ error: "Failed to send email" },
+			{ status: 500 },
+		);
 	}
 
 	return NextResponse.json({ success: true });

@@ -5,7 +5,7 @@ export function HeaderRoot() {
 	return (
 		<section
 			id="header"
-			className="fixed z-50 flex h-16 w-screen items-center border-b border-green-700 bg-background/95 backdrop-blur-sm"
+			className="fixed z-50 flex h-16 w-screen items-center border-green-700 border-b bg-background/95 backdrop-blur-sm"
 		>
 			<nav className="grid w-full grid-cols-[1fr_auto_1fr] items-center px-4">
 				<div />

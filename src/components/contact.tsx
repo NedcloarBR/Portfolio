@@ -68,10 +68,12 @@ export function Contact() {
 					{status === "success" ? (
 						<div className="flex flex-col items-center gap-4 py-10 text-center">
 							<CheckCircle2 className="size-14 text-green-500" />
-							<p className="text-lg font-semibold text-foreground">
+							<p className="font-semibold text-foreground text-lg">
 								{t("Form.SuccessTitle")}
 							</p>
-							<p className="text-sm text-muted-foreground">{t("Form.Success")}</p>
+							<p className="text-muted-foreground text-sm">
+								{t("Form.Success")}
+							</p>
 							<Button
 								variant="outline"
 								size="sm"
@@ -159,7 +161,7 @@ export function Contact() {
 								/>
 
 								{status === "error" && (
-									<div className="flex items-center gap-2 rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-sm text-destructive">
+									<div className="flex items-center gap-2 rounded-md border border-destructive/40 bg-destructive/10 px-3 py-2 text-destructive text-sm">
 										<XCircle className="size-4 shrink-0" />
 										{t("Form.Error")}
 									</div>

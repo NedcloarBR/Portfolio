@@ -43,10 +43,7 @@ export function BackToTop({ startRef }: Readonly<BackToTopProps>) {
 					transition={{ ease: "easeInOut", duration: 0.5 }}
 					className="fixed right-8 bottom-8 size-12"
 				>
-					<Button
-						className="size-full rounded-full p-0"
-						onClick={handleClick}
-					>
+					<Button className="size-full rounded-full p-0" onClick={handleClick}>
 						<ArrowUp />
 					</Button>
 				</motion.div>

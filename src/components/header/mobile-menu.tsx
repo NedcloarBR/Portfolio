@@ -23,7 +23,7 @@ export function MobileMenu() {
 
 	return (
 		<Sheet open={open} onOpenChange={setOpen}>
-			<SheetTrigger asChild>
+			<SheetTrigger asChild={true}>
 				<Button variant="ghost" size="icon" aria-label={t("OpenMenu")}>
 					<Menu className="size-5" />
 				</Button>

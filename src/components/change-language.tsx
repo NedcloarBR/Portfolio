@@ -1,8 +1,5 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
-import { useRouter } from "next/navigation";
-import type { ReactElement } from "react";
 import {
 	Button,
 	DropdownMenu,
@@ -10,6 +7,9 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from "@/components/ui";
+import { useLocale, useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
+import type { ReactElement } from "react";
 
 export function ChangeLanguage() {
 	const t = useTranslations("Languages");

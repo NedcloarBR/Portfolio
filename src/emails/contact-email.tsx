@@ -18,7 +18,13 @@ interface ContactEmailProps {
 	sentAt: string;
 }
 
-export function ContactEmail({ name, email, subject, message, sentAt }: ContactEmailProps) {
+export function ContactEmail({
+	name,
+	email,
+	subject,
+	message,
+	sentAt,
+}: ContactEmailProps) {
 	return (
 		<Html lang="en">
 			<Head />
@@ -82,7 +88,8 @@ export function ContactEmail({ name, email, subject, message, sentAt }: ContactE
 const styles = {
 	body: {
 		backgroundColor: "#09090b",
-		fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+		fontFamily:
+			"'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
 		margin: "0",
 		padding: "32px 0",
 	},

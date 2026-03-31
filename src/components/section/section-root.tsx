@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { cva, type VariantProps } from "class-variance-authority";
+import { type VariantProps, cva } from "class-variance-authority";
 import type { ClassValue } from "clsx";
 
 const sectionVariants = cva("justify-center min-h-screen scroll-mt-16", {

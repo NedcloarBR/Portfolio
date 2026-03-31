@@ -2,8 +2,6 @@
 
 import type { Project } from "@/@types";
 import { Icon } from "@/components";
-import type { ProjectMetrics } from "@/lib/metrics";
-import { formatCount } from "@/lib/metrics";
 import {
 	Card,
 	CardContent,
@@ -13,6 +11,8 @@ import {
 	CardTitle,
 	Separator,
 } from "@/components/ui";
+import type { ProjectMetrics } from "@/lib/metrics";
+import { formatCount } from "@/lib/metrics";
 import { track } from "@vercel/analytics";
 import { GitFork, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -24,7 +24,10 @@ interface ProjectsSmallCardProps {
 	metrics: ProjectMetrics;
 }
 
-export function ProjectsSmallCard({ info, metrics }: Readonly<ProjectsSmallCardProps>) {
+export function ProjectsSmallCard({
+	info,
+	metrics,
+}: Readonly<ProjectsSmallCardProps>) {
 	const uniqueTechs = Array.from(new Set(info.techs));
 	const openState = useState(false);
 	const [logoError, setLogoError] = useState(false);
@@ -56,7 +59,7 @@ export function ProjectsSmallCard({ info, metrics }: Readonly<ProjectsSmallCardP
 				<CardHeader>
 					{logoError ? (
 						<div className="flex h-22.5 w-52.5 items-center justify-center rounded-sm bg-muted">
-							<span className="text-xs text-muted-foreground">{info.name}</span>
+							<span className="text-muted-foreground text-xs">{info.name}</span>
 						</div>
 					) : (
 						<img
@@ -70,7 +73,7 @@ export function ProjectsSmallCard({ info, metrics }: Readonly<ProjectsSmallCardP
 					<div className="flex items-center justify-between">
 						<CardTitle>{info.name}</CardTitle>
 						{metrics.stars !== null && (
-							<span className="flex items-center gap-1 text-xs text-muted-foreground">
+							<span className="flex items-center gap-1 text-muted-foreground text-xs">
 								<Star className="size-3 fill-yellow-400 text-yellow-400" />
 								{formatCount(metrics.stars)}
 							</span>

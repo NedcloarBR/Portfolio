@@ -71,13 +71,13 @@ export function ProjectCarousel({ name }: ProjectCarouselProps) {
 							<Card className="w-57.5">
 								<CardContent className="flex aspect-square items-center justify-center p-6">
 									<Image
-									src={picture.src}
-									alt={picture.alt}
-									width={200}
-									height={200}
-									className="object-contain"
-									unoptimized
-								/>
+										src={picture.src}
+										alt={picture.alt}
+										width={200}
+										height={200}
+										className="object-contain"
+										unoptimized={true}
+									/>
 								</CardContent>
 							</Card>
 						</div>

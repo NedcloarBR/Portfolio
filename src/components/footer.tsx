@@ -51,7 +51,11 @@ export function Footer() {
 				{/* Nav */}
 				<nav className="flex flex-wrap justify-center gap-1">
 					{navTargets.map((target) => (
-						<Header.Anchor key={target} target={target} text={t(`Header.${target}`)} />
+						<Header.Anchor
+							key={target}
+							target={target}
+							text={t(`Header.${target}`)}
+						/>
 					))}
 				</nav>
 
@@ -73,7 +77,7 @@ export function Footer() {
 							</a>
 						))}
 					</div>
-					<p className="text-center text-xs text-muted-foreground sm:text-right">
+					<p className="text-center text-muted-foreground text-xs sm:text-right">
 						© {year} Miguel Alexandre Uhlein. All rights reserved.
 					</p>
 				</div>

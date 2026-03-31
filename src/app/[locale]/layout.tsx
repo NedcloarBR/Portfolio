@@ -75,7 +75,7 @@ export default async function LocaleLayout(props: {
 	const messages = await getMessages({ locale });
 
 	return (
-		<html lang={locale} suppressHydrationWarning>
+		<html lang={locale} suppressHydrationWarning={true}>
 			<head>
 				<script
 					type="application/ld+json"

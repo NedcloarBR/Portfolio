@@ -1,4 +1,10 @@
-import { Card, CardContent, CardFooter, CardHeader, Separator } from "@/components/ui";
+import {
+	Card,
+	CardContent,
+	CardFooter,
+	CardHeader,
+	Separator,
+} from "@/components/ui";
 
 function ProjectCardSkeleton() {
 	return (
@@ -29,7 +35,10 @@ function ProjectCardSkeleton() {
 
 export function ProjectsSectionSkeleton() {
 	return (
-		<section id="projects" className="grid min-h-screen scroll-mt-16 justify-center">
+		<section
+			id="projects"
+			className="grid min-h-screen scroll-mt-16 justify-center"
+		>
 			<div className="mt-8 flex items-center justify-center">
 				<div className="h-9 w-32 animate-pulse rounded bg-muted" />
 			</div>

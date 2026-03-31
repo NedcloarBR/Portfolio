@@ -36,11 +36,16 @@ export async function getGitHubMetrics(
 	}
 }
 
-export async function getNpmDownloads(packageName: string): Promise<number | null> {
+export async function getNpmDownloads(
+	packageName: string,
+): Promise<number | null> {
 	try {
 		const res = await fetch(
 			`https://api.npmjs.org/downloads/point/last-month/${encodeURIComponent(packageName)}`,
-			{ next: { revalidate: 3600 }, signal: AbortSignal.timeout(METRICS_TIMEOUT_MS) },
+			{
+				next: { revalidate: 3600 },
+				signal: AbortSignal.timeout(METRICS_TIMEOUT_MS),
+			},
 		);
 		if (!res.ok) return null;
 		const data = await res.json();
@@ -51,7 +56,9 @@ export async function getNpmDownloads(packageName: string): Promise<number | nul
 }
 
 // Fetches combined installs from VS Code Marketplace + OpenVSX
-export async function getVSCodeInstalls(extensionId: string): Promise<number | null> {
+export async function getVSCodeInstalls(
+	extensionId: string,
+): Promise<number | null> {
 	const [publisher, name] = extensionId.split(".");
 	if (!publisher || !name) return null;
 
@@ -67,7 +74,10 @@ export async function getVSCodeInstalls(extensionId: string): Promise<number | n
 	return (a ?? 0) + (b ?? 0);
 }
 
-async function fetchMarketplaceInstalls(publisher: string, name: string): Promise<number | null> {
+async function fetchMarketplaceInstalls(
+	publisher: string,
+	name: string,
+): Promise<number | null> {
 	try {
 		const res = await fetch(
 			"https://marketplace.visualstudio.com/_apis/public/gallery/extensionquery",
@@ -80,7 +90,9 @@ async function fetchMarketplaceInstalls(publisher: string, name: string): Promis
 					Accept: "application/json;api-version=3.0-preview.1",
 				},
 				body: JSON.stringify({
-					filters: [{ criteria: [{ filterType: 7, value: `${publisher}.${name}` }] }],
+					filters: [
+						{ criteria: [{ filterType: 7, value: `${publisher}.${name}` }] },
+					],
 					flags: 256,
 				}),
 			},
@@ -95,7 +107,10 @@ async function fetchMarketplaceInstalls(publisher: string, name: string): Promis
 	}
 }
 
-async function fetchOpenVsxInstalls(publisher: string, name: string): Promise<number | null> {
+async function fetchOpenVsxInstalls(
+	publisher: string,
+	name: string,
+): Promise<number | null> {
 	try {
 		const res = await fetch(`https://open-vsx.org/api/${publisher}/${name}`, {
 			next: { revalidate: 3600 },
@@ -117,7 +132,9 @@ export async function getProjectMetrics(
 	const [github, npmDownloads, vscodeInstalls] = await Promise.all([
 		getGitHubMetrics(repoUrl),
 		npmPackage ? getNpmDownloads(npmPackage) : Promise.resolve(null),
-		vscodeExtension ? getVSCodeInstalls(vscodeExtension) : Promise.resolve(null),
+		vscodeExtension
+			? getVSCodeInstalls(vscodeExtension)
+			: Promise.resolve(null),
 	]);
 	return { ...github, npmDownloads, vscodeInstalls };
 }
