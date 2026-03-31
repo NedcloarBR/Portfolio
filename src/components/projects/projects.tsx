@@ -6,8 +6,13 @@ import { ProjectsSmallCard } from "./small-card";
 export async function ProjectsSection() {
 	const t = await getTranslations("Projects");
 
-	const metrics = await Promise.all(
+	const results = await Promise.allSettled(
 		projects.map((p) => getProjectMetrics(p.github, p.npm, p.vscode)),
+	);
+	const metrics = results.map((r) =>
+		r.status === "fulfilled"
+			? r.value
+			: { stars: null, forks: null, npmDownloads: null, vscodeInstalls: null },
 	);
 
 	return (

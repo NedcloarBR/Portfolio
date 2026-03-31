@@ -11,6 +11,8 @@ export function formatCount(n: number): string {
 	return n.toString();
 }
 
+const METRICS_TIMEOUT_MS = 3000;
+
 export async function getGitHubMetrics(
 	repoUrl: string,
 ): Promise<Pick<ProjectMetrics, "stars" | "forks">> {
@@ -21,6 +23,7 @@ export async function getGitHubMetrics(
 		const res = await fetch(`https://api.github.com/repos/${match[1]}`, {
 			next: { revalidate: 3600 },
 			headers: { Accept: "application/vnd.github+json" },
+			signal: AbortSignal.timeout(METRICS_TIMEOUT_MS),
 		});
 		if (!res.ok) return { stars: null, forks: null };
 		const data = await res.json();
@@ -37,7 +40,7 @@ export async function getNpmDownloads(packageName: string): Promise<number | nul
 	try {
 		const res = await fetch(
 			`https://api.npmjs.org/downloads/point/last-month/${encodeURIComponent(packageName)}`,
-			{ next: { revalidate: 3600 } },
+			{ next: { revalidate: 3600 }, signal: AbortSignal.timeout(METRICS_TIMEOUT_MS) },
 		);
 		if (!res.ok) return null;
 		const data = await res.json();
@@ -71,6 +74,7 @@ async function fetchMarketplaceInstalls(publisher: string, name: string): Promis
 			{
 				method: "POST",
 				next: { revalidate: 3600 },
+				signal: AbortSignal.timeout(METRICS_TIMEOUT_MS),
 				headers: {
 					"Content-Type": "application/json",
 					Accept: "application/json;api-version=3.0-preview.1",
@@ -95,6 +99,7 @@ async function fetchOpenVsxInstalls(publisher: string, name: string): Promise<nu
 	try {
 		const res = await fetch(`https://open-vsx.org/api/${publisher}/${name}`, {
 			next: { revalidate: 3600 },
+			signal: AbortSignal.timeout(METRICS_TIMEOUT_MS),
 		});
 		if (!res.ok) return null;
 		const data = await res.json();
