@@ -29,14 +29,16 @@ function ProjectCardSkeleton() {
 
 export function ProjectsSectionSkeleton() {
 	return (
-		<section id="projects" className="grid h-screen justify-center text-white">
+		<section id="projects" className="grid min-h-screen scroll-mt-16 justify-center">
 			<div className="mt-8 flex items-center justify-center">
 				<div className="h-9 w-32 animate-pulse rounded bg-muted" />
 			</div>
-			<div className="flex items-center gap-4">
+			<div className="flex items-center gap-4 overflow-x-auto px-4 pb-4">
 				{Array.from({ length: 5 }).map((_, i) => (
 					// biome-ignore lint/suspicious/noArrayIndexKey: static skeleton items
-					<ProjectCardSkeleton key={i} />
+					<div key={i} className="shrink-0">
+						<ProjectCardSkeleton />
+					</div>
 				))}
 			</div>
 		</section>

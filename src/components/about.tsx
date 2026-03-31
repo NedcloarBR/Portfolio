@@ -26,16 +26,16 @@ export function About() {
 	return (
 		<Section.Root id="about">
 			<Section.Title title={t("Title")} />
-			<Section.Content className="-mb-16 overflow-wrap break-word">
-				<div className="flex flex-col gap-4">
+			<Section.Content className="flex-col items-center gap-8 break-words px-6 py-8 md:flex-row md:items-start">
+				<div className="flex shrink-0 flex-col items-center gap-4">
 					<Image
 						src="/PPF.jpeg"
 						alt="Miguel Alexandre Uhlein"
 						width={320}
 						height={320}
-						className="mt-2 mr-8 rounded-xl"
+						className="rounded-xl"
 					/>
-					<div className="mt-2 flex">
+					<div className="flex gap-2">
 						<Button
 							variant="link"
 							className="card-hover"
@@ -67,7 +67,7 @@ export function About() {
 						</Button>
 					</div>
 				</div>
-				<div className="mt-8 max-w-xl">
+				<div className="max-w-xl">
 					<motion.div
 						className="overflow-hidden"
 						initial={{ height: 0 }}
@@ -89,7 +89,7 @@ export function About() {
 						</div>
 					</motion.div>
 					<Button
-						className="text-blue-500"
+						className="text-primary"
 						variant="link"
 						onClick={() => setIsExpanded((prev) => !prev)}
 						disabled={isAnimating}

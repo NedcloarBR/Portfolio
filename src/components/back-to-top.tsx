@@ -41,11 +41,10 @@ export function BackToTop({ startRef }: Readonly<BackToTopProps>) {
 					animate={{ opacity: 1, y: 0 }}
 					exit={{ opacity: 0, y: 50 }}
 					transition={{ ease: "easeInOut", duration: 0.5 }}
-					className="fixed right-8 bottom-8 flex items-center justify-center"
-					style={{ width: "48px", height: "48px" }}
+					className="fixed right-8 bottom-8 size-12"
 				>
 					<Button
-						className="flex h-full w-full items-center justify-center rounded-full bg-blue-300 p-0"
+						className="size-full rounded-full p-0"
 						onClick={handleClick}
 					>
 						<ArrowUp />
