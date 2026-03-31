@@ -24,6 +24,16 @@ export function Skills() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [dialogSkill, setDialogSkill] = useState<SkillData | null>(null);
 
+	const CATEGORY_ORDER = [
+		"Backend",
+		"ProgrammingLanguage",
+		"Database",
+		"DevOps",
+		"Tools",
+		"Library",
+		"Frontend",
+	];
+
 	const skillsByCategory = useMemo(() => {
 		const map = new Map<string, SkillData[]>();
 		for (const skill of skills) {
@@ -33,7 +43,11 @@ export function Skills() {
 			}
 			map.get(category)?.push(skill);
 		}
-		return map;
+		return new Map(
+			Array.from(map.entries()).sort(
+				([a], [b]) => CATEGORY_ORDER.indexOf(a) - CATEGORY_ORDER.indexOf(b),
+			),
+		);
 	}, []);
 
 	function handleClick(skill: SkillData) {
@@ -55,36 +69,40 @@ export function Skills() {
 	return (
 		<Section.Root id="skills">
 			<Section.Title title={t("Title")} />
-			<Section.Content className="flex-wrap items-center justify-center">
-				{Array.from(skillsByCategory.entries()).map(
-					([category, categorySkills]) => (
-						<Card
-							key={category}
-							className="flex flex-col items-center rounded-lg"
-						>
-							<h1 className="m-1 mb-2 text-2xl">
-								{t(`Categories.${category}`)}
-							</h1>
-							<Separator className="m-2" />
-							<div className="m-2 flex w-full max-w-96 flex-wrap items-center justify-center gap-2">
-								{categorySkills.map((skill) => (
-									<Button
-										key={skill.name}
-										onClick={() => handleClick(skill)}
-										className="card-hover flex items-center gap-4"
-										variant="link"
-									>
-										<Icon
-											className="size-12"
-											name={skill.name}
-											extension={skill.name === "Necord" ? "png" : "svg"}
-										/>
-									</Button>
-								))}
-							</div>
-						</Card>
-					),
-				)}
+			<Section.Content className="w-full px-4 sm:px-8">
+				<div className="grid w-full grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+					{Array.from(skillsByCategory.entries()).map(
+						([category, categorySkills]) => (
+							<Card
+								key={category}
+								className="flex flex-col items-center rounded-lg p-4"
+							>
+								<h1 className="mb-2 text-xl">
+									{t(`Categories.${category}`)}
+								</h1>
+								<Separator className="mb-3" />
+								<div className="flex flex-wrap items-center justify-center gap-2">
+									{categorySkills.map((skill) => (
+										<Button
+											key={skill.name}
+											onClick={() => handleClick(skill)}
+											variant="outline"
+											size="sm"
+											className="card-hover h-auto gap-2 py-2"
+										>
+											<Icon
+												className="size-5"
+												name={skill.name}
+												extension={skill.name === "Necord" ? "png" : "svg"}
+											/>
+											<span className="text-xs">{skill.name}</span>
+										</Button>
+									))}
+								</div>
+							</Card>
+						),
+					)}
+				</div>
 			</Section.Content>
 
 			{dialogSkill && (

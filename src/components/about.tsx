@@ -24,7 +24,7 @@ export function About() {
 	}, []);
 
 	return (
-		<Section.Root id="about">
+		<Section.Root id="about" className="bg-muted/20">
 			<Section.Title title={t("Title")} />
 			<Section.Content className="flex-col items-center gap-8 break-words px-6 py-8 md:flex-row md:items-start">
 				<div className="flex shrink-0 flex-col items-center gap-4">
@@ -33,7 +33,7 @@ export function About() {
 						alt="Miguel Alexandre Uhlein"
 						width={320}
 						height={320}
-						className="rounded-xl"
+						className="rounded-xl ring-2 ring-border"
 					/>
 					<div className="flex gap-2">
 						<Button

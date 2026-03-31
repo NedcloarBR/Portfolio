@@ -18,7 +18,7 @@ export async function ProjectsSection() {
 	return (
 		<section
 			id="projects"
-			className="grid min-h-screen scroll-mt-16 justify-center"
+			className="grid min-h-screen scroll-mt-16 justify-center bg-muted/20"
 		>
 			<h1 className="mt-8 flex items-center justify-center text-2xl sm:text-4xl">
 				{t("Title")}
