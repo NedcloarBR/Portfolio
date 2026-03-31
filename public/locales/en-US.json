@@ -137,13 +137,22 @@
 		"Title": "Contact",
 		"Form": {
 			"Name": "Name",
-			"NameDescription": "What should I call you?",
+			"NamePlaceholder": "John Doe",
+			"Email": "Email",
+			"EmailPlaceholder": "john@example.com",
 			"Subject": "Subject",
-			"SubjectDescription": "What would you like to talk about?",
+			"SubjectPlaceholder": "Project proposal, collaboration...",
 			"Message": "Message",
-			"MessageDescription": "Write your message here...",
-			"Submit": "Submit",
-			"NameTooShort": "Name must have at least 3 characters"
+			"MessagePlaceholder": "Tell me about your project or idea...",
+			"Submit": "Send message",
+			"Sending": "Sending...",
+			"SendAnother": "Send another message",
+			"Required": "This field is required",
+			"NameTooShort": "Name must have at least 3 characters",
+			"EmailInvalid": "Please enter a valid email address",
+			"SuccessTitle": "Message sent!",
+			"Success": "Thank you for reaching out. I'll get back to you as soon as possible.",
+			"Error": "Something went wrong. Please try again later."
 		}
 	},
 	"Languages": {

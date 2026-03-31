@@ -137,13 +137,22 @@
 		"Title": "Contato",
 		"Form": {
 			"Name": "Nome",
-			"NameDescription": "Como posso te chamar?",
+			"NamePlaceholder": "João Silva",
+			"Email": "E-mail",
+			"EmailPlaceholder": "joao@exemplo.com",
 			"Subject": "Assunto",
-			"SubjectDescription": "Sobre o que você gostaria de falar?",
+			"SubjectPlaceholder": "Proposta de projeto, colaboração...",
 			"Message": "Mensagem",
-			"MessageDescription": "Escreva sua mensagem aqui...",
-			"Submit": "Enviar",
-			"NameTooShort": "Nome deve ter no mínimo 3 caracteres"
+			"MessagePlaceholder": "Conte sobre seu projeto ou ideia...",
+			"Submit": "Enviar mensagem",
+			"Sending": "Enviando...",
+			"SendAnother": "Enviar outra mensagem",
+			"Required": "Este campo é obrigatório",
+			"NameTooShort": "Nome deve ter no mínimo 3 caracteres",
+			"EmailInvalid": "Por favor, insira um e-mail válido",
+			"SuccessTitle": "Mensagem enviada!",
+			"Success": "Obrigado pelo contato. Retornarei o mais breve possível.",
+			"Error": "Algo deu errado. Por favor, tente novamente mais tarde."
 		}
 	},
 	"Languages": {
