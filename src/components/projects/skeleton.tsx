@@ -37,17 +37,15 @@ export function ProjectsSectionSkeleton() {
 	return (
 		<section
 			id="projects"
-			className="grid min-h-screen scroll-mt-16 justify-center"
+			className="min-h-screen scroll-mt-16 bg-muted/20 px-6 py-8"
 		>
-			<div className="mt-8 flex items-center justify-center">
+			<div className="mb-8 flex items-center justify-center">
 				<div className="h-9 w-32 animate-pulse rounded bg-muted" />
 			</div>
-			<div className="flex items-center gap-4 overflow-x-auto px-4 pb-4">
+			<div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{Array.from({ length: 5 }).map((_, i) => (
 					// biome-ignore lint/suspicious/noArrayIndexKey: static skeleton items
-					<div key={i} className="shrink-0">
-						<ProjectCardSkeleton />
-					</div>
+					<ProjectCardSkeleton key={i} />
 				))}
 			</div>
 		</section>

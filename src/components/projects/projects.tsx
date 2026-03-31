@@ -18,16 +18,18 @@ export async function ProjectsSection() {
 	return (
 		<section
 			id="projects"
-			className="grid min-h-screen scroll-mt-16 justify-center bg-muted/20"
+			className="min-h-screen scroll-mt-16 bg-muted/20 px-6 py-8"
 		>
-			<h1 className="mt-8 flex items-center justify-center text-2xl sm:text-4xl">
+			<h1 className="mb-8 flex items-center justify-center text-2xl sm:text-4xl">
 				{t("Title")}
 			</h1>
-			<div className="flex items-center gap-4 overflow-x-auto px-4 pb-4">
+			<div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
 				{projects.map((project, i) => (
-					<div key={project.name} className="shrink-0">
-						<ProjectsSmallCard info={project} metrics={metrics[i]} />
-					</div>
+					<ProjectsSmallCard
+						key={project.name}
+						info={project}
+						metrics={metrics[i]}
+					/>
 				))}
 			</div>
 		</section>

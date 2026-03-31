@@ -84,45 +84,55 @@ export function ProjectsFullCard({
 				<Separator />
 
 				<DialogDescription>{t(info.description)}</DialogDescription>
+
 				<Separator />
-				<div className="space-y-2">
+
+				<div className="grid grid-cols-2 gap-2">
 					<Button
-						variant="link"
+						variant="outline"
 						size="sm"
-						className={`flex ${info.github ? "cursor-pointer" : "cursor-not-allowed"}`}
+						disabled={!info.github}
+						className={info.github ? "cursor-pointer" : "cursor-not-allowed opacity-50"}
 						onClick={() =>
 							info.github
 								? window.open(info.github, "_blank", "noopener noreferrer")
 								: null
 						}
 					>
-						<Icon name="GitHub" className="size-8" />
+						<Icon name="GitHub" className="size-4" />
 						{info.github ? t("ViewSource") : t("NoSource")}
 					</Button>
 					<Button
-						variant="link"
+						variant="outline"
 						size="sm"
-						className={`flex ${info.deploy ? "cursor-pointer" : "cursor-not-allowed"}`}
+						disabled={!info.deploy}
+						className={info.deploy ? "cursor-pointer" : "cursor-not-allowed opacity-50"}
 						onClick={() =>
 							info.deploy
 								? window.open(info.deploy, "_blank", "noopener noreferrer")
 								: null
 						}
 					>
-						<LucideUpload className="size-8" />
+						<LucideUpload className="size-4" />
 						{info.deploy ? t("ViewDeploy") : t("NoDeploy")}
 					</Button>
 				</div>
+
 				<Separator />
 
 				<div className="flex flex-wrap items-center justify-center gap-2">
 					{info.techs.map((tech) => (
-						<Icon
+						<span
 							key={tech}
-							name={tech}
-							extension={tech === "Necord" ? "png" : "svg"}
-							className="size-10"
-						/>
+							className="flex items-center gap-1.5 rounded-md border border-border px-2 py-1.5 text-xs"
+						>
+							<Icon
+								name={tech}
+								extension={tech === "Necord" ? "png" : "svg"}
+								className="size-4"
+							/>
+							{tech}
+						</span>
 					))}
 				</div>
 			</DialogContent>

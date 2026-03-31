@@ -70,7 +70,7 @@ export function Skills() {
 		<Section.Root id="skills">
 			<Section.Title title={t("Title")} />
 			<Section.Content className="w-full px-4 sm:px-8">
-				<div className="grid w-full grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+				<div className="grid w-full grid-cols-2 items-start gap-4 sm:grid-cols-3 lg:grid-cols-4">
 					{Array.from(skillsByCategory.entries()).map(
 						([category, categorySkills]) => (
 							<Card

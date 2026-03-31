@@ -5,7 +5,7 @@ import type { ClassValue } from "clsx";
 const sectionVariants = cva("justify-center min-h-screen scroll-mt-16", {
 	variants: {
 		variant: {
-			default: "grid justify-center min-h-screen scroll-mt-16",
+			default: "grid justify-center min-h-screen scroll-mt-16 pb-16",
 			start:
 				"min-h-screen flex flex-col items-center justify-center text-center space-y-2",
 		},
