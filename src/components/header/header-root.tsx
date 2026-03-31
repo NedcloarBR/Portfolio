@@ -1,22 +1,26 @@
 import { ChangeLanguage, Header, Theme } from "@/components";
+import { MobileMenu } from "./mobile-menu";
 
 export function HeaderRoot() {
 	return (
 		<section
 			id="header"
-			className="fixed flex h-25 w-screen border-green-700 border-b-4 bg-zinc-400 dark:bg-zinc-900"
+			className="fixed z-50 flex h-16 w-screen items-center border-b border-green-700 bg-background/95 backdrop-blur-sm"
 		>
-			<nav className="flex w-full items-center justify-between px-4">
-				<div className="flex-1" />
-				<div className="ml-28 flex w-full items-center justify-center gap-4">
+			<nav className="grid w-full grid-cols-[1fr_auto_1fr] items-center px-4">
+				<div />
+				<div className="hidden items-center gap-4 md:flex">
 					<Header.Anchor target="about" />
 					<Header.Anchor target="skills" />
 					<Header.Anchor target="projects" />
 					<Header.Anchor target="contact" />
 				</div>
-				<div className="mr-8 flex gap-2">
+				<div className="flex items-center justify-end gap-2">
 					<Theme.Toggle />
 					<ChangeLanguage />
+					<div className="md:hidden">
+						<MobileMenu />
+					</div>
 				</div>
 			</nav>
 		</section>

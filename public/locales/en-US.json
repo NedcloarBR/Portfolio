@@ -9,7 +9,9 @@
 		"about": "About",
 		"skills": "Competencies",
 		"projects": "Projects",
-		"contact": "Contact"
+		"contact": "Contact",
+		"Navigation": "Navigation",
+		"OpenMenu": "Open navigation menu"
 	},
 	"Theme": {
 		"Dark": "Dark",

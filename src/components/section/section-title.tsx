@@ -13,7 +13,7 @@ export function SectionTitle({
 	return (
 		<h1
 			className={cn(
-				"mt-8 flex items-center justify-center text-4xl",
+				"mt-8 flex items-center justify-center text-2xl sm:text-4xl",
 				className,
 			)}
 		>

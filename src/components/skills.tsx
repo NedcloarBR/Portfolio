@@ -66,7 +66,7 @@ export function Skills() {
 								{t(`Categories.${category}`)}
 							</h1>
 							<Separator className="m-2" />
-							<div className="m-2 flex w-96 flex-wrap items-center justify-center gap-2">
+							<div className="m-2 flex w-full max-w-96 flex-wrap items-center justify-center gap-2">
 								{categorySkills.map((skill) => (
 									<Button
 										key={skill.name}

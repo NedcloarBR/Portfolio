@@ -11,9 +11,10 @@ import {
 interface Props extends ComponentProps<"a"> {
 	target: string;
 	text?: string;
+	onNavigate?: () => void;
 }
 
-export function HeaderAnchor({ target, text }: Readonly<Props>) {
+export function HeaderAnchor({ target, text, onNavigate }: Readonly<Props>) {
 	const t = useTranslations("Header");
 
 	const [anchorTarget, setAnchorTarget] = useState<HTMLElement | null>(null);
@@ -25,6 +26,7 @@ export function HeaderAnchor({ target, text }: Readonly<Props>) {
 	function handleClick(event: MouseEvent<HTMLButtonElement>) {
 		event.preventDefault();
 		anchorTarget?.scrollIntoView({ behavior: "smooth", block: "start" });
+		onNavigate?.();
 	}
 
 	return (

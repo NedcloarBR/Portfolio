@@ -11,10 +11,9 @@ export function Start() {
 
 	return (
 		<Section.Root ref={startRef} id="start" variant="start">
-			<h1>{t("WIP")}</h1>
-			<div className="text-3xl">{t("Start.Hello")}</div>
-			<div className="text-6xl">{t("Start.Name")}</div>
-			<div className="text-2xl">{t("Start.Details")}</div>
+			<div className="text-xl sm:text-3xl">{t("Start.Hello")}</div>
+			<div className="text-4xl sm:text-6xl">{t("Start.Name")}</div>
+			<div className="text-lg sm:text-2xl">{t("Start.Details")}</div>
 			<BackToTop startRef={startRef} />
 		</Section.Root>
 	);
