@@ -1,9 +1,14 @@
 import { projects } from "@/constants";
-import { useTranslations } from "next-intl";
+import { getProjectMetrics } from "@/lib/metrics";
+import { getTranslations } from "next-intl/server";
 import { ProjectsSmallCard } from "./small-card";
 
-export function ProjectsSection() {
-	const t = useTranslations("Projects");
+export async function ProjectsSection() {
+	const t = await getTranslations("Projects");
+
+	const metrics = await Promise.all(
+		projects.map((p) => getProjectMetrics(p.github, p.npm, p.vscode)),
+	);
 
 	return (
 		<section id="projects" className="grid h-screen justify-center text-white">
@@ -11,8 +16,12 @@ export function ProjectsSection() {
 				{t("Title")}
 			</div>
 			<div className="flex items-center gap-4">
-				{projects.map((project) => (
-					<ProjectsSmallCard key={project.name} info={project} />
+				{projects.map((project, i) => (
+					<ProjectsSmallCard
+						key={project.name}
+						info={project}
+						metrics={metrics[i]}
+					/>
 				))}
 			</div>
 		</section>

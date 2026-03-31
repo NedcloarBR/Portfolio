@@ -131,6 +131,12 @@
 		},
 		"NestWhats": {
 			"Description": "NestWhats é um módulo para NestJS que abstrai métodos do whatsapp-web.js para facilitar a criação de bots para WhatsApp."
+		},
+		"Metrics": {
+			"Stars": "estrelas",
+			"Forks": "forks",
+			"Downloads": "downloads/mês",
+			"Installs": "instalações"
 		}
 	},
 	"Contact": {

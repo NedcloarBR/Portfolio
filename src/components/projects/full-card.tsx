@@ -2,6 +2,8 @@
 
 import type { Project } from "@/@types";
 import { Icon } from "@/components";
+import type { ProjectMetrics } from "@/lib/metrics";
+import { formatCount } from "@/lib/metrics";
 import {
 	Button,
 	Dialog,
@@ -11,7 +13,7 @@ import {
 	DialogTitle,
 	Separator,
 } from "@/components/ui";
-import { LucideUpload } from "lucide-react";
+import { GitFork, LucideUpload, MonitorDown, Package, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { Dispatch, SetStateAction } from "react";
 import { ProjectCarousel } from "./project-carousel";
@@ -19,11 +21,13 @@ import { ProjectCarousel } from "./project-carousel";
 interface ProjectsFullCardProps {
 	openState: [boolean, Dispatch<SetStateAction<boolean>>];
 	info: Project;
+	metrics: ProjectMetrics;
 }
 
 export function ProjectsFullCard({
 	openState,
 	info,
+	metrics,
 }: Readonly<ProjectsFullCardProps>) {
 	const [isOpen, setIsOpen] = openState;
 	const t = useTranslations("Projects");
@@ -37,6 +41,37 @@ export function ProjectsFullCard({
 						{info.name}
 					</DialogTitle>
 				</DialogHeader>
+
+				{/* Metrics */}
+				{(metrics.stars !== null || metrics.forks !== null || metrics.npmDownloads !== null || metrics.vscodeInstalls !== null) && (
+					<div className="flex flex-wrap justify-center gap-4">
+						{metrics.stars !== null && (
+							<span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+								<Star className="size-4 fill-yellow-400 text-yellow-400" />
+								{formatCount(metrics.stars)} {t("Metrics.Stars")}
+							</span>
+						)}
+						{metrics.forks !== null && (
+							<span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+								<GitFork className="size-4" />
+								{formatCount(metrics.forks)} {t("Metrics.Forks")}
+							</span>
+						)}
+						{metrics.npmDownloads !== null && (
+							<span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+								<Package className="size-4" />
+								{formatCount(metrics.npmDownloads)} {t("Metrics.Downloads")}
+							</span>
+						)}
+						{metrics.vscodeInstalls !== null && (
+							<span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+								<MonitorDown className="size-4" />
+								{formatCount(metrics.vscodeInstalls)} {t("Metrics.Installs")}
+							</span>
+						)}
+					</div>
+				)}
+
 				<Separator />
 
 				<DialogDescription>{t(info.description)}</DialogDescription>

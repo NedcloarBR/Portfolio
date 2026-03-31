@@ -2,6 +2,8 @@
 
 import type { Project } from "@/@types";
 import { Icon } from "@/components";
+import type { ProjectMetrics } from "@/lib/metrics";
+import { formatCount } from "@/lib/metrics";
 import {
 	Card,
 	CardContent,
@@ -12,15 +14,17 @@ import {
 	Separator,
 } from "@/components/ui";
 import { track } from "@vercel/analytics";
+import { GitFork, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { ProjectsFullCard } from "./full-card";
 
 interface ProjectsSmallCardProps {
 	info: Project;
+	metrics: ProjectMetrics;
 }
 
-export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
+export function ProjectsSmallCard({ info, metrics }: Readonly<ProjectsSmallCardProps>) {
 	const uniqueTechs = Array.from(new Set(info.techs));
 	const openState = useState(false);
 	const [logoError, setLogoError] = useState(false);
@@ -40,7 +44,9 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
 		);
 		openState[1](true);
 	}
+
 	const nameForAssets = info.name.split(" ").join("");
+
 	return (
 		<>
 			<Card
@@ -61,7 +67,15 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
 						/>
 					)}
 					<Separator />
-					<CardTitle className="flex justify-center">{info.name}</CardTitle>
+					<div className="flex items-center justify-between">
+						<CardTitle>{info.name}</CardTitle>
+						{metrics.stars !== null && (
+							<span className="flex items-center gap-1 text-xs text-muted-foreground">
+								<Star className="size-3 fill-yellow-400 text-yellow-400" />
+								{formatCount(metrics.stars)}
+							</span>
+						)}
+					</div>
 				</CardHeader>
 				<CardContent className="-mt-4">
 					<CardDescription>
@@ -79,7 +93,7 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
 					))}
 				</CardFooter>
 			</Card>
-			<ProjectsFullCard openState={openState} info={info} />
+			<ProjectsFullCard openState={openState} info={info} metrics={metrics} />
 		</>
 	);
 }

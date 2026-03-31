@@ -29,6 +29,7 @@ export const projects: Project[] = [
 		deploy:
 			"https://marketplace.visualstudio.com/items?itemName=nedcloarbr.random-brazil",
 		techs: ["NodeJS", "TypeScript", "JavaScript", "BiomeJS", "VSCode"],
+		vscode: "nedcloarbr.random-brazil",
 	},
 	{
 		name: "Biome Config",
@@ -37,6 +38,7 @@ export const projects: Project[] = [
 		github: "https://github.com/NedcloarBR/biome-config",
 		deploy: "https://www.npmjs.com/package/@nedcloarbr/biome-config",
 		techs: ["NodeJS", "TypeScript", "JavaScript", "NPM", "BiomeJS"],
+		npm: "@nedcloarbr/biome-config",
 	},
 	{
 		name: "NestJS Initializr",
@@ -62,5 +64,6 @@ export const projects: Project[] = [
 		github: "https://github.com/NedcloarBR/NestWhats",
 		deploy: "https://www.npmjs.com/package/nestwhats",
 		techs: ["NodeJS", "NestJS", "TypeScript", "JavaScript", "NPM"],
+		npm: "nestwhats",
 	},
 ];

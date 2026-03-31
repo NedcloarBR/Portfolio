@@ -47,4 +47,6 @@ export type Project = {
 	deploy: string | null;
 	techs: Techs[];
 	categories: ProjectCategories[];
+	npm?: string;
+	vscode?: string; // format: "publisher.extensionId"
 };
