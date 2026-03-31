@@ -9,6 +9,7 @@ import {
 	CarouselNext,
 	CarouselPrevious,
 } from "@/components/ui";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 interface ProjectCarouselProps {
@@ -69,7 +70,14 @@ export function ProjectCarousel({ name }: ProjectCarouselProps) {
 						<div className="p-1">
 							<Card className="w-57.5">
 								<CardContent className="flex aspect-square items-center justify-center p-6">
-									<img src={picture.src} alt={picture.alt} />
+									<Image
+									src={picture.src}
+									alt={picture.alt}
+									width={200}
+									height={200}
+									className="object-contain"
+									unoptimized
+								/>
 								</CardContent>
 							</Card>
 						</div>

@@ -23,6 +23,7 @@ interface ProjectsSmallCardProps {
 export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
 	const uniqueTechs = Array.from(new Set(info.techs));
 	const openState = useState(false);
+	const [logoError, setLogoError] = useState(false);
 	const t = useTranslations("Projects");
 
 	function handleClick() {
@@ -47,11 +48,18 @@ export function ProjectsSmallCard({ info }: Readonly<ProjectsSmallCardProps>) {
 				onClick={handleClick}
 			>
 				<CardHeader>
-					<img
-						src={`images/${nameForAssets}/Logo.png`}
-						alt={`${info.name} Logo`}
-						className="h-22.5 w-52.5 rounded-sm"
-					/>
+					{logoError ? (
+						<div className="flex h-22.5 w-52.5 items-center justify-center rounded-sm bg-muted">
+							<span className="text-xs text-muted-foreground">{info.name}</span>
+						</div>
+					) : (
+						<img
+							src={`/images/${nameForAssets}/Logo.png`}
+							alt={`${info.name} Logo`}
+							className="h-22.5 w-52.5 rounded-sm object-cover"
+							onError={() => setLogoError(true)}
+						/>
+					)}
 					<Separator />
 					<CardTitle className="flex justify-center">{info.name}</CardTitle>
 				</CardHeader>

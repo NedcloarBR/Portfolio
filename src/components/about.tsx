@@ -4,6 +4,7 @@ import { Button } from "@/components/ui";
 import { motion } from "framer-motion";
 import { Mail } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { HeaderAnchor } from "./header/header-anchor";
 import { Icon } from "./icon";
@@ -27,10 +28,12 @@ export function About() {
 			<Section.Title title={t("Title")} />
 			<Section.Content className="-mb-16 overflow-wrap break-word">
 				<div className="flex flex-col gap-4">
-					<img
-						src="PPF.jpeg"
-						alt="Miguel Alexandre Uhlein PPF"
-						className="mt-2 mr-8 inline-block size-80 rounded-xl"
+					<Image
+						src="/PPF.jpeg"
+						alt="Miguel Alexandre Uhlein"
+						width={320}
+						height={320}
+						className="mt-2 mr-8 rounded-xl"
 					/>
 					<div className="mt-2 flex">
 						<Button
