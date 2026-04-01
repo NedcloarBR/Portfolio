@@ -1,4 +1,5 @@
 import { render } from "@react-email/render";
+import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
@@ -10,9 +11,40 @@ const bodySchema = z.object({
 	email: z.string().email(),
 	subject: z.string().min(1),
 	message: z.string().min(1),
+	website: z.string().max(0),
 });
 
+const rateLimit = new Map<string, { count: number; resetAt: number }>();
+const RATE_LIMIT_MAX = 5;
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+
+function checkRateLimit(ip: string): boolean {
+	const now = Date.now();
+	const entry = rateLimit.get(ip);
+
+	if (!entry || now > entry.resetAt) {
+		rateLimit.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+		return false;
+	}
+
+	if (entry.count >= RATE_LIMIT_MAX) return true;
+
+	entry.count++;
+	return false;
+}
+
 export async function POST(request: Request) {
+	const headersList = await headers();
+	const ip =
+		headersList.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
+
+	if (checkRateLimit(ip)) {
+		return NextResponse.json(
+			{ error: "Too many requests" },
+			{ status: 429 },
+		);
+	}
+
 	const json = await request.json();
 	const parsed = bodySchema.safeParse(json);
 
@@ -21,6 +53,10 @@ export async function POST(request: Request) {
 			{ error: "Invalid request body" },
 			{ status: 400 },
 		);
+	}
+
+	if (parsed.data.website) {
+		return NextResponse.json({ success: true });
 	}
 
 	const { name, email, subject, message } = parsed.data;

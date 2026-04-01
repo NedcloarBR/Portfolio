@@ -32,13 +32,14 @@ export function Contact() {
 		email: z.string().email({ message: t("Form.EmailInvalid") }),
 		subject: z.string().min(1, { message: t("Form.Required") }),
 		message: z.string().min(1, { message: t("Form.Required") }),
+		website: z.string().max(0),
 	});
 
 	type formType = z.infer<typeof formSchema>;
 
 	const form = useForm<formType>({
 		resolver: zodResolver(formSchema),
-		defaultValues: { name: "", email: "", subject: "", message: "" },
+		defaultValues: { name: "", email: "", subject: "", message: "", website: "" },
 	});
 
 	async function onSubmit(values: formType) {
@@ -89,6 +90,15 @@ export function Contact() {
 								onSubmit={form.handleSubmit(onSubmit)}
 								className="flex flex-col gap-5"
 							>
+								{/* Honeypot: hidden from humans, bots fill it — rejected server-side */}
+								<input
+									type="text"
+									{...form.register("website")}
+									tabIndex={-1}
+									aria-hidden="true"
+									autoComplete="off"
+									className="pointer-events-none absolute h-0 w-0 opacity-0"
+								/>
 								<div className="grid gap-5 sm:grid-cols-2">
 									<FormField
 										control={form.control}
