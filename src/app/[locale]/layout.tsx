@@ -1,16 +1,15 @@
-import { Inter } from "next/font/google";
 import "@/styles/global.css";
 import "flag-icons/css/flag-icons.css";
 import { MainContainer, Theme } from "@/components";
+import { BASE_URL } from "@/lib/base-url";
 import { routing } from "@/lib/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
+import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
-
-const BASE_URL = "https://portfolio-nedcloarbr.vercel.app";
 
 const jsonLd = {
 	"@context": "https://schema.org",
@@ -53,7 +52,7 @@ export async function generateMetadata(props: {
 			type: "website",
 		},
 		twitter: {
-			card: "summary",
+			card: "summary_large_image",
 			title: t("Home.title"),
 			description: t("Home.description"),
 		},
