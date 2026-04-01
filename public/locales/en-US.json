@@ -18,6 +18,13 @@
 		"Light": "Light"
 	},
 	"WIP": "🚧 This project is under development 🚧",
+	"Stats": {
+		"Stars": "GitHub Stars",
+		"Forks": "GitHub Forks",
+		"NPMDownloads": "NPM Downloads",
+		"VSCodeInstalls": "VSCode Installs",
+		"Projects": "Projects"
+	},
 	"Start": {
 		"Hello": "Hello, World!",
 		"Name": "My name is Miguel",

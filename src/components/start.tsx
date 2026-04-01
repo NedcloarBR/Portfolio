@@ -18,13 +18,7 @@ const itemVariants = {
 	show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
-const TECH_BADGES = [
-	"TypeScript",
-	"NestJS",
-	"Node.js",
-	"PostgreSQL",
-	"Docker",
-];
+const TECH_BADGES = ["TypeScript", "NestJS", "Node.js", "PostgreSQL", "Docker"];
 
 const blobs = [
 	{

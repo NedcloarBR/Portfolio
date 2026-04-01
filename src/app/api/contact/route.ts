@@ -39,10 +39,7 @@ export async function POST(request: Request) {
 		headersList.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
 
 	if (checkRateLimit(ip)) {
-		return NextResponse.json(
-			{ error: "Too many requests" },
-			{ status: 429 },
-		);
+		return NextResponse.json({ error: "Too many requests" }, { status: 429 });
 	}
 
 	const json = await request.json();

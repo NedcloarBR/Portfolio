@@ -92,7 +92,9 @@ export function ProjectsFullCard({
 						variant="outline"
 						size="sm"
 						disabled={!info.github}
-						className={info.github ? "cursor-pointer" : "cursor-not-allowed opacity-50"}
+						className={
+							info.github ? "cursor-pointer" : "cursor-not-allowed opacity-50"
+						}
 						onClick={() =>
 							info.github
 								? window.open(info.github, "_blank", "noopener noreferrer")
@@ -106,7 +108,9 @@ export function ProjectsFullCard({
 						variant="outline"
 						size="sm"
 						disabled={!info.deploy}
-						className={info.deploy ? "cursor-pointer" : "cursor-not-allowed opacity-50"}
+						className={
+							info.deploy ? "cursor-pointer" : "cursor-not-allowed opacity-50"
+						}
 						onClick={() =>
 							info.deploy
 								? window.open(info.deploy, "_blank", "noopener noreferrer")

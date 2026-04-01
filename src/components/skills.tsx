@@ -16,6 +16,7 @@ import { track } from "@vercel/analytics";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { FadeInView } from "./fade-in-view";
 import { Icon } from "./icon";
 import { Section } from "./section";
 
@@ -69,41 +70,43 @@ export function Skills() {
 	return (
 		<Section.Root id="skills">
 			<Section.Title title={t("Title")} />
-			<Section.Content className="w-full px-4 sm:px-8">
-				<div className="grid w-full grid-cols-2 items-start gap-4 sm:grid-cols-3 lg:grid-cols-4">
-					{Array.from(skillsByCategory.entries()).map(
-						([category, categorySkills]) => (
-							<Card
-								key={category}
-								className="flex flex-col items-center rounded-lg p-4"
-							>
-								<h1 className="mb-2 text-xl">
-									{t(`Categories.${category}`)}
-								</h1>
-								<Separator className="mb-3" />
-								<div className="flex flex-wrap items-center justify-center gap-2">
-									{categorySkills.map((skill) => (
-										<Button
-											key={skill.name}
-											onClick={() => handleClick(skill)}
-											variant="outline"
-											size="sm"
-											className="card-hover h-auto gap-2 py-2"
-										>
-											<Icon
-												className="size-5"
-												name={skill.name}
-												extension={skill.name === "Necord" ? "png" : "svg"}
-											/>
-											<span className="text-xs">{skill.name}</span>
-										</Button>
-									))}
-								</div>
-							</Card>
-						),
-					)}
-				</div>
-			</Section.Content>
+			<FadeInView>
+				<Section.Content className="w-full px-4 sm:px-8">
+					<div className="grid w-full grid-cols-2 items-start gap-4 sm:grid-cols-3 lg:grid-cols-4">
+						{Array.from(skillsByCategory.entries()).map(
+							([category, categorySkills]) => (
+								<Card
+									key={category}
+									className="flex flex-col items-center rounded-lg p-4"
+								>
+									<h1 className="mb-2 text-xl">
+										{t(`Categories.${category}`)}
+									</h1>
+									<Separator className="mb-3" />
+									<div className="flex flex-wrap items-center justify-center gap-2">
+										{categorySkills.map((skill) => (
+											<Button
+												key={skill.name}
+												onClick={() => handleClick(skill)}
+												variant="outline"
+												size="sm"
+												className="card-hover h-auto gap-2 py-2"
+											>
+												<Icon
+													className="size-5"
+													name={skill.name}
+													extension={skill.name === "Necord" ? "png" : "svg"}
+												/>
+												<span className="text-xs">{skill.name}</span>
+											</Button>
+										))}
+									</div>
+								</Card>
+							),
+						)}
+					</div>
+				</Section.Content>
+			</FadeInView>
 
 			{dialogSkill && (
 				<Dialog open={isOpen} onOpenChange={(open) => setIsOpen(open)}>

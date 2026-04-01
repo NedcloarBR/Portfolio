@@ -215,10 +215,7 @@
 		@apply border-border outline-ring/50;
 	}
 	*:not(svg, svg *, img, canvas) {
-		transition:
-			background-color 0.3s ease,
-			color 0.15s ease,
-			border-color 0.3s ease;
+		transition: background-color 0.3s ease, color 0.15s ease, border-color 0.3s ease;
 	}
 	html {
 		scroll-behavior: smooth;

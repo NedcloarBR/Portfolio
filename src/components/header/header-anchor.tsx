@@ -12,9 +12,15 @@ interface Props extends ComponentProps<"a"> {
 	target: string;
 	text?: string;
 	onNavigate?: () => void;
+	isActive?: boolean;
 }
 
-export function HeaderAnchor({ target, text, onNavigate }: Readonly<Props>) {
+export function HeaderAnchor({
+	target,
+	text,
+	onNavigate,
+	isActive,
+}: Readonly<Props>) {
 	const t = useTranslations("Header");
 
 	const [anchorTarget, setAnchorTarget] = useState<HTMLElement | null>(null);
@@ -33,7 +39,9 @@ export function HeaderAnchor({ target, text, onNavigate }: Readonly<Props>) {
 		<Button
 			variant="link"
 			size="sm"
-			className="hover:font-bold hover:underline"
+			className={
+				isActive ? "font-bold underline" : "hover:font-bold hover:underline"
+			}
 			onClick={handleClick}
 		>
 			{text ?? t(target)}

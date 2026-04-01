@@ -1,5 +1,6 @@
-import { ChangeLanguage, Header, Theme } from "@/components";
+import { ChangeLanguage, Theme } from "@/components";
 import { MobileMenu } from "./mobile-menu";
+import { NavLinks } from "./nav-links";
 
 export function HeaderRoot() {
 	return (
@@ -10,10 +11,7 @@ export function HeaderRoot() {
 			<nav className="grid w-full grid-cols-[1fr_auto_1fr] items-center px-4">
 				<div />
 				<div className="hidden items-center gap-4 md:flex">
-					<Header.Anchor target="about" />
-					<Header.Anchor target="skills" />
-					<Header.Anchor target="projects" />
-					<Header.Anchor target="contact" />
+					<NavLinks />
 				</div>
 				<div className="flex items-center justify-end gap-2">
 					<Theme.Toggle />

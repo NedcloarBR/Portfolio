@@ -11,7 +11,7 @@ import {
 import { Menu } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
-import { HeaderAnchor } from "./header-anchor";
+import { NavLinks } from "./nav-links";
 
 export function MobileMenu() {
 	const [open, setOpen] = useState(false);
@@ -33,10 +33,7 @@ export function MobileMenu() {
 					<SheetTitle>{t("Navigation")}</SheetTitle>
 				</SheetHeader>
 				<nav className="flex flex-col items-start gap-1 p-4">
-					<HeaderAnchor target="about" onNavigate={close} />
-					<HeaderAnchor target="skills" onNavigate={close} />
-					<HeaderAnchor target="projects" onNavigate={close} />
-					<HeaderAnchor target="contact" onNavigate={close} />
+					<NavLinks onNavigate={close} />
 				</nav>
 			</SheetContent>
 		</Sheet>
