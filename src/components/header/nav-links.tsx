@@ -3,7 +3,7 @@
 import { useActiveSection } from "@/hooks/use-active-section";
 import { HeaderAnchor } from "./header-anchor";
 
-const NAV_SECTIONS = ["about", "skills", "projects", "contact"] as const;
+const NAV_SECTIONS = ["about", "skills", "experience", "projects", "contact"] as const;
 
 interface Props {
 	onNavigate?: () => void;

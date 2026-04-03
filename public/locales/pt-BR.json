@@ -8,6 +8,7 @@
 	"Header": {
 		"about": "Sobre",
 		"skills": "Competências",
+		"experience": "Experiência",
 		"projects": "Projetos",
 		"contact": "Contato",
 		"Navigation": "Navegação",
@@ -17,7 +18,26 @@
 		"Dark": "Escuro",
 		"Light": "Claro"
 	},
-	"WIP": "🚧 Este projeto está sob desenvolvimento 🚧",
+	"Experience": {
+		"Title": "Formação & Experiência",
+		"Current": "Atual",
+		"Roles": "cargos",
+		"Courses": "cursos",
+		"Timeline": {
+			"versotech-analyst": {
+				"role": "Analista de Implantação de Software",
+				"description": "Responsável pela implantação e configuração de soluções de software para clientes, prestando suporte técnico e garantindo a entrega bem-sucedida dos projetos."
+			},
+			"versotech-intern": {
+				"role": "Estagiário de Implantação de Software",
+				"description": "Auxiliei na implantação e configuração de soluções de software, apoiando a equipe técnica no onboarding de clientes e na resolução de problemas."
+			},
+			"fatec": {
+				"role": "(CST) Análise e Desenvolvimento de Sistemas",
+				"description": "Graduação tecnológica com foco em desenvolvimento de software, análise de sistemas, bancos de dados, algoritmos e práticas de engenharia de software."
+			}
+		}
+	},
 	"Stats": {
 		"Stars": "Stars no GitHub",
 		"Forks": "Forks no GitHub",

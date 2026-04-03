@@ -4,9 +4,9 @@ import { MainContainer, Theme } from "@/components";
 import { BASE_URL } from "@/lib/base-url";
 import { routing } from "@/lib/i18n/routing";
 import { Analytics } from "@vercel/analytics/next";
-import { Inter } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
+import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,7 +20,7 @@ const jsonLd = {
 	jobTitle: "Back-end Developer",
 	sameAs: [
 		"https://github.com/NedcloarBR",
-		"https://www.linkedin.com/in/miguel-alexandre-uhlein-7979a71b0/",
+		"https://www.linkedin.com/in/nedcloarbr",
 		"http://discord.gg/5CHARxbaRk",
 	],
 };

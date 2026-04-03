@@ -72,7 +72,7 @@ export function About() {
 								className="card-hover gap-2"
 								onClick={() =>
 									window.open(
-										"https://www.linkedin.com/in/miguel-alexandre-uhlein-7979a71b0/",
+										"https://www.linkedin.com/in/nedcloarbr",
 										"_blank",
 									)
 								}

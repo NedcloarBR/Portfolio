@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-const SECTIONS = ["about", "skills", "projects", "contact"] as const;
+const SECTIONS = ["about", "skills", "experience", "projects", "contact"] as const;
 
 type Section = (typeof SECTIONS)[number];
 

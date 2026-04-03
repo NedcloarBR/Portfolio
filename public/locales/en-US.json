@@ -8,6 +8,7 @@
 	"Header": {
 		"about": "About",
 		"skills": "Competencies",
+		"experience": "Experience",
 		"projects": "Projects",
 		"contact": "Contact",
 		"Navigation": "Navigation",
@@ -17,7 +18,26 @@
 		"Dark": "Dark",
 		"Light": "Light"
 	},
-	"WIP": "🚧 This project is under development 🚧",
+	"Experience": {
+		"Title": "Education & Experience",
+		"Current": "Current",
+		"Roles": "roles",
+		"Courses": "courses",
+		"Timeline": {
+			"versotech-analyst": {
+				"role": "Software Implementation Analyst",
+				"description": "Responsible for implementing and configuring software solutions for clients, providing technical support and ensuring successful project delivery."
+			},
+			"versotech-intern": {
+				"role": "Software Implementation Intern",
+				"description": "Assisted in the implementation and configuration of software solutions, supporting the technical team in client onboarding and troubleshooting."
+			},
+			"fatec": {
+				"role": "(CST) Systems Analysis and Development",
+				"description": "Higher education degree focused on software development, systems analysis, databases, algorithms, and software engineering practices."
+			}
+		}
+	},
 	"Stats": {
 		"Stars": "GitHub Stars",
 		"Forks": "GitHub Forks",
