@@ -225,6 +225,12 @@
 	}
 }
 
+*, *::before, *::after {
+	transition-property: color, background-color, border-color, outline-color, box-shadow, fill, stroke;
+	transition-duration: 250ms;
+	transition-timing-function: ease;
+}
+
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,

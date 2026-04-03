@@ -16,8 +16,9 @@ export function ChangeLanguage() {
 	const router = useRouter();
 	const locale = useLocale();
 
-	const changeLanguageHandler = (locale: string) => {
-		router.replace(`/${locale}`);
+	const changeLanguageHandler = (newLocale: string) => {
+		document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`;
+		router.replace(`/${newLocale}`);
 	};
 
 	const Languages = [
