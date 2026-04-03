@@ -83,7 +83,12 @@ export default async function LocaleLayout(props: {
 				/>
 			</head>
 			<body className={inter.className}>
-				<Theme.Provider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange={false}>
+				<Theme.Provider
+					attribute="class"
+					defaultTheme="dark"
+					enableSystem={false}
+					disableTransitionOnChange={false}
+				>
 					<NextIntlClientProvider messages={messages}>
 						<MainContainer>
 							{children}

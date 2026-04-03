@@ -23,11 +23,18 @@ type RoleDialogProps = {
 	children: React.ReactNode;
 };
 
-export function RoleDialog({ role, institution, logo, children }: RoleDialogProps) {
+export function RoleDialog({
+	role,
+	institution,
+	logo,
+	children,
+}: RoleDialogProps) {
 	const t = useTranslations("Experience");
 	const format = useFormatter();
 
-	const start = capitalizeFirst(format.dateTime(new Date(role.startDate), DATE_FORMAT));
+	const start = capitalizeFirst(
+		format.dateTime(new Date(role.startDate), DATE_FORMAT),
+	);
 	const end = role.endDate
 		? capitalizeFirst(format.dateTime(new Date(role.endDate), DATE_FORMAT))
 		: t("Current");

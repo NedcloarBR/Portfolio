@@ -15,7 +15,13 @@ export async function GET(
 		);
 	}
 
-	const imagesPath = path.join(process.cwd(), "public", "images", "Projects", project);
+	const imagesPath = path.join(
+		process.cwd(),
+		"public",
+		"images",
+		"Projects",
+		project,
+	);
 
 	try {
 		const files = fs.readdirSync(imagesPath);

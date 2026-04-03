@@ -32,7 +32,9 @@ export function GroupItem({ group }: { group: TimelineGroup }) {
 			: Briefcase;
 
 	function formatPeriod(role: TimelineEntry): string {
-		const start = capitalizeFirst(format.dateTime(new Date(role.startDate), DATE_FORMAT));
+		const start = capitalizeFirst(
+			format.dateTime(new Date(role.startDate), DATE_FORMAT),
+		);
 		const end = role.endDate
 			? capitalizeFirst(format.dateTime(new Date(role.endDate), DATE_FORMAT))
 			: t("Current");
@@ -62,7 +64,8 @@ export function GroupItem({ group }: { group: TimelineGroup }) {
 						</h3>
 						{hasMultipleRoles && (
 							<p className="text-muted-foreground text-xs">
-								{group.roles.length} {t(group.type === "Education" ? "Courses" : "Roles")}
+								{group.roles.length}{" "}
+								{t(group.type === "Education" ? "Courses" : "Roles")}
 							</p>
 						)}
 					</div>
@@ -72,7 +75,12 @@ export function GroupItem({ group }: { group: TimelineGroup }) {
 				<div className="border-border/40 border-t">
 					{group.roles.map((role, j) => (
 						// biome-ignore lint/suspicious/noArrayIndexKey: static list
-						<RoleDialog key={j} role={role} institution={group.institution} logo={logoSrc ?? undefined}>
+						<RoleDialog
+							key={j}
+							role={role}
+							institution={group.institution}
+							logo={logoSrc ?? undefined}
+						>
 							<div className="relative flex cursor-pointer gap-3 px-4 py-3 transition-colors last:pb-4 hover:bg-muted/40">
 								{hasMultipleRoles && (
 									<div className="flex flex-col items-center">

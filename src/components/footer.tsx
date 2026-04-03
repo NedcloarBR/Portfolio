@@ -38,7 +38,13 @@ const socials = [
 	},
 ];
 
-const navTargets = ["about", "skills", "experience", "projects", "contact"] as const;
+const navTargets = [
+	"about",
+	"skills",
+	"experience",
+	"projects",
+	"contact",
+] as const;
 
 export function Footer() {
 	const t = useTranslations();

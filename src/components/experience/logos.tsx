@@ -17,4 +17,3 @@ export function GroupLogo({ src, alt }: { src: string; alt: string }) {
 		/>
 	);
 }
-
