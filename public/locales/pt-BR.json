@@ -70,7 +70,8 @@
 			"Library": "Bibliotecas",
 			"Tools": "Ferramentas",
 			"DevOps": "DevOps",
-			"ProgrammingLanguage": "Linguagens de Programação"
+			"ProgrammingLanguage": "Linguagens de Programação",
+			"Mobile": "Mobile"
 		},
 		"BeekeeperStudio": {
 			"Description": "Beekeeper Studio é um cliente SQL de código aberto e multiplataforma para desenvolvedores de banco de dados. Ele oferece uma interface intuitiva e fácil de usar para interagir com bancos de dados, executar consultas SQL, visualizar esquemas e muito mais."
@@ -128,6 +129,12 @@
 		},
 		"ReactJS": {
 			"Description": "React é uma biblioteca JavaScript de código aberto para criar interfaces de usuário. É mantido pelo Facebook e por uma comunidade de desenvolvedores individuais e empresas. O React pode ser usado como uma base no desenvolvimento de aplicativos de página única ou móveis."
+		},
+		"ReactNative": {
+			"Description": "React Native é um framework de código aberto desenvolvido pela Meta para criar aplicativos móveis nativos usando React. Permite escrever código JavaScript e React que compila para componentes nativos de iOS e Android, possibilitando o desenvolvimento multiplataforma com uma única base de código."
+		},
+		"Expo": {
+			"Description": "Expo é uma plataforma de código aberto e conjunto de ferramentas construído em torno do React Native que simplifica o desenvolvimento de aplicativos móveis. Oferece um fluxo de trabalho gerenciado, atualizações over-the-air e acesso a APIs nativas do dispositivo, permitindo que desenvolvedores criem e publiquem apps iOS e Android com mais agilidade."
 		},
 		"TailwindCSS": {
 			"Description": "Tailwind CSS é um framework CSS de utilitários de baixo nível que fornece classes prontas para uso para criar designs personalizados sem sair do HTML. Ele é projetado para ser fácil de usar e altamente personalizável, permitindo que você crie rapidamente designs exclusivos e responsivos."

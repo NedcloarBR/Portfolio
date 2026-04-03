@@ -29,6 +29,7 @@ export type SkillCategory =
 	| "Tools"
 	| "Library"
 	| "Framework"
+	| "Mobile"
 	| "ProgrammingLanguage";
 
 export type SkillData = {

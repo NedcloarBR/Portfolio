@@ -33,6 +33,7 @@ export function Skills() {
 		"Tools",
 		"Library",
 		"Frontend",
+    "Mobile"
 	];
 
 	const skillsByCategory = useMemo(() => {

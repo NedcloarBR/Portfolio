@@ -116,6 +116,18 @@ export const skills: SkillData[] = [
 		url: "https://reactjs.org/",
 	},
 	{
+		name: "ReactNative",
+		description: "ReactNative.Description",
+		categories: ["Mobile"],
+		url: "https://reactnative.dev/",
+	},
+	{
+		name: "Expo",
+		description: "Expo.Description",
+		categories: ["Mobile"],
+		url: "https://expo.dev/",
+	},
+	{
 		name: "TailwindCSS",
 		description: "TailwindCSS.Description",
 		categories: ["Frontend"],

@@ -70,7 +70,8 @@
 			"Library": "Libraries",
 			"Tools": "Tools",
 			"DevOps": "DevOps",
-			"ProgrammingLanguage": "Programming Languages"
+			"ProgrammingLanguage": "Programming Languages",
+			"Mobile": "Mobile"
 		},
 		"BeekeeperStudio": {
 			"Description": "Beekeeper Studio is an open-source, cross-platform SQL  client for database developers. It offers an intuitive and user-friendly   interface to interact with databases, execute SQL queries, visualize  schemas, and much more."
@@ -128,6 +129,12 @@
 		},
 		"ReactJS": {
 			"Description": "React is an open-source JavaScript library for building user interfaces. Maintained by Facebook and a community of developers and companies, React can be used as a base in the development of single-page or mobile applications."
+		},
+		"ReactNative": {
+			"Description": "React Native is an open-source framework developed by Meta for building native mobile applications using React. It allows you to write JavaScript and React code that compiles to native iOS and Android components, enabling cross-platform development with a single codebase."
+		},
+		"Expo": {
+			"Description": "Expo is an open-source platform and set of tools built around React Native that simplifies mobile app development. It provides a managed workflow, over-the-air updates, and access to native device APIs, allowing developers to build and deploy iOS and Android apps more quickly."
 		},
 		"TailwindCSS": {
 			"Description": "Tailwind CSS is a low-level utility-first CSS framework that provides pre-built classes for creating custom designs directly in HTML. It is designed to be easy to use and highly customizable, allowing you to quickly create unique and responsive designs."
