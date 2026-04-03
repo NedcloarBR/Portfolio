@@ -15,7 +15,7 @@ export async function GET(
 		);
 	}
 
-	const imagesPath = path.join(process.cwd(), "public", "images", project);
+	const imagesPath = path.join(process.cwd(), "public", "images", "Projects", project);
 
 	try {
 		const files = fs.readdirSync(imagesPath);
@@ -23,7 +23,7 @@ export async function GET(
 			.filter((file) => /\.(png|jpg|jpeg|gif|svg)$/i.test(file))
 			.map((file, index) => ({
 				id: index,
-				src: `/images/${project}/${file}`,
+				src: `/images/Projects/${project}/${file}`,
 				alt: `${project} ${file}`,
 			}));
 

@@ -25,7 +25,7 @@ export function ProjectCarousel({ name }: ProjectCarouselProps) {
 	useEffect(() => {
 		const fetchPictures = async () => {
 			try {
-				const response = await fetch(`/api/images/${nameForAssets}`);
+				const response = await fetch(`/api/images/projects/${nameForAssets}`);
 				if (response.ok) {
 					const data = await response.json();
 					setPictures(data);

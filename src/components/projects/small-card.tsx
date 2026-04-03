@@ -69,7 +69,7 @@ export function ProjectsSmallCard({
 						</div>
 					) : (
 						<img
-							src={`/images/${nameForAssets}/Logo.png`}
+							src={`/images/Projects/${nameForAssets}/Logo.png`}
 							alt={`${info.name} Logo`}
 							className="h-36 w-full rounded-sm object-cover"
 							onError={() => setLogoError(true)}
