@@ -24,6 +24,13 @@ export function About() {
 		}
 	}, []);
 
+  const birthDate = new Date("2004-12-01T07:20:00-03:00");
+  const today = new Date();
+
+  const age = Math.floor(
+    (today.getTime() - birthDate.getTime()) / (1000 * 60 * 60 * 24 * 365.25)
+  );
+
 	return (
 		<Section.Root id="about" className="bg-muted/20">
 			<Section.Title title={t("Title")} />
@@ -96,6 +103,7 @@ export function About() {
 										contact: (text) => (
 											<HeaderAnchor target="contact" text={text as string} />
 										),
+										age
 									})}
 								</div>
 							</motion.div>
