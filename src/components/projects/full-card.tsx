@@ -40,10 +40,10 @@ export function ProjectsFullCard({
 
 	return (
 		<Dialog open={isOpen} onOpenChange={() => setIsOpen((prev) => !prev)}>
-			<DialogContent>
+			<DialogContent className="max-w-lg">
 				<DialogHeader className="flex items-center justify-center">
 					<ProjectCarousel name={info.name} />
-					<DialogTitle className="flex items-center justify-center text-2xl">
+					<DialogTitle className="flex items-center justify-center text-xl sm:text-2xl">
 						{info.name}
 					</DialogTitle>
 				</DialogHeader>
@@ -87,10 +87,9 @@ export function ProjectsFullCard({
 
 				<Separator />
 
-				<div className="grid grid-cols-2 gap-2">
+				<div className="flex flex-col gap-2 sm:grid sm:grid-cols-2">
 					<Button
 						variant="outline"
-						size="sm"
 						disabled={!info.github}
 						className={
 							info.github ? "cursor-pointer" : "cursor-not-allowed opacity-50"
@@ -106,7 +105,6 @@ export function ProjectsFullCard({
 					</Button>
 					<Button
 						variant="outline"
-						size="sm"
 						disabled={!info.deploy}
 						className={
 							info.deploy ? "cursor-pointer" : "cursor-not-allowed opacity-50"

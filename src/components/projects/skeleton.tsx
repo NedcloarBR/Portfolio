@@ -1,34 +1,27 @@
-import {
-	Card,
-	CardContent,
-	CardFooter,
-	CardHeader,
-	Separator,
-} from "@/components/ui";
+import { Card, CardContent, CardHeader } from "@/components/ui";
 
 function ProjectCardSkeleton() {
 	return (
-		<Card className="h-100 w-60">
-			<CardHeader>
-				<div className="h-22.5 w-52.5 animate-pulse rounded-sm bg-muted" />
-				<Separator />
+		<Card className="flex w-full flex-col overflow-hidden">
+			<div className="h-28 w-full animate-pulse bg-muted sm:h-36" />
+			<CardHeader className="px-4 pt-3 pb-1">
 				<div className="flex items-center justify-between">
-					<div className="h-5 w-24 animate-pulse rounded bg-muted" />
-					<div className="h-4 w-8 animate-pulse rounded bg-muted" />
+					<div className="h-4 w-24 animate-pulse rounded bg-muted" />
+					<div className="h-3 w-8 animate-pulse rounded bg-muted" />
 				</div>
 			</CardHeader>
-			<CardContent className="-mt-4">
-				<div className="space-y-2">
+			<CardContent className="flex-1 px-4 pb-0">
+				<div className="space-y-1.5">
 					<div className="h-3 w-full animate-pulse rounded bg-muted" />
 					<div className="h-3 w-3/4 animate-pulse rounded bg-muted" />
 				</div>
 			</CardContent>
-			<CardFooter className="flex flex-wrap justify-center gap-2">
+			<div className="mt-3 flex justify-center gap-2 border-border/40 border-t bg-muted/20 px-4 py-2.5">
 				{Array.from({ length: 5 }).map((_, i) => (
 					// biome-ignore lint/suspicious/noArrayIndexKey: static skeleton items
-					<div key={i} className="size-6 animate-pulse rounded bg-muted" />
+					<div key={i} className="size-5 animate-pulse rounded bg-muted" />
 				))}
-			</CardFooter>
+			</div>
 		</Card>
 	);
 }

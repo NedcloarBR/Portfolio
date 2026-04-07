@@ -78,23 +78,23 @@ export function Skills() {
 							([category, categorySkills]) => (
 								<Card
 									key={category}
-									className="flex flex-col items-center rounded-lg p-4"
+									className="flex flex-col items-center rounded-lg p-3 sm:p-4"
 								>
-									<h1 className="mb-2 text-xl">
+									<h2 className="mb-2 font-semibold text-muted-foreground text-sm uppercase tracking-wide sm:text-base sm:text-foreground sm:normal-case sm:tracking-normal">
 										{t(`Categories.${category}`)}
-									</h1>
+									</h2>
 									<Separator className="mb-3" />
-									<div className="flex flex-wrap items-center justify-center gap-2">
+									<div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2">
 										{categorySkills.map((skill) => (
 											<Button
 												key={skill.name}
 												onClick={() => handleClick(skill)}
 												variant="outline"
 												size="sm"
-												className="card-hover h-auto gap-2 py-2"
+												className="card-hover h-auto gap-1.5 px-2 py-1.5 sm:gap-2 sm:px-3 sm:py-2"
 											>
 												<Icon
-													className="size-5"
+													className="size-4 sm:size-5"
 													name={skill.name}
 													extension={skill.name === "Necord" ? "png" : "svg"}
 												/>

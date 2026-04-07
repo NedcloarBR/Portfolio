@@ -6,10 +6,8 @@ import {
 	Card,
 	CardContent,
 	CardDescription,
-	CardFooter,
 	CardHeader,
 	CardTitle,
-	Separator,
 } from "@/components/ui";
 import type { ProjectMetrics } from "@/lib/metrics";
 import { formatCount } from "@/lib/metrics";
@@ -59,25 +57,33 @@ export function ProjectsSmallCard({
 	return (
 		<>
 			<Card
-				className="card-hover w-full cursor-pointer hover:ring-2 hover:ring-ring"
+				className="card-hover card-clickable flex w-full cursor-pointer flex-col overflow-hidden"
 				onClick={handleClick}
 			>
-				<CardHeader className="pb-2">
+				{/* Full-bleed logo */}
+				<div className="relative h-28 shrink-0 sm:h-36">
 					{logoError ? (
-						<div className="flex h-36 w-full items-center justify-center rounded-sm bg-muted">
+						<div className="flex h-full items-center justify-center bg-muted/50">
 							<span className="text-muted-foreground text-xs">{info.name}</span>
 						</div>
 					) : (
-						<img
-							src={`/images/Projects/${nameForAssets}/Logo.png`}
-							alt={`${info.name} Logo`}
-							className="h-36 w-full rounded-sm object-cover"
-							onError={() => setLogoError(true)}
-						/>
+						<>
+							<img
+								src={`/images/Projects/${nameForAssets}/Logo.png`}
+								alt={`${info.name} Logo`}
+								className="h-full w-full bg-muted/30 object-contain p-3"
+								onError={() => setLogoError(true)}
+							/>
+							<div className="absolute inset-x-0 bottom-0 h-8 bg-gradient-to-t from-card to-transparent" />
+						</>
 					)}
-					<Separator />
+				</div>
+
+				<CardHeader className="px-4 pt-3 pb-1">
 					<div className="flex items-start justify-between gap-2">
-						<CardTitle className="text-base">{info.name}</CardTitle>
+						<CardTitle className="font-semibold text-sm leading-tight">
+							{info.name}
+						</CardTitle>
 						{hasMetrics && (
 							<div className="flex shrink-0 flex-wrap justify-end gap-1.5 text-muted-foreground text-xs">
 								{metrics.stars !== null && (
@@ -108,21 +114,24 @@ export function ProjectsSmallCard({
 						)}
 					</div>
 				</CardHeader>
-				<CardContent className="-mt-2">
-					<CardDescription className="line-clamp-2">
+
+				<CardContent className="flex-1 px-4 pb-0">
+					<CardDescription className="line-clamp-2 text-xs">
 						{`${t(info.description).split(".")[0]}.`}
 					</CardDescription>
 				</CardContent>
-				<CardFooter className="flex flex-wrap justify-center gap-2">
+
+				{/* Tech strip */}
+				<div className="mt-3 flex flex-wrap justify-center gap-2 border-border/40 border-t bg-muted/20 px-4 py-2.5">
 					{uniqueTechs.map((tech) => (
 						<Icon
 							key={tech}
 							name={tech}
 							extension={tech === "Necord" ? "png" : "svg"}
-							className="size-6"
+							className="size-5"
 						/>
 					))}
-				</CardFooter>
+				</div>
 			</Card>
 			<ProjectsFullCard openState={openState} info={info} metrics={metrics} />
 		</>

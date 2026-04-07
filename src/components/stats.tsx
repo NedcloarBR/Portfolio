@@ -48,10 +48,10 @@ function MetricPill({
 	label,
 }: { icon: ReactNode; value: string; label: string }) {
 	return (
-		<div className="flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-4 py-1.5 text-sm backdrop-blur-sm">
+		<div className="flex items-center justify-center gap-2 rounded-full border border-border/60 bg-background/60 px-3 py-1.5 text-sm backdrop-blur-sm sm:px-4">
 			<span className="text-muted-foreground">{icon}</span>
-			<span className="font-semibold">{value}</span>
-			<span className="text-muted-foreground">{label}</span>
+			<span className="font-bold tabular-nums">{value}</span>
+			<span className="text-muted-foreground text-xs sm:text-sm">{label}</span>
 		</div>
 	);
 }
@@ -63,7 +63,7 @@ export async function Stats() {
 	]);
 
 	return (
-		<div className="mx-auto mb-8 flex max-w-5xl flex-wrap justify-center gap-3">
+		<div className="mx-auto mb-8 grid max-w-5xl grid-cols-2 gap-3 sm:flex sm:flex-wrap sm:justify-center">
 			<MetricPill
 				icon={<Star className="size-3.5" />}
 				value={formatCount(stats.stars)}
